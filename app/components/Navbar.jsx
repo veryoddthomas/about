@@ -11,7 +11,7 @@ import { logo, menu, close } from "../assets";
 const navLinks = [
   { id: "about", title: "About", },
   { id: "work", title: "Work", },
-  // { id: "contact", title: "Contact Me", },
+  { id: "contact", title: "Contact Me", },
 ];
 
 const Navbar = () => {
