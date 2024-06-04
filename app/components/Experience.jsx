@@ -22,13 +22,13 @@ import Image from "next/image";
 import Toggle from './Toggle';
 import { useState } from 'react'
 
-const ExperienceCard = ({ experience }) => {
+const ExperienceCard = ({ experience, preferDetailed }) => {
   return (
     <VerticalTimelineElement
-    // set 'visible to work around
-    // https://github.com/stephane-monnot/react-vertical-timeline/issues/166
-    visible= {true}
-    contentStyle={{
+      // set 'visible to work around
+      // https://github.com/stephane-monnot/react-vertical-timeline/issues/166
+      visible={true}
+      contentStyle={{
         background: colors.secondary.dark,
         color: "#fff",
         // border: "1px solid #fff",
@@ -54,98 +54,39 @@ const ExperienceCard = ({ experience }) => {
         </p>
       </div>
 
-      {experience.detailed_points != null ?
-
-        <div className="group perspective" >
-          <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000" >
-            <div className="relative backface-hidden group-hover:hidden " >
-              <ul className='mt-5 list-disc ml-5 space-y-2'>
-                {experience.points.map((point, index) => (
-                  <li
-                    key={`xp-${index}`}
-                    className='text-primary-light text-[14px] pl-1 tracking-wider'
-                  >
-                    {point}
-                  </li>
-                ))}
-              </ul>
-
-              {experience.languages != null ?
-                <div className='gap-y-0 mt-4 flex flex-wrap gap-2'>
-                  {experience.languages.map((language, index) => (
-                    <div
-                      key={`lang-${index}`}
-                      className={`text-[14px] text-tertiary-light`}
-                    >
-                      {language}
-                      </div>
-                  ))}
-                </div>
-                :
-                null}
-            </div>
-
-            <div className="relative group-not-hover my-rotate-y-180 backface-hidden overflow-hidden" >
-              <ul className='mt-5 list-disc ml-5 space-y-2'>
-                {experience.detailed_points.map((point, index) => (
-                  <li
-                    key={`dxp-${index}`}
-                    className='text-primary-light text-[14px] pl-1 tracking-wider'
-                  >
-                    {point}
-                  </li>
-                ))}
-              </ul>
-              {experience.languages != null ?
-                <div className='mt-4 flex flex-wrap gap-2'>
-                  {experience.languages.map((language, index) => (
-                    <div
-                      key={`lang-${index}`}
-                      className={'`text-[14px] text-tertiary-light'}
-                    >
-                      {language}
-                    </div>
-                  ))}
-                </div>
-                :
-                null}
-            </div>
-          </div>
-        </div>
-        :
-        <div>
-          <ul className='mt-5 list-disc ml-5 space-y-2'>
-            {experience.points.map((point, index) => (
-              <li
-                key={`xp-${index}`}
-                className='text-primary-light text-[14px] pl-1 tracking-wider'
+      <div>
+        <ul className='mt-5 list-disc ml-5 space-y-2'>
+          {(experience.detailed_points != null && preferDetailed == true ? experience.detailed_points : experience.points).map((point, index) => (
+            <li
+              key={`xp-${index}`}
+              className='text-primary-light text-[14px] pl-1 tracking-wider'
+            >
+              {point}
+            </li>
+          ))}
+        </ul>
+        {experience.languages != null ?
+          <div className='gap-y-0 mt-4 flex flex-wrap gap-2'>
+            {experience.languages.map((language, index) => (
+              <div
+                key={`lang-${index}`}
+                className={'`text-[14px] text-tertiary-light'}
               >
-                {point}
-              </li>
+                {language}
+              </div>
             ))}
-          </ul>
-          {experience.languages != null ?
-                <div className='mt-4 flex flex-wrap gap-2'>
-                  {experience.languages.map((language, index) => (
-                    <div
-                      key={`lang-${index}`}
-                      className={'`text-[14px] text-tertiary-light'}
-                    >
-                      {language}
-                    </div>
-                  ))}
-                </div>
-                :
-                null}
-        </div>
-      }
+          </div>
+          :
+          null}
+      </div>
+      {/* {experience.detailed_points != null && preferDetailed == true ?      } */}
 
-    </VerticalTimelineElement>
+    </VerticalTimelineElement >
   );
 };
 
 const Experience = () => {
-  const [isDetailed, setDetailed] = useState(true)
+  const [isDetailed, setDetailed] = useState(false)
 
   return (
     <>
@@ -156,18 +97,21 @@ const Experience = () => {
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Work Experience
         </h2>
-        <Toggle label="Show Detailed" toggled={isDetailed} onClick={(detailed) => {
-          setDetailed(detailed);
-        }} />
+        <div className='flex justify-center items-center'>
+          <Toggle label="Show Detailed" initState={isDetailed} onClick={() => {
+            setDetailed(!isDetailed);
+          }} />
+        </div>
 
       </motion.div>
 
-      <div className='mt-20 flex flex-col'>
+      <div className='mt-10 flex flex-col'>
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard
               key={`experience-${index}`}
               experience={experience}
+              preferDetailed={isDetailed}
             />
           ))}
         </VerticalTimeline>
