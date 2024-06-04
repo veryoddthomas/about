@@ -19,6 +19,9 @@ import { PageSection } from ".";
 import { textVariant } from "../utils/motion";
 import Image from "next/image";
 
+import Toggle from './Toggle';
+import { useState } from 'react'
+
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
@@ -142,6 +145,8 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const [isDetailed, setDetailed] = useState(true)
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -151,6 +156,10 @@ const Experience = () => {
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Work Experience
         </h2>
+        <Toggle label="Show Detailed" toggled={isDetailed} onClick={(detailed) => {
+          setDetailed(detailed);
+        }} />
+
       </motion.div>
 
       <div className='mt-20 flex flex-col'>
