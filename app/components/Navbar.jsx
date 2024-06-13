@@ -9,6 +9,7 @@ import { logo, menu, close } from "../assets";
 
 
 const navLinks = [
+  { id: "", title: "Home", },
   { id: "about", title: "About", },
   { id: "work", title: "Work", },
   { id: "contact", title: "Contact Me", },
@@ -35,14 +36,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
+      className={`${styles.paddingX
+        } w-full flex items-center py-5 fixed top-0 z-20 ${
         // scrolled ? "bg-primary" : "bg-primary-dark"
         // scrolled ? "hidden" : "bg-transparent"
         // "bg-transparent"  // ignore scrolled for now
         "bg-primary-dark"  // ignore scrolled for now
-      }`}
+        }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -57,8 +57,6 @@ const Navbar = () => {
             Tom Zakrajsek&nbsp;
             <span className='sm:block hidden'> &mdash; Software Engineer</span>
           </p>
-
-
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
@@ -70,14 +68,12 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
-            {/* <li
+          {/* <li
               key={'login-button'}
               className={` text-secondary hover:text-white text-[18px] font-medium cursor-pointer`}
             >
               <Button />
             </li> */}
-
-
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
@@ -89,9 +85,8 @@ const Navbar = () => {
           />
 
           <div
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            className={`${!toggle ? "hidden" : "flex"
+              } p-6 bg-primary-dark absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
