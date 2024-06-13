@@ -30,6 +30,13 @@ import chromium from "./chromium.png";
 import os from "./os-contrib.png";
 import firmware from "./firmware1.png";
 
+import python from "./tech/python-logo-only.png";
+import cpp from "./tech/cpp_logo.png";
+import c from "./tech/C_Logo.png";
+import lua from "./lua.png";
+import rust from "./tech/rust-logo-512x512.png";
+import mojo from "./tech/mojo-1.png";
+
 
 export {
   logo,
@@ -59,5 +66,11 @@ export {
   shield,
   chromium,
   os,
-  firmware
+  firmware,
+  c,
+  cpp,
+  python,
+  lua,
+  rust,
+  mojo,
 };
