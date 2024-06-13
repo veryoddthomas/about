@@ -15,6 +15,11 @@ const domains = [
   { title: "Software Security", icon: lock, },  // shield
 ];
 
+const languages = [
+  { title: "C/C++", icon: os, },
+  { title: "Python", icon: os, },
+];
+
 const DomainCard = ({ index, title, icon }) => (
     <motion.div
       variants={fadeIn("right", "spring", index * 0.15, 0.50)}
@@ -66,6 +71,12 @@ const About = () => {
       <div className='mt-20 flex flex-wrap gap-10'>
         {domains.map((domain, index) => (
           <DomainCard key={domain.title} index={index} {...domain} />
+        ))}
+      </div>
+
+      <div className='mt-20 flex flex-wrap gap-10'>
+        {languages.map((language, index) => (
+          <DomainCard key={language.title} index={index} {...language} />
         ))}
       </div>
     </>
