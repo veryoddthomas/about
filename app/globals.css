@@ -30,7 +30,7 @@
   }
 
   h2 {
-    @apply text-secondary-light font-black md:text-[40px] sm:text-[35px] xs:text-[30px] text-[20px]
+    @apply text-secondary-light font-black md:text-[40px] sm:text-[35px] xs:text-[30px] text-[20px] mt-8
   }
 }
 

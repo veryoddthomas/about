@@ -36,6 +36,7 @@ import c from "./tech/C_Logo.png";
 import lua from "./lua.png";
 import rust from "./tech/rust-logo-512x512.png";
 import mojo from "./tech/mojo-1.png";
+import code from "./tech/generic-code.png";
 
 
 export {
@@ -73,4 +74,5 @@ export {
   lua,
   rust,
   mojo,
+  code,
 };

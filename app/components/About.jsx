@@ -4,7 +4,7 @@ import Image from "next/image";
 import { fadeIn, textVariant } from "../utils/motion";
 import { PageSection } from ".";
 
-import { chromium, firmware, lock, mobile, os, c, cpp, python, lua, rust, mojo } from "../assets";
+import { chromium, firmware, lock, mobile, os, c, cpp, python, lua, rust, mojo, code } from "../assets";
 
 const domains = [
   { title: "Operating Systems", icon: os, },
@@ -21,6 +21,7 @@ const languages = [
   { title: "Python", icon: python, },
   { title: "Lua", icon: lua, },
   { title: "Mojo", icon: mojo, },
+  { title: "Other", icon: code, },
 ];
 
 const DomainCard = ({ index, title, icon }) => (
