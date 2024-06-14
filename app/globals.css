@@ -21,8 +21,16 @@
 }
 
 @layer base {
+  .pre-h1 {
+    @apply sm:text-[18px] text-[14px] text-primary-light uppercase tracking-wider
+  }
+
   h1 {
     @apply text-secondary-light font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]
+  }
+
+  h2 {
+    @apply text-secondary-light font-black md:text-[40px] sm:text-[35px] xs:text-[30px] text-[20px]
   }
 }
 

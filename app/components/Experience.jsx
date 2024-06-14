@@ -13,7 +13,6 @@ import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
 
-import { styles } from "../styles";
 import { experiences } from "../constants";
 import { PageSection } from ".";
 import { textVariant } from "../utils/motion";
@@ -22,10 +21,10 @@ import Image from "next/image";
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
-    // set 'visible to work around
-    // https://github.com/stephane-monnot/react-vertical-timeline/issues/166
-    visible= {true}
-    contentStyle={{
+      // set 'visible to work around
+      // https://github.com/stephane-monnot/react-vertical-timeline/issues/166
+      visible={true}
+      contentStyle={{
         background: colors.secondary.dark,
         color: "#fff",
         // border: "1px solid #fff",
@@ -75,7 +74,7 @@ const ExperienceCard = ({ experience }) => {
                       className={`text-[14px] text-tertiary-light`}
                     >
                       {language}
-                      </div>
+                    </div>
                   ))}
                 </div>
                 :
@@ -122,18 +121,18 @@ const ExperienceCard = ({ experience }) => {
             ))}
           </ul>
           {experience.languages != null ?
-                <div className='mt-4 flex flex-wrap gap-2'>
-                  {experience.languages.map((language, index) => (
-                    <div
-                      key={`lang-${index}`}
-                      className={'`text-[14px] text-tertiary-light'}
-                    >
-                      {language}
-                    </div>
-                  ))}
+            <div className='mt-4 flex flex-wrap gap-2'>
+              {experience.languages.map((language, index) => (
+                <div
+                  key={`lang-${index}`}
+                  className={'`text-[14px] text-tertiary-light'}
+                >
+                  {language}
                 </div>
-                :
-                null}
+              ))}
+            </div>
+            :
+            null}
         </div>
       }
 
@@ -145,12 +144,12 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
+        <h1 className={'pre-h1 text-center'}>
           Oh, the places I have worked...
-        </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
+        </h1>
+        <h1 className={'text-center'}>
           Work Experience
-        </h2>
+        </h1>
       </motion.div>
 
       <div className='mt-20 flex flex-col'>

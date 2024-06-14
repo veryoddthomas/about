@@ -4,7 +4,6 @@ import { React, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
-import { styles } from "../styles";
 import { logo, menu, close } from "../assets";
 
 
@@ -36,8 +35,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX
-        } w-full flex items-center py-5 fixed top-0 z-20 ${
+      className={`sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 ${
         // scrolled ? "bg-primary" : "bg-primary-dark"
         // scrolled ? "hidden" : "bg-transparent"
         // "bg-transparent"  // ignore scrolled for now

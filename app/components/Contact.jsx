@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
-import { styles } from "../styles";
 import PageSection from "./PageSection";
 import { slideIn } from "../utils/motion";
 
@@ -71,8 +70,8 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact Me</h3>
+        <h1 className='pre-h1'>Get in touch</h1>
+        <h1>Contact Me</h1>
 
         <form
           ref={formRef}
@@ -80,7 +79,7 @@ const Contact = () => {
           className='mt-12 flex flex-col gap-8'
         >
 
-            {/* <button
+          {/* <button
             type='submit'
             className='bg-white py-3 px-8 rounded-xl outline-none w-fit text-tertiary font-bold shadow-md shadow-primary'
           >

@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import { PageSection } from ".";
 
@@ -50,9 +49,8 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
+        <h1 className='pre-h1'>Introduction</h1>
         <h1>Overview</h1>
-        {/* <h2 className={styles.sectionHeadText}>Overview</h2> */}
       </motion.div>
 
       <motion.p
@@ -73,7 +71,7 @@ const About = () => {
         to build up my open-source portfolio.
       </motion.p>
 
-      <p className={styles.sectionHeadText2}>Domains</p>
+      <h2>Domains</h2>
 
       <div className='mt-10 flex flex-wrap gap-10'>
         {domains.map((domain, index) => (
@@ -81,7 +79,7 @@ const About = () => {
         ))}
       </div>
 
-      <p className={styles.sectionHeadText2}>Programming Languages</p>
+      <h2>Programming Languages</h2>
 
       <div className='mt-10 flex flex-wrap gap-10'>
         {languages.map((language, index) => (

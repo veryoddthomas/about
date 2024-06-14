@@ -1,32 +1,30 @@
 import { motion } from "framer-motion";
-import { styles } from "../styles";
-// import { CrabCanvas, ComputersCanvas, EarthCanvas } from "./canvas";
 
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto  ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto sm:px-16 px-6 flex flex-row items-start gap-5`}
       >
         <div>
-          <h1 className={styles.heroHeadText}>
+          <h1 className='lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2'>
             Welcome!
           </h1>
-          <br/>
+          <br />
           {/* <hr/>  */}
-          <br/>
-          <p className={`${styles.heroSubText}`}>
-            My name is <span className='text-secondary-light font-bold'>Tom Zakrajsek</span>.
-          </p>
-          <p className={`${styles.heroSubText}`}>
-            I&apos;m a former Technical
-            Director, and avid coder with an insatiable curiosity about
-            emerging technologies.
-          </p>
-          <p className={`${styles.heroSubText}`}>
-            I am an alumnus of both Microsoft and Qualcomm.
-          </p>
-
+          <br />
+          <div className='font-medium text-primary-light lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-6'>
+            <p className='mt-4'>
+              My name is <span className='text-secondary-light font-bold'>Tom Zakrajsek</span>.
+            </p>
+            <p className='mt-4'>
+              I&apos;m a former Technical Director, and avid coder with an insatiable curiosity
+              about emerging technologies.
+            </p>
+            <p className='mt-4'>
+              I am an alumnus of both Microsoft and Qualcomm.
+            </p>
+          </div>
         </div>
       </div>
 
