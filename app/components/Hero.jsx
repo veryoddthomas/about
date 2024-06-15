@@ -3,9 +3,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
-      <div
-        className={'absolute inset-0 top-[120px]  max-w-7xl mx-auto sm:px-16 px-6 flex flex-row items-start gap-5'}
-      >
+      <div className={'page-setup'}>
         <div>
           <h1 className='lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2'>
             Welcome!

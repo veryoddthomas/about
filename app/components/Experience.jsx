@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
 import { experiences } from "../constants";
-import { PageSection } from ".";
+import { AnimatedSection } from ".";
 import { textVariant } from "../utils/motion";
 import Image from "next/image";
 
@@ -166,4 +166,4 @@ const Experience = () => {
   );
 };
 
-export default PageSection(Experience, "work");
+export default AnimatedSection(Experience, "work");

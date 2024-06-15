@@ -2,7 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { fadeIn, textVariant } from "../utils/motion";
-import { PageSection } from ".";
+import { AnimatedSection } from ".";
+import { IconCard } from ".";
 
 import { chromium, firmware, lock, mobile, os, c, cpp, python, lua, rust, mojo, code } from "../assets";
 
@@ -24,27 +25,27 @@ const languages = [
   { title: "Other", icon: code, },
 ];
 
-const DomainCard = ({ index, title, icon }) => (
-  <motion.div
-    variants={fadeIn("right", "spring", index * 0.15, 0.50)}
-    className='xs:w-[250px] w-full bg-primary-dark p-[1px] rounded-[20px] shadow-card'
-  >
-    <div
-      className='group rounded-[20px] border border-primary-light px-5 py-4  hover:border-primary-light hover:bg-secondary-dark flex justify-evenly items-center flex-col'
-    >
-      <Image
-        src={icon}
-        alt={title}
-        className='w-24 h-24 object-contain'
-      />
+// const DomainCard = ({ index, title, icon }) => (
+//   <motion.div
+//     variants={fadeIn("right", "spring", index * 0.15, 0.50)}
+//     className='xs:w-[250px] w-full bg-primary-dark p-[1px] rounded-[20px] shadow-card'
+//   >
+//     <div
+//       className='group rounded-[20px] border border-primary-light px-5 py-4  hover:border-primary-light hover:bg-secondary-dark flex justify-evenly items-center flex-col'
+//     >
+//       <Image
+//         src={icon}
+//         alt={title}
+//         className='w-24 h-24 object-contain'
+//       />
 
-      <br />
-      <h3 className='text-primary-light text-[20px] text-center'>
-        {title}
-      </h3>
-    </div>
-  </motion.div>
-);
+//       <br />
+//       <h3 className='text-primary-light text-[20px] text-center'>
+//         {title}
+//       </h3>
+//     </div>
+//   </motion.div>
+// );
 
 const About = () => {
   return (
@@ -76,19 +77,19 @@ const About = () => {
 
       <div className='mt-10 flex flex-wrap gap-10'>
         {domains.map((domain, index) => (
-          <DomainCard key={domain.title} index={index} {...domain} />
+          <IconCard key={domain.title} index={index} {...domain} />
         ))}
       </div>
 
-      <h2>Programming Languages</h2>
+      <a href='languages'><h2 className='link'>Programming Languages</h2></a>
 
       <div className='mt-10 flex flex-wrap gap-10'>
         {languages.map((language, index) => (
-          <DomainCard key={language.title} index={index} {...language} />
+          <IconCard key={language.title} index={index} {...language} />
         ))}
       </div>
     </>
   );
 };
 
-export default PageSection(About, "about");
+export default AnimatedSection(About, "about");

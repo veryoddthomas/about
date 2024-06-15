@@ -63,7 +63,7 @@ const Navbar = () => {
               key={nav.id}
               className={'text-primary-light hover:text-secondary-light text-[18px] font-medium cursor-pointer'}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={`/#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
           {/* <li
@@ -95,7 +95,7 @@ const Navbar = () => {
                     setToggle(!toggle);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={`/#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
             </ul>

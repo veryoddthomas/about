@@ -22,8 +22,14 @@
 
 @layer base {
 
+  .page-setup2 {
+    /* @apply bg-primary-dark */
+    @apply absolute inset-0 top-[120px]  max-w-7xl mx-auto sm:px-16 px-6 flex flex-row items-start gap-5
+  }
+
   .page-setup {
-    @apply bg-primary-dark absolute inset-0 top-[120px]  max-w-7xl mx-auto sm:px-16 px-6 flex flex-row items-start gap-5
+    /* @apply bg-primary-dark  */
+    @apply absolute inset-0 top-[120px]  max-w-7xl mx-auto sm:px-16 px-6
   }
 
   .page-title {
@@ -32,6 +38,10 @@
 
   .pre-h1 {
     @apply sm:text-[18px] text-[14px] text-primary-light uppercase tracking-wider
+  }
+
+  .link {
+    @apply hover:underline
   }
 
   h1 {

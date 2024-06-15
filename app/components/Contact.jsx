@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
-import PageSection from "./PageSection";
+import AnimatedSection from "./AnimatedSection";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
@@ -133,4 +133,4 @@ const Contact = () => {
   );
 };
 
-export default PageSection(Contact, "contact");
+export default AnimatedSection(Contact, "contact");

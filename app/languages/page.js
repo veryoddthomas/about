@@ -2,13 +2,17 @@ import Navbar from "../components/Navbar";
 
 export default function Languages() {
   return (
-    <main className="bg-primary">
+    <main className="bg-primary-dark">
       <Navbar />
-      <section className='relative w-full h-screen mx-auto'>
-        <div className='page-setup'>
-          <h1 className='page-title'>Languages!</h1>
-        </div>
-      </section>
+      <div className='page-setup'>
+        <h1>Programming Languages!</h1>
+
+        <a id='#c-and-cpp'> <h2>C and C++</h2> </a>
+
+        <p>Text for C and C++</p>
+      </div>
+
+      {/* </section> */}
     </main>
   );
 }

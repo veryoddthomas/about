@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { staggerContainer } from "../utils/motion";
 
-const PageSection = (Component, idName) =>
+const AnimatedSection = (Component, idName) =>
   // This takes a component in, and creates a higher-order component
   // that wraps it in a motion section for animation.
   function HOC() {
@@ -22,4 +22,4 @@ const PageSection = (Component, idName) =>
     );
   };
 
-export default PageSection;
+export default AnimatedSection;
