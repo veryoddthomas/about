@@ -21,6 +21,15 @@
 }
 
 @layer base {
+
+  .page-setup {
+    @apply bg-primary-dark absolute inset-0 top-[120px]  max-w-7xl mx-auto sm:px-16 px-6 flex flex-row items-start gap-5
+  }
+
+  .page-title {
+    @apply lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2
+  }
+
   .pre-h1 {
     @apply sm:text-[18px] text-[14px] text-primary-light uppercase tracking-wider
   }
