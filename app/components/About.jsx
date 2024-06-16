@@ -87,7 +87,7 @@ const About = () => {
 
       <div className='mt-10 flex flex-wrap gap-10'>
         {languages.map((language, index) => (
-          <IconCard key={language.title} index={index} {...language} />
+          <IconCard key={language.title} index={index} url={'languages/#' + language.id} {...language} />
         ))}
       </div>
     </>

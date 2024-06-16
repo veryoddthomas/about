@@ -2,7 +2,6 @@
 
 const colors = require('tailwindcss/colors')
 
-
 const primary_base_color = colors.neutral;
 const secondary_base_color = colors.sky;
 const tertiary_base_color = colors.teal;
@@ -19,20 +18,21 @@ module.exports = {
       colors: {
         primary: {
           dark: primary_base_color['950'],
-          light: primary_base_color['200'],
-        } ,
+          DEFAULT: primary_base_color['500'],
+          light: primary_base_color['300'],
+        },
         secondary: {
           dark: secondary_base_color['950'],
           light: secondary_base_color['500'],
-        } ,
+        },
         tertiary: {
           dark: tertiary_base_color['950'],
           light: tertiary_base_color['500'],
-        } ,
+        },
 
         neutral: {
           dark: colors.neutral['950'],
-          DEFAULT: colors.neutral['500'] ,
+          DEFAULT: colors.neutral['500'],
           light: colors.neutral['300']
         }
       },
