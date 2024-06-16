@@ -33,6 +33,7 @@ import firmware from "./firmware1.png";
 import python from "./tech/python-logo-only.png";
 import cpp from "./tech/cpp_logo.png";
 import c from "./tech/C_Logo.png";
+import c_and_cpp from "./tech/c_and_cpp_logo.png";
 import lua from "./lua.png";
 import rust from "./tech/rust-logo-512x512.png";
 import mojo from "./tech/mojo-1.png";
@@ -68,6 +69,7 @@ export {
   chromium,
   os,
   firmware,
+  c_and_cpp,
   c,
   cpp,
   python,

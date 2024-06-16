@@ -15,15 +15,17 @@ const domains = [
   { title: "Software Security", icon: lock, },  // shield
 ];
 
-const languages = [
-  { title: "C", icon: c, },
-  { title: "C++", icon: cpp, },
-  { title: "Rust", icon: rust, },
-  { title: "Python", icon: python, },
-  { title: "Lua", icon: lua, },
-  { title: "Mojo", icon: mojo, },
-  { title: "Other", icon: code, },
-];
+import { languages } from "../data/languages";
+
+// const languages = [
+//   { title: "C", icon: c, },
+//   { title: "C++", icon: cpp, },
+//   { title: "Rust", icon: rust, },
+//   { title: "Python", icon: python, },
+//   { title: "Lua", icon: lua, },
+//   { title: "Mojo", icon: mojo, },
+//   { title: "Other", icon: code, },
+// ];
 
 // const DomainCard = ({ index, title, icon }) => (
 //   <motion.div
