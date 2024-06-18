@@ -14,18 +14,28 @@ const navLinks = [
   { id: "contact", title: "Contact Me", },
 ];
 
+// Intended behavior:
+// When scrolling down, if you are more than 100px from the top of the page,
+// the navbar should be hidden.  When scrolling up, the navbar should be shown.
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  let prevScrollTop = 0;  // window.scrollY;
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
+
+      if (scrollTop > prevScrollTop && scrollTop > 100) {
+        // if scrolling down and we are down >100px from the top,
+        // hide the Navbar
         setScrolled(true);
-      } else {
+      } else if (prevScrollTop - scrollTop > 10) {
+        // if scrolling up, and moved enough, show Navbar
         setScrolled(false);
       }
+      prevScrollTop = scrollTop;
     };
 
     window.addEventListener("scroll", handleScroll);
