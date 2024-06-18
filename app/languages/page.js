@@ -6,12 +6,17 @@ import { languages } from "../data/languages";
 const LanguageDescription = ({ index, title, icon, id, desc }) => (
   <div>
     <a id={id} />
-    <div className='min-h-64 pt-12'>
-      <h2>{title}</h2>
-      <Image src={icon} alt={title} className='w-24 h-24 object-contain justify-start' />
-      {desc.map((paragraph, index) => (
-        <p key={index} className='pt-4'>{paragraph}</p>
-      ))}
+    {/* pt-20 below is to count the navbar.  If the navbar hides, remove it*/}
+    <div className='mt-4 flex flex-wrap gap-4'>
+      <div className='w-40'> {/*className='w-40'*/}
+        <Image src={icon} alt={title} className='w-24 h-24 object-contain justify-start' />
+      </div>
+      <div className='w-96 text-2xl'> {/*className='w-96'*/}
+        <h2>{title}</h2>
+        {desc.map((paragraph, index) => (
+          <p key={index} className='pt-4'>{paragraph}</p>
+        ))}
+      </div>
     </div>
   </div>
 );
@@ -20,7 +25,7 @@ const LanguageDescription = ({ index, title, icon, id, desc }) => (
 export default function Languages() {
   return (
     <main className="bg-primary-dark">
-      <Navbar />
+      {/* <Navbar /> */}
       <div className='page-setup'>
         <h1>Programming Languages</h1>
 
@@ -34,10 +39,13 @@ export default function Languages() {
         The same is true for technology stacks in general.
         </p> */}
 
-        <div className='flex flex-row gap-10 mt-6 text-secondary-light text-2xl '>
-          {languages.map((language, index) => (
-            <a href={'#' + language.id} className="link"> {language.title} </a>
-          ))}
+        <div className='flex flex-row mt-6 text-secondary-light text-2xl '>
+          {/* <div className='flex flex-row'> */}
+          <div>
+            {languages.map((language, index) => (
+              <a href={'#' + language.id} className="link"> {language.title} </a>
+            ))}
+          </div>
 
         </div>
 

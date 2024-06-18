@@ -36,10 +36,10 @@ const Navbar = () => {
   return (
     <nav
       className={`sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 ${
-        // scrolled ? "bg-primary" : "bg-primary-dark"
-        // scrolled ? "hidden" : "bg-transparent"
+        // scrolled ? "hidden" : "bg-primary-dark"  // "bg-transparent"
         // "bg-transparent"  // ignore scrolled for now
-        "bg-primary-dark"  // ignore scrolled for now
+        // "bg-primary-dark"  // ignore scrolled for now
+        scrolled ? "hidden" : "bg-primary-dark"
         }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
