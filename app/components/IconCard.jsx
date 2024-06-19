@@ -6,7 +6,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 const IconCard = ({ index, title, icon, url }) => (
     <motion.div
         variants={fadeIn("right", "spring", index * 0.15, 1.50)}
-        className='xs:w-[250px] w-full bg-primary-dark p-[1px] rounded-[20px] shadow-card'
+        className='xs:w-[200px] xs:h-[200px] w-full bg-primary-dark p-[1px] rounded-[20px] shadow-card'
     >
         <a
             href={url}
@@ -17,11 +17,11 @@ const IconCard = ({ index, title, icon, url }) => (
             <Image
                 src={icon}
                 alt={title}
-                className='w-24 h-24 object-contain'
+                className='w-16 h-16 object-contain'
             />
 
             <br />
-            <h3 className='text-primary-light text-[20px] text-center'>
+            <h3 className='text-primary-light text-[16px] text-center'>
                 {title}
             </h3>
         </a>

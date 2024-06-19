@@ -30,7 +30,8 @@ const About = () => {
         className='mt-4 text-primary-light text-[18px] max-w-3xl leading-[30px]'
       >
         I have written firmware, device drivers, graphics
-        software, multimedia codecs, communication protocols, test frameworks, DRM software (I&apos;m sorry), and many, many applications.
+        software, multimedia codecs, communication protocols,
+        test frameworks, DRM software, and many, many applications.
 
         <br />
         <br />

@@ -16,11 +16,15 @@ const Hero = () => {
               My name is <span className='text-secondary-light font-bold'>Tom Zakrajsek</span>.
             </p>
             <p className='mt-6'>
-              I&apos;m a former Technical Director, and avid coder with an insatiable curiosity
-              about emerging technologies.
+              I&apos;m a recovering Technical Director and avid coder with a passion for
+              clean code and test coverage.
             </p>
             <p className='mt-6'>
-              I am an alumnus of both Microsoft and Qualcomm.
+              I focus on comprehensibility, functionality, security, performance, and
+              resource efficiency, basically in that order.
+            </p>
+            <p className='mt-6'>
+              I have worked for both Microsoft and Qualcomm, as well as a couple of other companies.
             </p>
           </div>
         </div>

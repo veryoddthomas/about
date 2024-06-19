@@ -7,17 +7,27 @@ const LanguageDescription = ({ index, title, icon, id, desc }) => (
   <div>
     <a id={id} />
     {/* pt-20 below is to count the navbar.  If the navbar hides, remove it*/}
-    <div className='mt-4 flex flex-wrap gap-4'>
-      <div className='w-40'> {/*className='w-40'*/}
+
+    {/* <div className='mt-4 flex flex-wrap gap-4'>
+      <div className='w-40'>
         <Image src={icon} alt={title} className='w-24 h-24 object-contain justify-start' />
       </div>
-      <div className='w-96 text-2xl'> {/*className='w-96'*/}
+      <div className='w-96 text-2xl'>
         <h2>{title}</h2>
         {desc.map((paragraph, index) => (
           <p key={index} className='pt-4'>{paragraph}</p>
         ))}
       </div>
+    </div> */}
+
+    <div className='mt-6 text-2xl'>
+      <h2 className='mb-4'>{title}</h2>
+
+      {desc.map((paragraph, index) => (
+        <p key={index} className='pt-4'>{paragraph}</p>
+      ))}
     </div>
+
   </div>
 );
 
@@ -41,7 +51,7 @@ export default function Languages() {
 
         <div className='flex flex-row mt-6 text-secondary-light text-2xl '>
           {/* <div className='flex flex-row'> */}
-          <div>
+          <div className='space-x-8'>
             {languages.map((language, index) => (
               <a href={'#' + language.id} className="link"> {language.title} </a>
             ))}

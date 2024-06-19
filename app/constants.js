@@ -143,7 +143,7 @@ const experiences = [
     detailed_points: [
       "Led a global team of 30+ engineers responsible for end-to-end delivery of Qualcomm's TrustZone software. The team was highly execution focused, and process optimization and robustness were key to success through scalability.",
       "Launched 20+ Snapdragon™ processors on Android, Windows, iOS, Embedded Linux, and Chrome OS.",
-      "Drove, reviewed, and contributed to initiatives to convert critical code, including secure boot and the trusted-application framework, from C to Rust, reducing code size by 50% and increasing performance by 10%. Memory related defects (accounting for 80% of total, historically) were reduced to 0.",
+      "Reviewed and contributed to initiatives to convert critical code, including secure boot and the trusted-application framework, from C to Rust, reducing code size by 50% and increasing performance by 10%. Memory related defects (accounting for 80% of total, historically) were reduced to 0.",
       "Re-designed the continuous integration and delivery processes for Qualcomm's Trusted Execution Environment (QTEE). Increased code throughput and decreased latencies by 5x and reduced developer build times by 75%.",
       "Developed auditing and tracking infrastructure for static analysis reducing 'release impacting' events by >90%",
     ],

@@ -4,6 +4,7 @@ import {
   lua,
   rust,
   mojo,
+  javascript,
   code
 } from "../assets";
 
@@ -14,9 +15,18 @@ const languages = [
     id: "c-and-cpp",
     desc: [
       `
-Let's just say I have my 10,000+ hours.
+I have been programming in C for more than 30 years.
+I have extensive experience with the language, the
+varieties of compilers and toolchains, the standard
+libraries, and the build systems.
       `,
       `
+During that time, I also used C++ for specific projects.
+Much of the C++ used objects, but was not what I'd call
+object-oriented.  It was more for simple encapulation,
+but with limits on inheritence.  In general, I find
+that large inheritence trees make debugging and
+performance-tuning unacceptably convoluted.
       `,
     ],
   },
@@ -56,7 +66,7 @@ Lua is extremely intuitive, compact, and easy to comprehend.
 
   },
   {
-    title: "Mojo 🔥",
+    title: "Mojo",
     icon: mojo,
     id: "mojo",
     desc: [
@@ -72,18 +82,31 @@ in my toolbag
     ]
   },
   {
+    title: "Javascript",
+    icon: javascript,
+    id: "javascript",
+    desc: [
+      `
+I've used Javascript for web development, and still consider myself a novice.
+But, I have been able to complete several projects and keep the code
+readable, functional, and maintainable.  As long as you stick to the rational
+subset of the language, it seems to be powerful and elegant.  I'm exploring
+TypeScript, but prioritized Javascript first.
+      `,
+    ]
+  },
+  {
     title: "Other",
     icon: code,
     id: "other",
     desc: [
       `
-TBD:
+I've also used the following languages as needed:
+HTML, CSS, Bash, C#, Lisp, Pascal, Ada, Awk, Sed, Perl, and Basic.
       `,
       `
-Javascript, HTML, CSS, Pascal, Ada, Lisp, Awk, Bash, Ruby, C#, Prolog.
-      `,
-      `
-Assembly on: x86, 68k, ADSP2101, DSP56k, ARM, Snapdragon, PowerPC, MIPS, Alpha, and SPARC.
+I've also programmed in Assembly on the following RISC, CISC, and DSP processors:
+x86, 68k, ADSP2101, DSP56k, ARM, Snapdragon, PowerPC, MIPS, Alpha, and SPARC (LSI Logic?).
       `,
     ]
   },
