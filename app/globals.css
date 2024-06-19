@@ -39,6 +39,10 @@
     @apply hover:underline
   }
 
+  .emphasized-2 {
+    @apply text-secondary-light font-bold
+  }
+
   h1 {
     @apply text-secondary-light font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]
   }

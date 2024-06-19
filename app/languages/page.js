@@ -24,7 +24,7 @@ const LanguageDescription = ({ index, title, icon, id, desc }) => (
       <h2 className='mb-4'>{title}</h2>
 
       {desc.map((paragraph, index) => (
-        <p key={index} className='pt-4'>{paragraph}</p>
+        <p key={index} className='text-primary-light pt-4'>{paragraph}</p>
       ))}
     </div>
 

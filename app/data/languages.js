@@ -23,7 +23,7 @@ libraries, and the build systems.
       `
 During that time, I also used C++ for specific projects.
 Much of the C++ used objects, but was not what I'd call
-object-oriented.  It was more for simple encapulation,
+object-oriented.  It was more for simple encapsulation,
 but with limits on inheritence.  In general, I find
 that large inheritence trees make debugging and
 performance-tuning unacceptably convoluted.

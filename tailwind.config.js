@@ -18,8 +18,8 @@ module.exports = {
       colors: {
         primary: {
           dark: primary_base_color['950'],
-          DEFAULT: primary_base_color['500'],
-          light: primary_base_color['300'],
+          DEFAULT: primary_base_color['400'],
+          light: primary_base_color['400'],
         },
         secondary: {
           dark: secondary_base_color['950'],
@@ -32,7 +32,7 @@ module.exports = {
 
         neutral: {
           dark: colors.neutral['950'],
-          DEFAULT: colors.neutral['500'],
+          DEFAULT: colors.neutral['400'],
           light: colors.neutral['300']
         }
       },

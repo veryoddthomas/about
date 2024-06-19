@@ -13,26 +13,21 @@ const Hero = () => {
           <br />
           <div className='font-medium text-primary-light lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-6'>
             <p className='mt-6'>
-              My name is <span className='text-secondary-light font-bold'>Tom Zakrajsek</span>.
+              My name is <span className='emphasized-2'>Tom Zakrajsek</span>.
             </p>
             <p className='mt-6'>
-              I&apos;m a recovering Technical Director and avid coder with a passion for
-              clean code and test coverage.
+              I&apos;m a software engineer with a passion for clean code.
             </p>
+
             <p className='mt-6'>
-              I focus on comprehensibility, functionality, security, performance, and
-              resource efficiency, basically in that order.
-            </p>
-            <p className='mt-6'>
-              I have worked for both Microsoft and Qualcomm, as well as a couple of other companies.
+              I have worked for both
+              &nbsp;<span className='emphasized-2'>Microsoft</span>&nbsp; and
+              &nbsp;<span className='emphasized-2'>Qualcomm</span>&nbsp;
+              as well as a few smaller companies.
             </p>
           </div>
         </div>
       </div>
-
-      {/* <EarthCanvas /> */}
-      {/* <CrabCanvas /> */}
-      {/* <ComputersCanvas /> */}
 
       <div className='absolute xs:bottom-10 bottom-16 w-full flex justify-center items-center'>
         <a href='#about'>
