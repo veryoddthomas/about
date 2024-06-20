@@ -19,7 +19,7 @@ module.exports = {
         primary: {
           dark: primary_base_color['950'],
           DEFAULT: primary_base_color['400'],
-          light: primary_base_color['400'],
+          light: primary_base_color['300'],
         },
         secondary: {
           dark: secondary_base_color['950'],
