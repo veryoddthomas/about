@@ -11,7 +11,7 @@ const Hero = () => {
           <br />
           {/* <hr/>  */}
           <br />
-          <div className='font-medium text-primary-light lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-6'>
+          <div className='font-medium text-primary lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-6'>
             <p className='mt-6'>
               My name is <span className='emphasized-2'>Tom Zakrajsek</span>.
             </p>

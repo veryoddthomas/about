@@ -24,7 +24,7 @@ const LanguageDescription = ({ index, title, icon, id, desc }) => (
       <h2 className='mb-4'>{title}</h2>
 
       {desc.map((paragraph, index) => (
-        <p key={index} className='text-primary-light pt-4'>{paragraph}</p>
+        <p key={index} className='text-primary pt-4'>{paragraph}</p>
       ))}
     </div>
 
@@ -49,7 +49,7 @@ export default function Languages() {
         The same is true for technology stacks in general.
         </p> */}
 
-        <div className='flex flex-row mt-6 text-secondary-light text-2xl '>
+        <div className='flex flex-row mt-6 text-tertiary-light text-2xl '>
           {/* <div className='flex flex-row'> */}
           <div className='space-x-8'>
             {languages.map((language, index) => (

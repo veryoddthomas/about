@@ -3,8 +3,8 @@
 const colors = require('tailwindcss/colors')
 
 const primary_base_color = colors.neutral;
-const secondary_base_color = colors.sky;
-const tertiary_base_color = colors.teal;
+const secondary_base_color = colors.sky;  // sky, neutral, yellow, red
+const tertiary_base_color = colors.teal;  // teal, neutral
 
 module.exports = {
   content: [
