@@ -49,7 +49,7 @@ export default function Languages() {
         The same is true for technology stacks in general.
         </p> */}
 
-        <div className='flex flex-row mt-6 text-tertiary-light text-2xl '>
+        <div className='flex flex-row mt-6 text-primary-light font-bold text-2xl '>
           {/* <div className='flex flex-row'> */}
           <div className='space-x-8'>
             {languages.map((language, index) => (

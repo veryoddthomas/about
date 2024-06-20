@@ -5,7 +5,9 @@ import {
   rust,
   mojo,
   javascript,
-  code
+  code,
+  gears,
+  asm,
 } from "../assets";
 
 const languages = [
@@ -96,18 +98,30 @@ TypeScript, but prioritized Javascript first.
     ]
   },
   {
+    title: "Assembly",
+    icon: asm,
+    id: "Assembly",
+    desc: [
+      `
+I've programmed in Assembly language on the following RISC, CISC, and DSP processors:
+x86, 68k, ADSP2101, DSP56k, ARM, Snapdragon, PowerPC, MIPS, Alpha, and SPARC (LSI Logic?).
+      `,
+    ]
+  }, {
     title: "Other",
     icon: code,
     id: "other",
     desc: [
       `
-I've also used the following languages as needed:
-HTML, CSS, Bash, C#, Lisp, Pascal, Ada, Awk, Sed, Perl, and Basic.
+I've also used the following:
+C#, Ruby, Lisp, HTML, CSS, Bash, Pascal, Ada, Awk, Make, Sed, Perl, PHP, and Basic.  I'm sure
+there are others, but I don't really consider myself proficient
+in any of these, so it's not worth coming up with the exhaustive list.
       `,
-      `
-I've also programmed in Assembly on the following RISC, CISC, and DSP processors:
-x86, 68k, ADSP2101, DSP56k, ARM, Snapdragon, PowerPC, MIPS, Alpha, and SPARC (LSI Logic?).
-      `,
+      //       `
+      // I've also programmed in Assembly on the following RISC, CISC, and DSP processors:
+      // x86, 68k, ADSP2101, DSP56k, ARM, Snapdragon, PowerPC, MIPS, Alpha, and SPARC (LSI Logic?).
+      //       `,
     ]
   },
 ];

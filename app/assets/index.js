@@ -38,6 +38,8 @@ import lua from "./lua.png";
 import rust from "./tech/rust-logo-512x512.png";
 import mojo from "./tech/mojo-1.png";
 import code from "./tech/generic-code.png";
+import gears from "./tech/gears.png"
+import asm from "./tech/asm.png"
 
 
 export {
@@ -77,4 +79,6 @@ export {
   rust,
   mojo,
   code,
+  gears,
+  asm,
 };
