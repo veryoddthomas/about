@@ -154,7 +154,6 @@ const experiences = [
       "lua",
       "python",
       "arm-asm",
-      "riscv-asm",
     ],
   },
 ];

@@ -17,10 +17,10 @@ const languages = [
     id: "c-and-cpp",
     desc: [
       `
-I have been programming in C for more than 30 years.
-I have extensive experience with the language, the
-varieties of compilers and toolchains, the standard
-libraries, and the build systems.
+I have been programming in C for my entire career.
+I have extensive experience with the language,
+varieties of compilers and toolchains, and versions of
+standard libraries.
       `,
       `
 During that time, I also used C++ for specific projects.
@@ -103,8 +103,8 @@ TypeScript, but prioritized Javascript first.
     id: "Assembly",
     desc: [
       `
-I've programmed in Assembly language on the following RISC, CISC, and DSP processors:
-x86, 68k, ADSP2101, DSP56k, ARM, Snapdragon, PowerPC, MIPS, Alpha, and SPARC (LSI Logic?).
+I've programmed in Assembly language on the following RISC, CISC, and DSP processor families:
+x86, 68k, ADSP2101, DSP56k, ARM, Snapdragon, PowerPC, MIPS, and Alpha.
       `,
     ]
   }, {
@@ -118,10 +118,6 @@ C#, Ruby, Lisp, HTML, CSS, Bash, Pascal, Ada, Awk, Make, Sed, Perl, PHP, and Bas
 there are others, but I don't really consider myself proficient
 in any of these, so it's not worth coming up with the exhaustive list.
       `,
-      //       `
-      // I've also programmed in Assembly on the following RISC, CISC, and DSP processors:
-      // x86, 68k, ADSP2101, DSP56k, ARM, Snapdragon, PowerPC, MIPS, Alpha, and SPARC (LSI Logic?).
-      //       `,
     ]
   },
 ];
