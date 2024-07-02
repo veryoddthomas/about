@@ -20,7 +20,7 @@ const LanguageDescription = ({ index, title, icon, id, desc }) => (
       </div>
     </div> */}
 
-    <div className='mt-6 text-2xl'>
+    <div className='mt-12 text-2xl'>
       <h2 className='mb-4'>{title}</h2>
 
       {desc.map((paragraph, index) => (

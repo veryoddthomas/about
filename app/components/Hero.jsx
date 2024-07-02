@@ -16,7 +16,8 @@ const Hero = () => {
               My name is <span className='emphasized-2'>Tom Zakrajsek</span>.
             </p>
             <p className='mt-6'>
-              I&apos;m a software engineer and technical leader with a passion for clean code.
+              I&apos;m a software engineer and technical leader with a passion
+              for all aspects of software craftsmanship.
             </p>
 
             <p className='mt-6'>

@@ -27,16 +27,24 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-primary text-[18px] max-w-3xl leading-[30px]'
+        className='mt-4 text-primary lg:text-[30px] text-[18px] max-w-3xl leading-[30px]'
       >
-        I have written firmware, device drivers, graphics
-        software, multimedia codecs, communication protocols,
-        test frameworks, DRM software, and many, many applications.
+        Over the years, I have written, or contributed to, firmware,
+        Windows NT display drivers, WDM stream class
+        drivers, graphics software, multimedia codecs,
+        communication protocols, test frameworks, DRM software,
+        and many applications.
 
         <br />
         <br />
 
-        I have also contributed to
+        I have a great deal of experience with performance analysis and
+        optimization, as well as low-level debugging.
+
+        <br />
+        <br />
+
+        I've also contributed to
         operating-system kernels, a web-rendering engine, SDKs, DDKs.
 
         Most of the software I have worked on was proprietary IP of my employer at the time, other
