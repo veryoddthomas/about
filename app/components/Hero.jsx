@@ -15,9 +15,17 @@ const Hero = () => {
           {/* <hr/>  */}
           <br />
           <div className='font-medium text-primary lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-6'>
-            <p className='mt-6'>
-              My name is <span className='emphasized-2'>Tom Zakrajsek</span>.
-            </p>
+            <div className="flex gap-6 mt-16">
+
+              <span>My name is <span className='emphasized-2'>Tom Zakrajsek</span>.</span>
+              <div></div>
+              <Link rel="noopener noreferrer" target="_blank" href={'https://github.com/veryoddthomas/'}>
+                <Image src={github} alt="My Github" width={48} height={48} />
+              </Link>
+              <Link rel="noopener noreferrer" target="_blank" href={'https://www.linkedin.com/in/tom-zakrajsek/'}>
+                <Image bac src={linkedin} alt="My LinkedIn" width={48} height={48} />
+              </Link>
+            </div>
             <p className='mt-6'>
               I&apos;m a software engineer and technical leader with a passion
               for all aspects of software craftsmanship.
@@ -29,18 +37,6 @@ const Hero = () => {
               &nbsp;<span className='emphasized-2'>Qualcomm</span>&nbsp;
               as well as a few smaller companies.
             </p>
-
-            {/* <div className="flex justify-center items-center gap-4 mt-12"> */}
-            <div className="flex gap-12 mt-16">
-              <Link rel="noopener noreferrer" target="_blank" href={'https://github.com/veryoddthomas/'}>
-                <Image src={github} alt="My Github" width={48} height={48} />
-              </Link>
-              <Link rel="noopener noreferrer" target="_blank" href={'https://www.linkedin.com/in/tom-zakrajsek/'}>
-                <Image bac src={linkedin} alt="My LinkedIn" width={48} height={48} />
-              </Link>
-            </div>
-
-
 
           </div>
         </div>

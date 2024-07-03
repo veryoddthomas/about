@@ -35,19 +35,8 @@ const LanguageDescription = ({ index, title, icon, id, desc }) => (
 export default function Languages() {
   return (
     <main className="bg-primary-dark">
-      {/* <Navbar /> */}
       <div className='page-setup'>
         <h1>Programming Languages</h1>
-
-        {/* <p className='mt-6 text-2xl'>
-        My philosphy is that there is not one 'best' programming
-        language for every job.  As a result, it's important to
-        be familiar with a variety, and understand the tradeoffs.
-        </p>
-
-        <p className='mt-6 text-2xl'>
-        The same is true for technology stacks in general.
-        </p> */}
 
         <div className='flex flex-row mt-6 text-primary-light font-bold text-2xl '>
           {/* <div className='flex flex-row'> */}
