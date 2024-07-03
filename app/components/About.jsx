@@ -30,27 +30,25 @@ const About = () => {
         className='mt-4 text-primary lg:text-[20px] text-[18px] max-w-3xl leading-[30px]'
       >
         <p>
-          Over the years, I have written, or contributed to, firmware,
-          display drivers, streaming media drivers, graphics software,
-          multimedia codecs, communication protocols, test frameworks,
-          DRM software, and many applications.
+          Throughout my career, I have worked on firmware, display drivers,
+          streaming media drivers, DMA drivers, graphics software, multimedia
+          codecs, parsers, communication protocols, test frameworks,
+          profilers, DRM software, console applications on Windows and Linux,
+          web applications, a web rendering engine, and a trusted execution
+          environment (TEE).
         </p>
 
         <p>
-          I have a great deal of experience with performance analysis and
-          optimization, as well as low-level debugging.
+          I have contributed code to Microsoft Windows, Qualcomm BREW,
+          Qualcomm's Android and Embedded Linux releases for Snapdragon,
+          WebKit, SDKs, and DDKs.
         </p>
 
         <p>
-          I've contributed code to Windows, Linux, Android, WebKit, SDKs,
-          and DDKs.
-        </p>
-
-        <p>
-          Most of the software I have worked on was proprietary IP of my
-          employer at the time, other than WebKit and the Chromium Browser
-          for Snapdragon.  But I have plans to build up my open-source
-          portfolio.
+          While most of the software I have worked on has been proprietary
+          to my employers, I have also contributed to the WebKit and the
+          Chromium Browser for Snapdragon projects. I'm planning to expand
+          my open-source contributions soon.
         </p>
       </motion.div>
 

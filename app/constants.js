@@ -42,17 +42,15 @@ const experiences = [
     iconBg: "#000",   // "#383E56"
     date: "Jun 1992 - Dec 1996",
     points: [
-      "Display Driver and GDI development - C++, C and Assembly (x86, Mips, Alpha, and PowerPC)",
+      "Created and owned several of the display drivers",
+      "Contributed to the GDI (rendering) engine",
       "Extensive performance analysis and tuning.",
-      "Authored and maintained several of the commercial display drivers",
-      "Participated in code reviews, providing constructive feedback to peer developers.",
-      "Mentored by some industry legends.",
     ],
     detailed_points: [
-      "Software developer on all versions of Windows NT through Windows 2000.",
-      "Implemented GDI support for multiple monitors and remote displays for Windows NT.",
-      "Wrote several of the Windows NT display drivers (Cirrus Logic, Matrox, and Tseng Labs).",
-      "Supported and maintained most of the internal display drivers for Windows NT.",
+      "Software developer on all versions of Windows NT from Windows NT 3.1 through Windows 2000.",
+      "Implemented GDI support for multiple monitors and remote displays.",
+      "Wrote and owned several of the shipped display drivers (Cirrus Logic, Matrox, and Tseng Labs).",
+      "Supported and maintained additional display drivers.",
       "Implemented initial DirectDraw support for many of the Windows NT display drivers.",
       "Ported user-mode display drivers to kernel-mode to improve performance.",
       "Sped up the already optimized VGA driver assembly code by 4x.",
@@ -70,13 +68,13 @@ const experiences = [
   },
   {
     title: "Digital Infotainment Division",
-    company_name: "Conexant Systems, Inc.",
+    company_name: "Conexant Systems, Inc. (via Brooktree)",
     icon: conexant,
     iconBg: "#112",   // "#383E56"
     date: "Dec 1996 - Oct 2004",
     points: [
-      "PCI bus-mastering drivers for terrestrial and satelite TV tuners and decoders",
-      "WDM Stream Class and AVStream Class driver development",
+      "Wrote drivers for analog terrestrial broadcast TV capture cards",
+      "Wrote drivers for digital terrestrial and satelite TV capture cards",
     ],
     detailed_points: [
       "Directed software development for broadcast video and audio decoders, video encoders, and satellite products.",

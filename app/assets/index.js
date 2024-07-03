@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import mobile from "./snapdragon2.png";
 import github from "./github.png";
+import linkedin from "./linkedin-icon.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -46,6 +47,7 @@ export {
   logo,
   mobile,
   github,
+  linkedin,
   menu,
   close,
   css,

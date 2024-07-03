@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from 'next/link'
+import { github, linkedin } from "../assets";
 
 const Hero = () => {
   return (
@@ -26,9 +29,23 @@ const Hero = () => {
               &nbsp;<span className='emphasized-2'>Qualcomm</span>&nbsp;
               as well as a few smaller companies.
             </p>
+
+            {/* <div className="flex justify-center items-center gap-4 mt-12"> */}
+            <div className="flex gap-12 mt-16">
+              <Link rel="noopener noreferrer" target="_blank" href={'https://github.com/veryoddthomas/'}>
+                <Image src={github} alt="My Github" width={48} height={48} />
+              </Link>
+              <Link rel="noopener noreferrer" target="_blank" href={'https://www.linkedin.com/in/tom-zakrajsek/'}>
+                <Image bac src={linkedin} alt="My LinkedIn" width={48} height={48} />
+              </Link>
+            </div>
+
+
+
           </div>
         </div>
       </div>
+
 
       <div className='absolute xs:bottom-10 bottom-16 w-full flex justify-center items-center'>
         <a href='#about'>
