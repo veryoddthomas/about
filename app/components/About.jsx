@@ -25,32 +25,34 @@ const About = () => {
         <h1>Overview</h1>
       </motion.div>
 
-      <motion.p
+      <motion.div
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-primary lg:text-[30px] text-[18px] max-w-3xl leading-[30px]'
+        className='mt-4 text-primary lg:text-[20px] text-[18px] max-w-3xl leading-[30px]'
       >
-        Over the years, I have written, or contributed to, firmware,
-        Windows NT display drivers, WDM stream class
-        drivers, graphics software, multimedia codecs,
-        communication protocols, test frameworks, DRM software,
-        and many applications.
+        <p>
+          Over the years, I have written, or contributed to, firmware,
+          display drivers, streaming media drivers, graphics software,
+          multimedia codecs, communication protocols, test frameworks,
+          DRM software, and many applications.
+        </p>
 
-        <br />
-        <br />
+        <p>
+          I have a great deal of experience with performance analysis and
+          optimization, as well as low-level debugging.
+        </p>
 
-        I have a great deal of experience with performance analysis and
-        optimization, as well as low-level debugging.
+        <p>
+          I've contributed code to Windows, Linux, Android, WebKit, SDKs,
+          and DDKs.
+        </p>
 
-        <br />
-        <br />
-
-        I've also contributed to
-        operating-system kernels, a web-rendering engine, SDKs, DDKs.
-
-        Most of the software I have worked on was proprietary IP of my employer at the time, other
-        than WebKit and the Chromium Browser for Snapdragon.  But I have plans
-        to build up my open-source portfolio.
-      </motion.p>
+        <p>
+          Most of the software I have worked on was proprietary IP of my
+          employer at the time, other than WebKit and the Chromium Browser
+          for Snapdragon.  But I have plans to build up my open-source
+          portfolio.
+        </p>
+      </motion.div>
 
       <h2>Domains</h2>
 

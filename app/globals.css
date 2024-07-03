@@ -43,6 +43,9 @@
     @apply text-secondary-light font-bold
   }
 
+  p {
+    @apply mt-6
+  }
   h1 {
     @apply text-secondary-light font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]
   }

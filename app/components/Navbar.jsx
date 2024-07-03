@@ -61,10 +61,10 @@ const Navbar = () => {
           }}
         >
           <Image src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-primary-light hover:text-secondary-light text-[18px] font-bold cursor-pointer flex '>
+          <div className='text-primary-light hover:text-secondary-light text-[18px] font-bold cursor-pointer flex '>
             Tom Zakrajsek&nbsp;
             <span className='sm:block hidden'> &mdash; Software Engineer</span>
-          </p>
+          </div>
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
