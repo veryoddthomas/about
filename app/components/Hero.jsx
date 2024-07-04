@@ -23,7 +23,7 @@ const Hero = () => {
                 <Image src={github} alt="My Github" width={48} height={48} />
               </Link>
               <Link rel="noopener noreferrer" target="_blank" href={'https://www.linkedin.com/in/tom-zakrajsek/'}>
-                <Image bac src={linkedin} alt="My LinkedIn" width={48} height={48} />
+                <Image src={linkedin} alt="My LinkedIn" width={48} height={48} />
               </Link>
             </div>
             <p className='mt-6'>
