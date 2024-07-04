@@ -46,9 +46,9 @@ const ExperienceCard = ({ experience }) => {
 
       <div>
         <h3 className='text-primary-light text-[20px] font-bold'>{experience.title}</h3>
-        <p className='text-secondary-light text-[16px] font-semibold m-0' >
+        <h3 className='text-secondary-light text-lg font-bold mt-1' >
           {experience.company_name}
-        </p>
+        </h3>
       </div>
 
       {
@@ -67,23 +67,10 @@ const ExperienceCard = ({ experience }) => {
                     </li>
                   ))}
                 </ul>
-
-                {experience.languages != null ?
-                  <div className='gap-y-0 mt-4 flex flex-wrap gap-2'>
-                    {experience.languages.map((language, index) => (
-                      <div
-                        key={`lang-${index}`}
-                        className={`text-[14px] text-tertiary-light`}
-                      >
-                        {language}
-                      </div>
-                    ))}
-                  </div>
-                  :
-                  null}
               </div>
 
               <div className="relative group-not-hover my-rotate-y-180 backface-hidden overflow-hidden" >
+                <h3 className='text-primary-light text-md italic mt-1' >TL;DR</h3>
                 <ul className='mt-5 list-disc ml-5 space-y-2'>
                   {experience.detailed_points.map((point, index) => (
                     <li
@@ -94,19 +81,6 @@ const ExperienceCard = ({ experience }) => {
                     </li>
                   ))}
                 </ul>
-                {experience.languages != null ?
-                  <div className='mt-4 flex flex-wrap gap-2'>
-                    {experience.languages.map((language, index) => (
-                      <div
-                        key={`lang-${index}`}
-                        className={'`text-[14px] text-tertiary-light'}
-                      >
-                        {language}
-                      </div>
-                    ))}
-                  </div>
-                  :
-                  null}
               </div>
             </div>
           </div>
@@ -122,21 +96,24 @@ const ExperienceCard = ({ experience }) => {
                 </li>
               ))}
             </ul>
-            {experience.languages != null ?
-              <div className='mt-4 flex flex-wrap gap-2'>
-                {experience.languages.map((language, index) => (
-                  <div
-                    key={`lang-${index}`}
-                    className={'`text-[14px] text-tertiary-light'}
-                  >
-                    {language}
-                  </div>
-                ))}
-              </div>
-              :
-              null}
           </div>
       }
+
+      <div>
+        {experience.languages != null ?
+          <div className='mt-4 flex flex-wrap gap-2'>
+            {experience.languages.map((language, index) => (
+              <div
+                key={`lang-${index}`}
+                className={'`text-[14px] text-tertiary-light'}
+              >
+                {language}
+              </div>
+            ))}
+          </div>
+          :
+          null}
+      </div>
 
     </VerticalTimelineElement >
   );
