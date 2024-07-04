@@ -9,8 +9,8 @@ import { logo, menu, close } from "../assets";
 
 const navLinks = [
   { id: "", title: "Home", },
-  { id: "about", title: "About", },
-  { id: "work", title: "Work", },
+  { id: "work", title: "Experience", },
+  { id: "about", title: "Overview", },
   { id: "contact", title: "Contact Me", },
 ];
 
