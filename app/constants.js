@@ -101,7 +101,13 @@ const experiences = [
       "... and the testing framework.",
     ],
     detailed_points: [
-      "TBD"
+      "Led the Graphics, Display, and Image Decoder teams.",
+      "Designed a feature-rich overlay manager for BREW supporting transforms including scaling, clipping, rotation, color-key, and alpha-blending. It was multi-threaded and had full software implementations for all functionality, but also leveraged hardware support wherever available.",
+      "Enabled automated documentation generation for 100% of our code.",
+      "Led workshops for KDDI's KCP+ 'porting to BREW' analysis and resolved information requests. This secured $20M+ in application processor sales.",
+      "Coordinated with the display hardware architecture group to optimize the overall pipeline.",
+      "Implemented EGL, OpenGL, and OpenVG support in surface manager which enabled simple porting of hundreds of existing applications from other platforms.",
+      "Implemented simulation support for OpenGL ES 2.0, increasing off-target test capability by 50-60%.",
     ],
     languages: [
       "c",
@@ -109,13 +115,13 @@ const experiences = [
     ],
   },
   {
-    title: "Principal Engineer, Infotainment",
+    title: "Principal Architect, Infotainment",
     company_name: "Conexant",
     icon: conexant,
     iconBg: "#112",   // "#383E56"
     date: "Dec 1996 - Oct 2004",
     points: [
-      "Led team that developed and maintained drivers for broadcast TV capture cards",
+      "Led team that developed and maintained drivers for broadcast TV capture cards including BT848 and BT878",
       "Analog terrestrial (NTSC, PAL, NTSC-J)",
       "Digital terrestrial (ATSC)",
       "Digital satelite (DVB-S)",

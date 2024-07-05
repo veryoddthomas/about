@@ -45,9 +45,9 @@ const ExperienceCard = ({ experience }) => {
     >
 
       <div>
-        <h3 className='text-primary-light text-[20px] font-bold'>{experience.title}</h3>
+        <h3 className='text-primary-light text-[24px] font-bold'>{experience.company_name}</h3>
         <h3 className='text-secondary-light text-lg font-bold mt-1' >
-          {experience.company_name}
+          {experience.title}
         </h3>
       </div>
 

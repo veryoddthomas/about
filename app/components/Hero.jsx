@@ -38,6 +38,10 @@ const Hero = () => {
               as well as a few smaller companies.
             </p>
 
+            {/* <p className='mt-6'>
+              &nbsp;<span className='emphasized-1'>Status:</span>&nbsp;
+              &nbsp;<span className='font-mono border-2'>seeking-position</span>
+            </p> */}
           </div>
         </div>
       </div>

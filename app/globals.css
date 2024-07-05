@@ -39,6 +39,10 @@
     @apply hover:underline
   }
 
+  .emphasized-1 {
+    @apply text-primary-light font-bold
+  }
+
   .emphasized-2 {
     @apply text-secondary-light font-bold
   }
