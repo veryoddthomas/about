@@ -145,7 +145,7 @@ const experiences = [
     ],
   },
   {
-    title: "Windows NT Development Team",
+    title: "Software Engineer, Windows NT GDI Team",
     company_name: "Microsoft",
     icon: microsoft,
     iconBg: "#000",   // "#383E56"

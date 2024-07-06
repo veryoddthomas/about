@@ -20,10 +20,10 @@ const Hero = () => {
               <span>My name is <span className='emphasized-2'>Tom Zakrajsek</span>.</span>
               <div></div>
               <Link rel="noopener noreferrer" target="_blank" href={'https://github.com/veryoddthomas/'}>
-                <Image src={github} alt="My Github" width={48} height={48} />
+                <Image className="" src={github} alt="My Github" width={40} height={40} />
               </Link>
               <Link rel="noopener noreferrer" target="_blank" href={'https://www.linkedin.com/in/tom-zakrajsek/'}>
-                <Image src={linkedin} alt="My LinkedIn" width={48} height={48} />
+                <Image src={linkedin} alt="My LinkedIn" width={40} height={40} />
               </Link>
             </div>
             <p className='mt-6'>
