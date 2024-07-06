@@ -17,8 +17,8 @@ const Hero = () => {
           <div className='font-medium text-primary lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-6'>
             <div className="flex gap-6 mt-16">
 
-              <span>My name is <span className='emphasized-2'>Tom Zakrajsek</span>.</span>
-              <div></div>
+              <span>My name is <span className='emphasized-2'>Tom Zakrajsek</span>.  You can find me at</span>
+
               <Link rel="noopener noreferrer" target="_blank" href={'https://github.com/veryoddthomas/'}>
                 <Image className="" src={github} alt="My Github" width={40} height={40} />
               </Link>
@@ -37,11 +37,6 @@ const Hero = () => {
               &nbsp;<span className='emphasized-2'>Qualcomm</span>&nbsp;
               as well as a few smaller companies.
             </p>
-
-            {/* <p className='mt-6'>
-              &nbsp;<span className='emphasized-1'>Status:</span>&nbsp;
-              &nbsp;<span className='font-mono border-2'>seeking-position</span>
-            </p> */}
           </div>
         </div>
       </div>

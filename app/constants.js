@@ -115,6 +115,32 @@ const experiences = [
     ],
   },
   {
+    title: "Technical Lead, ASIC SW",
+    company_name: "Qualcomm",
+    icon: snapdragon,
+    iconBg: "#112",
+    date: "Oct 2004 - Feb 2008",
+    points: [
+      "System performance lead for MSM6550",
+      "Windows Mobile BSP lead",
+      "Security champion",
+    ],
+    detailed_points: [
+      "Developed CPU and memory-bus profiling tools leveraging programmable logic analyzers and on-chip telemetry.",
+      "Analyzed, tracked and reported on multiple performance characteristics to the executive team.",
+      "Co-owned the MSM clock plan.",
+      "Identified and characterized bug in the ARM L2 cache controller we were using, which led to ARM HW rev.",
+      "Tuned clocks, caches, and bus controllers for performance/power tradeoffs.",
+      "Managed builds and releases for the Qualcomm Windows Mobile platform.",
+      "Implmented on-chip CPRM support (DRM for SD cards).",
+      "Was the 4C entity adopter contact for the Qualcomm.",
+    ],
+    languages: [
+      "c",
+      "arm-asm",
+    ],
+  },
+  {
     title: "Principal Architect, Infotainment",
     company_name: "Conexant",
     icon: conexant,

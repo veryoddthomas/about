@@ -6,7 +6,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 const IconCard = ({ index, title, icon, url }) => (
     <motion.div
         variants={fadeIn("right", "spring", index * 0.15, 1.50)}
-        className='w-[200px] h-[200px] bg-primary-dark p-[1px] rounded-[20px] shadow-card'
+        className='w-[150px] h-[150px] bg-primary-dark p-[1px] rounded-[10px] shadow-card'
     >
         <a
             href={url}

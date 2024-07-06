@@ -8,11 +8,11 @@ import { IconCard } from ".";
 import { chromium, firmware, lock, mobile, os, c, cpp, python, lua, rust, mojo, code } from "../assets";
 
 const domains = [
-  { title: "Operating Systems", icon: os, },
-  { title: "Mobile Platforms", icon: mobile, },
-  { title: "Web Technologies", icon: chromium, },
+  { title: "OS", icon: os, },
+  { title: "Mobile", icon: mobile, },
+  { title: "Web", icon: chromium, },
   { title: "Firmware", icon: firmware, },
-  { title: "Software Security", icon: lock, },  // shield
+  { title: "Security", icon: lock, },  // shield
 ];
 
 import { languages } from "../data/languages";

@@ -124,7 +124,7 @@ const Experience = () => {
     <>
       <motion.div variants={textVariant()}>
         <h1 className={'pre-h1 text-center'}>
-          Oh, the places I have worked...
+          Career
         </h1>
         <h1 className={'text-center'}>
           Work Experience
