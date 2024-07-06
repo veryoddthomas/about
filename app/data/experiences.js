@@ -1,38 +1,8 @@
 import {
-  // javascript,
-  // typescript,
-  // html,
-  // css,
-  // reactjs,
-  // redux,
-  // tailwind,
-  // nodejs,
-  // mongodb,
-  // git,
-  // figma,
-  // docker,
   conexant,
   microsoft,
   snapdragon,
-  // threejs,
-
-} from "./assets";
-
-// const technologies = [
-//   "HTML 5", icon: html,},
-//   "CSS 3", icon: css, },
-//   "JavaScript", icon: javascript, },
-//   "TypeScript", icon: typescript, },
-//   "React JS", icon: reactjs, },
-//   "Redux Toolkit", icon: redux, },
-//   "Tailwind CSS", icon: tailwind, },
-//   "Node JS", icon: nodejs, },
-//   "MongoDB", icon: mongodb, },
-//   "Three JS", icon: threejs, },
-//   "git", icon: git, },
-//   "figma", icon: figma, },
-//   "docker", icon: docker, },
-// ];
+} from "../assets";
 
 const experiences = [
   {
