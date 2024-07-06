@@ -54,7 +54,7 @@ const About = () => {
 
       <h2>Domains</h2>
 
-      <div className='mt-10 flex flex-wrap gap-10'>
+      <div className='mt-10 flex flex-wrap gap-4'>
         {domains.map((domain, index) => (
           <IconCard key={domain.title} index={index} {...domain} />
         ))}
@@ -62,7 +62,7 @@ const About = () => {
 
       <a href='languages'><h2 className='link'>Programming Languages</h2></a>
 
-      <div className='mt-10 flex flex-wrap gap-10'>
+      <div className='mt-10 flex flex-wrap gap-4'>
         {languages.map((language, index) => (
           <IconCard key={language.title} index={index} url={'languages/#' + language.id} {...language} />
         ))}
