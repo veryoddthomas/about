@@ -4,6 +4,8 @@ import About from "./About";
 import Contact from "./Contact";
 import AnimatedSection from "./AnimatedSection";
 import IconCard from "./IconCard";
+import Experience from "./Experience";
+
 
 export {
   Hero,
@@ -12,4 +14,5 @@ export {
   Contact,
   AnimatedSection,
   IconCard,
+  Experience,
 };
