@@ -47,6 +47,10 @@
     @apply text-secondary-light font-bold
   }
 
+  .emphasized-3 {
+    @apply text-tertiary-light font-bold
+  }
+
   p {
     @apply mt-6
   }

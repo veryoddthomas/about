@@ -1,9 +1,15 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import Image from "next/image";
+import Link from 'next/link'
+import { linkedin } from "../assets";
 
 import AnimatedSection from "./AnimatedSection";
 import { slideIn } from "../utils/motion";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
   const formRef = useRef();
@@ -72,6 +78,27 @@ const Contact = () => {
       >
         <h1 className='pre-h1'>Get in touch</h1>
         <h1>Contact Me</h1>
+
+        <div className='font-medium text-primary lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-6'>
+          {/* <div className="flex gap-6 mt-8"> */}
+          {/* <span>Visit my public platforms <FontAwesomeIcon icon={faLinkedin} /> <FontAwesomeIcon icon={faGithub} /></span> */}
+          <span>Visit my public platforms</span>
+          &nbsp;
+          &nbsp;
+          <Link rel="noopener noreferrer" target="_blank" href={'https://github.com/veryoddthomas/'}>
+            <FontAwesomeIcon icon={faGithub} inverse />
+          </Link>
+          &nbsp;
+          &nbsp;
+          <Link rel="noopener noreferrer" target="_blank" href={'https://www.linkedin.com/in/tom-zakrajsek/'}>
+            <FontAwesomeIcon icon={faLinkedin} inverse />
+          </Link>
+          &nbsp;
+          &nbsp;
+          <span>or just drop me a line below.</span>
+          {/* </div> */}
+        </div>
+
 
         <form
           ref={formRef}

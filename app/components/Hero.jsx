@@ -17,18 +17,22 @@ const Hero = () => {
           <div className='font-medium text-primary lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-6'>
             <div className="flex gap-6 mt-16">
 
-              <span>My name is <span className='emphasized-2'>Tom Zakrajsek</span>.  You can find me at</span>
+              <span>My name is <span className='emphasized-2'>Tom Zakrajsek</span>.
+                {/* You can find me at */}
+              </span>
 
-              <Link rel="noopener noreferrer" target="_blank" href={'https://github.com/veryoddthomas/'}>
+              {/* <Link rel="noopener noreferrer" target="_blank" href={'https://github.com/veryoddthomas/'}>
                 <Image className="" src={github} alt="My Github" width={40} height={40} />
               </Link>
               <Link rel="noopener noreferrer" target="_blank" href={'https://www.linkedin.com/in/tom-zakrajsek/'}>
                 <Image src={linkedin} alt="My LinkedIn" width={40} height={40} />
-              </Link>
+              </Link> */}
             </div>
             <p className='mt-6'>
-              I&apos;m a software engineer and technical leader with a passion
-              for all aspects of software craftsmanship.
+              I&apos;m a
+              &nbsp;<span className='emphasized-3'>software engineer</span>&nbsp; and
+              &nbsp;<span className='emphasized-3'>technical leader</span>&nbsp;
+              with a passion for all aspects of software craftsmanship.
             </p>
 
             <p className='mt-6'>
