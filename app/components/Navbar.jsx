@@ -43,9 +43,9 @@ const NameLogo = () => {
   );
 }
 
-const FullMenu = () => {
+const FullMenu = ({ showSize }) => {
   return (
-    <ul className='list-none hidden lg:flex flex-row gap-10'>
+    <ul className={`list-none hidden lg:flex ${showSize} flex-row gap-10`}>
       {navLinks.map((nav) => (
         <li
           key={nav.id}
@@ -64,13 +64,13 @@ const FullMenu = () => {
   );
 }
 
-const CompressedMenu = () => {
+const CompressedMenu = ({ hideSize }) => {
   // I'm not sure why, but if I pass the initial toggle value in
-  // it is not correctly
+  // it is not correctly set
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className='lg:hidden flex flex-1 justify-start items-center'>
+    <div className={`${hideSize} flex flex-1 justify-start items-center`} >
       <Image
         src={toggle ? close : menu}
         alt='menu'
@@ -79,14 +79,17 @@ const CompressedMenu = () => {
       />
 
       <div
-        className={`${!toggle ? "hidden" : "flex"
-          } p-6 bg-primary-dark absolute top-20 left-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+        // p-6 bg-primary-dark absolute top-20 left-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl
+
+        className={`${!toggle ? "hidden" : "flex"}
+          p-6 bg-primary-dark absolute top-20 mx-4 my-2 min-w-[140px] z-10 rounded-xl
+          `}
       >
         <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`font-poppins font-medium cursor-pointer text-[16px]  text-primary-light hover:text-secondary-light`}
+              className={`font-poppins font-medium cursor-pointer text-[24px]  text-primary-light hover:text-secondary-light`}
               onClick={() => {
                 setToggle(!toggle);
               }}
@@ -96,7 +99,7 @@ const CompressedMenu = () => {
           ))}
         </ul>
       </div>
-    </div>
+    </div >
   );
 }
 // Intended behavior:
@@ -131,16 +134,18 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 ${
+      className={`px-6 w-full flex items-center py-5 fixed top-0 z-20 ${
         // scrolled ? "hidden" : "bg-primary-dark"  // "bg-transparent"
         // "bg-transparent"  // ignore scrolled for now
         // "bg-primary-dark"  // ignore scrolled for now
         scrolled ? "hidden" : "bg-primary-dark"
-        }`}
+        } `}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-        <FullMenu />
-        <CompressedMenu />
+        <FullMenu showSize={'lg:flex'} />
+        <CompressedMenu hideSize={'lg:hidden'} />
+        {/* <CompressedMenu /> */}
+
         <NameLogo />
       </div>
     </nav>
