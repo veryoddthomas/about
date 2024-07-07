@@ -17,19 +17,6 @@ const navLinks = [
 ];
 
 
-// const NameLogo = () => {
-//   return (
-//     <div className="flex flex-row items-center gap-5">
-//       <Image src={logo} alt="logo" className="w-12 h-12 object-contain" />
-//       <h1 className="text-white text-[20px] font-bold cursor-pointer flex">
-//         <span className="text-gradient">Jason</span>
-//         <span className="text-[#d0d6f9]">Burk</span>
-//       </h1>
-//     </div>
-//   );
-// };
-
-
 const NameLogo = () => {
   return (
     <span className="flex flex-row items-center gap-5">
@@ -40,10 +27,10 @@ const NameLogo = () => {
       >
         <Image src={logo} alt='logo' className='w-9 h-9 object-contain' />
 
-        <div className='text-primary-light hover:text-secondary-light text-[18px] font-bold cursor-pointer flex '>
+        {/* <div className='text-primary-light hover:text-secondary-light text-[18px] font-bold cursor-pointer flex '>
           <span className='lg:block hidden'>Tom Zakrajsek&nbsp;
             &mdash; Software Engineer</span>
-        </div>
+        </div> */}
       </Link >
 
       <Link rel="noopener noreferrer" href={'https://github.com/veryoddthomas/'}>
