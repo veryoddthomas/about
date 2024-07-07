@@ -30,15 +30,15 @@ const Hero = () => {
             </div>
             <p className='mt-6'>
               I&apos;m a
-              &nbsp;<span className='emphasized-3'>software engineer</span>&nbsp; and
-              &nbsp;<span className='emphasized-3'>technical leader</span>&nbsp;
+              &nbsp;<span className='emphasized-1'>software engineer</span>&nbsp; and
+              &nbsp;<span className='emphasized-1'>technical leader</span>&nbsp;
               with a passion for all aspects of software craftsmanship.
             </p>
 
             <p className='mt-6'>
               I have worked for both
-              &nbsp;<span className='emphasized-2'>Microsoft</span>&nbsp; and
-              &nbsp;<span className='emphasized-2'>Qualcomm</span>&nbsp;
+              &nbsp;<span className='emphasized-1'>Microsoft</span>&nbsp; and
+              &nbsp;<span className='emphasized-1'>Qualcomm</span>&nbsp;
               as well as a few smaller companies.
             </p>
           </div>
