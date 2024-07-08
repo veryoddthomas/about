@@ -82,14 +82,14 @@ const CompressedMenu = ({ hideSize }) => {
         // p-6 bg-primary-dark absolute top-20 left-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl
 
         className={`${!toggle ? "hidden" : "flex"}
-          p-6 bg-primary-dark absolute top-20 mx-4 my-2 min-w-[140px] z-10 rounded-xl
+          p-6 absolute top-10 mx-4 my-2 min-w-[140px] z-10 rounded-xl
           `}
       >
-        <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+        <ul className='bg-secondary-dark list-none flex justify-end items-start flex-1 flex-col gap-4 p-4 border-2 rounded-2xl'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`font-poppins font-medium cursor-pointer text-[24px]  text-primary-light hover:text-secondary-light`}
+              className={`font-poppins font-medium cursor-pointer text-[24px]  text-primary-light hover:bg-primary-dark hover:text-secondary-light`}
               onClick={() => {
                 setToggle(!toggle);
               }}
@@ -142,9 +142,9 @@ const Navbar = () => {
         } `}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-        <FullMenu showSize={'lg:flex'} />
-        <CompressedMenu hideSize={'lg:hidden'} />
-        {/* <CompressedMenu /> */}
+        {/* <FullMenu showSize={'lg:flex'} />
+        <CompressedMenu hideSize={'lg:hidden'} /> */}
+        <CompressedMenu />
 
         <NameLogo />
       </div>
