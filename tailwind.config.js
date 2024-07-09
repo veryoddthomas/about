@@ -2,9 +2,19 @@
 
 const colors = require('tailwindcss/colors')
 
-const primary_base_color = colors.neutral;
-const secondary_base_color = colors.sky;  // sky, neutral, yellow, red
-const tertiary_base_color = colors.teal;  // teal, neutral
+const MONOCHROME_MODE = false;
+
+const palette = [colors.slate, colors.sky, colors.teal];  // default
+// const palette = [colors.neutral, colors.sky, colors.teal];  // a little warmer
+// const palette = [colors.slate, colors.orange, colors.yellow];  // halloween
+// const palette = [colors.slate, colors.emerald, colors.rose];  // christmas
+// const palette = [colors.slate, colors.blue, colors.red];  // 4th of july
+// const palette = [colors.slate, colors.yellow, colors.sky];  // default
+
+
+const primary_base_color = palette[0];
+const secondary_base_color = MONOCHROME_MODE ? palette[0] : palette[1];  // sky, neutral, yellow, red
+const tertiary_base_color = MONOCHROME_MODE ? palette[0] : palette[2];  // teal, neutral
 
 module.exports = {
   content: [
