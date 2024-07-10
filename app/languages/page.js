@@ -23,12 +23,12 @@ export default function Languages() {
       <div className='page-setup'>
         <h1>Programming Languages</h1>
 
-        <div className='flex flex-row mt-6 text-primary-light font-bold text-2xl '>
-          <div className='space-x-8'>
-            {languages.map((language, index) => (
-              <a href={'#' + language.id} className="link"> {language.title} </a>
-            ))}
-          </div>
+        <div className='flex flex-wrap my-8   '>
+          {languages.map((language, index) => (
+            <h2 className='p-2 mx-2 my-1 text-tertiary-light text-base  border-primary border-2 rounded-2xl hover:bg-tertiary-dark'>
+              <a href={'#' + language.id} className=""> {language.title} </a>
+            </h2>
+          ))}
         </div>
 
         {languages.map((language, index) => (

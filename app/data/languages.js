@@ -17,20 +17,25 @@ const languages = [
     id: "c-and-cpp",
     desc: [
       `
-I have been programming in C for my entire career.
-I have extensive experience with the language,
-varieties of compilers and toolchains, and versions of
-standard libraries.
-      `,
-      `
-During that time, I also used C++ for specific projects.
-Much of the C++ used objects, but was not what I'd call
-object-oriented.  It was more for simple encapsulation,
-but with limits on inheritence.  In general, I find
-that large inheritence trees make debugging and
-performance-tuning unacceptably convoluted.
+I have decades of experience with C and C++, developing
+on Windows, OS X, and Linux using GCC, clang, Microsoft
+Visual C++, as well numerous cross-compilers for
+embedded devices.  Much of my experience is with
+system code, as opposed to GUI applications.
       `,
     ],
+  },
+  {
+    title: "Python",
+    icon: python,
+    id: "python",
+    desc: [
+      `
+I have been programming in Python for more than 10 years.
+I use it for basic scripting, text manipulation and parsing,
+data analysis, modeling, and extensive on-device test automation.
+      `,
+    ]
   },
   {
     title: "Rust",
@@ -42,18 +47,6 @@ I'm ramping up on Rust right now, and I'm optimistic that it's
 a game-changer for system programmers.  The benefits of the
 memory-safety mechanisms are huge.  It also has a rich (and growing)
 standard library.  "System programmers can have nice things too."
-      `,
-    ]
-  },
-  {
-    title: "Python",
-    icon: python,
-    id: "python",
-    desc: [
-      `
-I have been programming in Python for more than 10 years.
-I use it for basic scripting, text manipulation and parsing,
-data analysis, modeling, and extensive on-device test automation.
       `,
     ]
   },
