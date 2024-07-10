@@ -43,7 +43,7 @@ const About = () => {
         </p>
       </motion.div>
 
-      <h2>Domains</h2>
+      <h2 className='link mt-16'><a href='domains'>Domains</a></h2>
 
       <div className='mt-10 flex flex-wrap gap-4'>
         {domains.map((domain, index) => (
@@ -51,7 +51,7 @@ const About = () => {
         ))}
       </div>
 
-      <a href='languages'><h2 className='link'>Programming Languages</h2></a>
+      <h2 className='link mt-16'><a href='languages'>Programming Languages</a></h2>
 
       <div className='mt-10 flex flex-wrap gap-4'>
         {languages.map((language, index) => (
