@@ -5,16 +5,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { AnimatedSection } from ".";
 import { IconCard } from ".";
 
-import { chromium, firmware, lock, mobile, os, c, cpp, python, lua, rust, mojo, code } from "../assets";
-
-const domains = [
-  { title: "Operating Systems", label: "OS", icon: os, },
-  { title: "Mobile Platforms", label: "Mobile", icon: mobile, },
-  { title: "Web Technologies", label: "Web", icon: chromium, },
-  { title: "Embedded Systems", label: "Firmware", icon: firmware, },
-  { title: "Software Security", label: "Security", icon: lock, },  // shield
-];
-
+import { domains } from "../data/domains";
 import { languages } from "../data/languages";
 
 const About = () => {
