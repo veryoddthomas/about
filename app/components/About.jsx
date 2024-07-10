@@ -47,7 +47,7 @@ const About = () => {
 
       <div className='mt-10 flex flex-wrap gap-4'>
         {domains.map((domain, index) => (
-          <IconCard key={domain.title} index={index} {...domain} />
+          <IconCard key={domain.title} index={index} url={'domains/#' + domain.id} {...domain} />
         ))}
       </div>
 
