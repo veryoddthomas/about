@@ -32,7 +32,7 @@ const Hero = () => {
               I&apos;m a
               &nbsp;<span className='emphasized-1'>software engineer</span>&nbsp; and
               &nbsp;<span className='emphasized-1'>technical leader</span>&nbsp;
-              with a passion for all aspects of software craftsmanship.
+              with a passion for software craftsmanship and developing strong teams.
             </p>
 
             <p className='mt-6'>
