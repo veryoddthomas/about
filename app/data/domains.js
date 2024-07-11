@@ -14,12 +14,12 @@ const domains = [
         icon: os,
         desc: [
             `
-My first commercial operating system development job was at Microsoft,
-working on the initial release of Windows NT.  I spent almost 5 years
-on that team.  Since then I have also contributed to Qualcomm's BREW
-operating system and their Android, Windows Mobile, and Embedded Linux
+I was hired out of college by Microsoft to work on the initial release
+of Windows NT.  I spent almost 5 years
+on that team.  Since then, I have also worked on Qualcomm's BREW
+operating system, Android, Windows Mobile, and Embedded Linux
 releases for Snapdragon.  One major focus of my work has been performance
-analysis and optimization.
+analysis and optimization.  Another has been security.
             `,
         ],
     },
