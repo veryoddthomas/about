@@ -16,14 +16,13 @@ const DomainDescription = ({ index, title, icon, id, desc }) => (
   </div>
 );
 
-
 export default function Domains() {
   return (
     <main className="bg-primary-dark">
       <div className='page-setup'>
         <h1>Technology Domains</h1>
 
-        <div className='flex flex-wrap my-8   '>
+        <div className='flex flex-wrap my-8 '>
           {domains.map((domain, index) => (
             <h2 className='p-2 mx-2 my-1 text-tertiary-light text-base  border-primary border-2 rounded-2xl hover:bg-tertiary-dark'>
               <a href={'#' + domain.id} className=""> {domain.title} </a>
@@ -40,8 +39,11 @@ export default function Domains() {
             index={index}
             {...domain} />
         ))}
+        {/* The following pads below the last entry so that following
+            the link will place the anchor at the top of the screen */}
+        <div className='min-h-screen flex flex-grow' />
       </div>
-    </main>
+    </main >
   );
 }
 
