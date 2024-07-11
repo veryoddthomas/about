@@ -6,7 +6,7 @@ import {
 
 const experiences = [
   {
-    title: "Technical Director, Secure Systems",
+    title: "Technical Director, Secure Systems Group",
     company_name: "Qualcomm",
     icon: snapdragon,
     iconBg: "#112",

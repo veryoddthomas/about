@@ -60,22 +60,22 @@ Lua is extremely intuitive, compact, and easy to comprehend.
     ]
 
   },
-  //   {
-  //     title: "Mojo",
-  //     icon: mojo,
-  //     id: "mojo",
-  //     desc: [
-  //       `
-  // TBD:
-  //       `,
-  //       `
-  // I'm just starting to work with Mojo and it looks like it has
-  // incredible potential.  Not only is it an extraordinary platform
-  // for AI, but it will probably eventually replace Python and Lua
-  // in my toolbag
-  //       `,
-  //     ]
-  //   },
+  {
+    title: "Mojo",
+    icon: mojo,
+    id: "mojo",
+    desc: [
+      `
+  TBD:
+        `,
+      `
+  I'm just starting to work with Mojo and it looks like it has
+  incredible potential.  Not only is it an extraordinary platform
+  for AI, but it will probably eventually replace Python and Lua
+  in my toolbag
+        `,
+    ]
+  },
   {
     title: "Javascript",
     icon: javascript,
@@ -101,7 +101,7 @@ x86, 68k, ADSP2101, DSP56k, ARM, Snapdragon, PowerPC, MIPS, and Alpha.
       `,
     ]
   }, {
-    title: "Other",
+    title: "Other Languages",
     icon: code,
     id: "other",
     desc: [
