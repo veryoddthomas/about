@@ -1,18 +1,17 @@
-import Navbar from "../components/Navbar";
-import Image from "next/image";
 import { languages } from "../data/languages";
 
 
 const LanguageDescription = ({ index, title, icon, id, desc }) => (
   <div>
     <a id={id} />
-    <div className='mt-12 text-2xl'>
-      <h2 className='mb-4'>{title}</h2>
-      {desc.map((paragraph, index) => (
-        <p key={index} className='text-primary pt-4'>{paragraph}</p>
-      ))}
+    <div className='mt-12 text-lg'>
+      <h2>{title}</h2>
+      <div className='space-y-4'>
+        {desc.map((paragraph, index) => (
+          <p key={index} className='text-primary'>{paragraph}</p>
+        ))}
+      </div>
     </div>
-
   </div>
 );
 

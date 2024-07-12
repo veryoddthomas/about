@@ -10,6 +10,13 @@ import {
   asm,
 } from "../assets";
 
+const proficiency_ratings = {
+  "Beginner/Novice": "Familiar with fundamental concepts, can write simple programs.",
+  "Intermediate": "Comfortable with core concepts, can tackle more complex tasks.  Familiar with idiomatic code.",
+  "Advanced": "Proficient, can handle challenging problems.",
+  "Expert": "Exceptional knowledge, often consulted by peers.",
+}
+
 const languages = [
   {
     title: "C and C++",

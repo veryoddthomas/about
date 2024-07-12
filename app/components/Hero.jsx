@@ -15,7 +15,7 @@ const Hero = () => {
           {/* <hr/>  */}
           <br />
           <div className='font-medium text-primary lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-6'>
-            <div className="flex gap-6 mt-16">
+            <div className="flex gap-6 mt-8 lg:mt-16">
 
               <span>My name is <span className='emphasized-2'>Tom Zakrajsek</span>.
                 {/* You can find me at */}

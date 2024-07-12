@@ -10,7 +10,7 @@ const IconCard = ({ index, title, icon, url }) => (
     >
         <a
             href={url}
-            className='w-[150px] h-[150px] group rounded-[20px] border border-primary-light px-5 py-4  hover:border-primary-light hover:bg-secondary-dark flex justify-evenly items-center flex-col'
+            className='w-[150px] h-[150px] group rounded-[20px] border border-primary-light px-4 py-4  hover:border-primary-light hover:bg-secondary-dark flex justify-evenly items-center flex-col'
             // target="_blank"
             rel="noopener noreferrer"
         >

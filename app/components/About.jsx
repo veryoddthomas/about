@@ -21,12 +21,12 @@ const About = () => {
         className='mt-4 text-primary lg:text-[20px] text-[18px] max-w-3xl leading-[30px]'
       >
         <p>
-          Throughout my career, I have worked on firmware, display drivers,
+          Throughout my career, I have worked on embedded systems, display drivers,
           streaming media drivers, DMA drivers, graphics software, multimedia
           codecs, parsers, communication protocols, test frameworks,
-          profilers, DRM software, console applications on Windows and Linux,
-          web applications, a web rendering engine, and a trusted execution
-          environment (TEE).
+          profilers, DRM software (CPRM), console applications on Windows and Linux,
+          web applications, the WebKit rendering engine, and Qualcomm's trusted execution
+          environment (QTEE).
         </p>
 
         <p>
@@ -37,15 +37,14 @@ const About = () => {
 
         <p>
           While most of the software I have worked on has been proprietary
-          to my employers, I have also contributed to the WebKit and the
-          Chromium Browser for Snapdragon projects. I'm planning to expand
-          my open-source contributions soon.
+          intellectual property of my employer, I am looking forward to
+          doing more work in open-source.
         </p>
       </motion.div>
 
       <h2 className='link mt-16'><a href='domains'>Domains</a></h2>
 
-      <div className='mt-10 flex flex-wrap gap-4'>
+      <div className='mt-10 flex flex-wrap gap-2'>
         {domains.map((domain, index) => (
           <IconCard key={domain.title} index={index} url={'domains/#' + domain.id} {...domain} />
         ))}
@@ -53,7 +52,7 @@ const About = () => {
 
       <h2 className='link mt-16'><a href='languages'>Programming Languages</a></h2>
 
-      <div className='mt-10 flex flex-wrap gap-4'>
+      <div className='mt-10 flex flex-wrap gap-2'>
         {languages.map((language, index) => (
           <IconCard key={language.title} index={index} url={'languages/#' + language.id} {...language} />
         ))}

@@ -8,6 +8,17 @@ import {
 
 const domains = [
     {
+        title: "Embedded Systems",
+        label: "Firmware",
+        id: "embedded-systems",
+        icon: firmware,
+        desc: [
+            `
+TBD.
+            `,
+        ],
+    },
+    {
         title: "Operating Systems",
         label: "OS",
         id: "operating-systems",
@@ -16,7 +27,9 @@ const domains = [
             `
 I was hired out of college by Microsoft to work on the initial release
 of Windows NT.  I spent almost 5 years
-on that team.  Since then, I have also worked on Qualcomm's BREW
+on that team.
+            `, `
+Since then, I have also worked on Qualcomm's BREW
 operating system, Android, Windows Mobile, and Embedded Linux
 releases for Snapdragon.  One major focus of my work has been performance
 analysis and optimization.  Another has been security.
@@ -39,17 +52,6 @@ TBD.
         label: "Web",
         id: "web-technologies",
         icon: chromium,
-        desc: [
-            `
-TBD.
-            `,
-        ],
-    },
-    {
-        title: "Embedded Systems",
-        label: "Firmware",
-        id: "embedded-systems",
-        icon: firmware,
         desc: [
             `
 TBD.
