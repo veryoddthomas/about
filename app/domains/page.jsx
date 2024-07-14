@@ -7,8 +7,8 @@ const DomainDescription = ({ index, title, icon, id, desc }) => (
     <div className='mt-12 text-lg'>
       <h2>{title}</h2>
       <div className='space-y-4'>
-        {desc.map((paragraph, index) => (
-          <p key={index} className='text-primary'>{paragraph}</p>
+        {desc.map((paragraph, paragraph_index) => (
+          <p key={`${id}-${paragraph_index}`} className='text-primary'>{paragraph}</p>
         ))}
       </div>
     </div>
@@ -24,7 +24,7 @@ export default function Domains() {
 
         <div className='flex flex-wrap my-8 '>
           {domains.map((domain, index) => (
-            <h2 className='p-2 mx-2 my-1 text-tertiary-light text-base  border-primary border-2 rounded-2xl hover:bg-tertiary-dark'>
+            <h2 key={domain.id} className='p-2 mx-2 my-1 text-tertiary-light text-base  border-primary border-2 rounded-2xl hover:bg-tertiary-dark'>
               <a href={'#' + domain.id} className=""> {domain.title} </a>
             </h2>
           ))}
