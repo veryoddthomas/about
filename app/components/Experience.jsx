@@ -70,7 +70,12 @@ const ExperienceCard = ({ experience }) => {
               </div>
 
               <div className="relative group-not-hover my-rotate-y-180 backface-hidden overflow-hidden" >
-                <h3 className='text-primary-light text-md italic mt-1' >TL;DR</h3>
+
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <p className="text-secondary-light font-bold opacity-50 z-0 -rotate-45 scale-[5] lg:scale-[8]">TL;DR</p>
+                </div>
+                {/* <h3 className='text-primary-light text-md italic mt-1' >TL;DR</h3> */}
+
                 <ul className='mt-5 list-disc ml-5 space-y-2'>
                   {experience.detailed_points.map((point, index) => (
                     <li
