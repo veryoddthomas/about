@@ -6,6 +6,24 @@ import {
 
 const experiences = [
   {
+    title: "Test for no details",
+    company_name: "Qualcomm",
+    icon: snapdragon,
+    iconBg: "#112",
+    date: "Now",
+    points: [
+      "Managed overall software delivery for Trustzone and the trusted execution environment on Qualcomm's Snapdragon processors.",
+    ],
+    languages: [
+      "rust",
+      "c++",
+      "c",
+      "lua",
+      "python",
+      "arm-asm",
+    ],
+  },
+  {
     title: "Technical Director, Secure Systems Group",
     company_name: "Qualcomm",
     icon: snapdragon,
