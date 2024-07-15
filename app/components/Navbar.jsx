@@ -10,10 +10,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const navLinks = [
-  { id: "", title: "Home", },
-  { id: "work", title: "Experience", },
-  { id: "about", title: "Overview", },
-  { id: "contact", title: "Contact Me", },
+  { page: "/", id: "", title: "Home", },
+  { page: "/", id: "work", title: "Experience", },
+  { page: "/", id: "about", title: "Overview", },
+  { page: "domains", id: "", title: "Domains", },
+  { page: "languages", id: "", title: "Languages", },
+  { page: "/", id: "contact", title: "Contact Me", },
 ];
 
 
@@ -51,7 +53,7 @@ const FullMenu = ({ showSize }) => {
           key={nav.id}
           className={'text-primary-light hover:text-secondary-light text-[18px] font-medium cursor-pointer'}
         >
-          <a href={`/#${nav.id}`}>{nav.title}</a>
+          <a href={`${nav.page}#${nav.id}`}>{nav.title}</a>
         </li>
       ))}
       {/* <li
@@ -94,7 +96,7 @@ const CompressedMenu = ({ hideSize }) => {
                 setToggle(!toggle);
               }}
             >
-              <a href={`/#${nav.id}`}>{nav.title}</a>
+              <a href={`${nav.page}#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
