@@ -1,7 +1,7 @@
 import { domains } from "../data/domains";
 
 
-const DomainDescription = ({ index, title, icon, id, desc }) => (
+const DomainDescription = ({ title, id, desc }) => (
   <div>
     <a id={id} />
     <div className='mt-12 text-lg'>
@@ -32,11 +32,6 @@ export default function Domains() {
 
         {domains.map((domain, index) => (
           <DomainDescription
-            title={domain.title}
-            icon={domain.icon}
-            id={domain.id}
-            desc={domain.desc}
-            index={index}
             {...domain} />
         ))}
         {/* The following pads below the last entry so that following
