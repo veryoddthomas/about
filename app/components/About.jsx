@@ -18,7 +18,8 @@ const About = () => {
 
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-primary lg:text-[20px] text-[18px] max-w-3xl leading-[30px]'
+        className='mt-4 text-primary lg:text-[20px] text-[18px] leading-[30px]'
+      // max-w-3xl
       >
         <p>
           Throughout my career, I have worked on embedded systems, display drivers,
@@ -44,7 +45,7 @@ const About = () => {
 
       <h2 className='link mt-16'><a href='domains'>Domains</a></h2>
 
-      <div className='mt-10 flex flex-wrap gap-2'>
+      <div className='mt-10 flex flex-wrap gap-2 max-w-[800px]'>
         {domains.map((domain, index) => (
           <IconCard key={domain.title} index={index} url={'domains/#' + domain.id} {...domain} />
         ))}
@@ -52,7 +53,7 @@ const About = () => {
 
       <h2 className='link mt-16'><a href='languages'>Programming Languages</a></h2>
 
-      <div className='mt-10 flex flex-wrap gap-2'>
+      <div className='mt-10 flex flex-wrap gap-2 max-w-[800px]'>
         {languages.map((language, index) => (
           <IconCard key={language.title} index={index} url={'languages/#' + language.id} {...language} />
         ))}
