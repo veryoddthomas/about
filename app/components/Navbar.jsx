@@ -1,6 +1,6 @@
 "use client";
 
-import { React, useEffect, useState } from "react";
+import { React, useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
@@ -71,21 +71,43 @@ const CompressedMenu = ({ hideSize }) => {
   // it is not correctly set
   const [toggle, setToggle] = useState(false);
 
+  const buttonRef = useRef(null);
+  const menuRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (
+      menuRef.current &&
+      !menuRef.current.contains(event.target) &&
+      buttonRef.current &&
+      !buttonRef.current.contains(event.target)
+    ) {
+      setToggle(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+
   return (
     <div className={`${hideSize} flex flex-1 justify-start items-center`} >
       <Image
         src={toggle ? close : menu}
         alt='menu'
+        ref={buttonRef}
         className='w-[28px] h-[28px] object-contain'
         onClick={() => setToggle(!toggle)}
       />
 
       <div
         // p-6 bg-primary-dark absolute top-20 left-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl
-
+        ref={menuRef}
         className={`${!toggle ? "hidden" : "flex"}
-          p-6 absolute top-10 mx-4 my-2 min-w-[140px] z-10 rounded-xl
-          `}
+          p-6 absolute top-10 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
       >
         <ul className='bg-secondary-dark list-none flex justify-end items-start flex-1 flex-col gap-4 p-4 border-2 rounded-2xl'>
           {navLinks.map((nav) => (
