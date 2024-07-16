@@ -11,11 +11,12 @@ const experiences = [
     icon: snapdragon,
     iconBg: "#112",
     date: "Oct 2017 - Dec 2023",
+    summary: "Managed overall software delivery for Qualcomm's Trusted Execution Environment (QTEE).",
     points: [
-      "Managed overall software delivery for Trustzone and the trusted execution environment on Qualcomm's Snapdragon processors.",
+      "Managed overall software delivery for Qualcomm's Trusted Execution Environment (QTEE).",
     ],
     detailed_points: [
-      "Led a global team of 30+ engineers responsible for end-to-end delivery of Qualcomm's TrustZone software. The team was highly execution focused, and process optimization and robustness were key to success through scalability.",
+      "Led a global team of 30+ engineers responsible for end-to-end delivery of Qualcomm's Trusted Execution Environment (QTEE). The team was highly execution focused, and process optimization and robustness were key to success through scalability.",
       "Launched 20+ Snapdragon processors on Android, Windows, iOS, Embedded Linux, and Chrome OS.",
       "Reviewed and contributed to initiatives to convert critical code, including secure boot and the trusted-application framework, from C to Rust, reducing code size by 50% and increasing performance by 10%. Memory related defects (accounting for 80% of total, historically) were reduced to 0.",
       "Re-designed the continuous integration and delivery processes for Qualcomm's Trusted Execution Environment (QTEE). Increased code throughput and decreased latencies by 5x and reduced developer build times by 75%.",
@@ -36,6 +37,7 @@ const experiences = [
     icon: snapdragon,
     iconBg: "#112",
     date: "May 2011 - Oct 2017",
+    summary: "Led Qualcomm's WebCore team providing the browser rendering engine for Snapdragon devices, and contributing to WebKit.",
     points: [
       "Developed the Chromium-based Snapdragon Web Engine (SWE) for mobile devices.",
       "Maintained the open-source 'Chromium for Snapdragon Web Engine (SWE)' project.",
@@ -45,7 +47,7 @@ const experiences = [
       "Contributed >40 patches as a Committer for the WebKit open-source project (used by Chrome and Safari), including performance enhancements, tests, and bug fixes, to generate goodwill with open-source community.",
       "Worked with cross-organizational team to create process allowing contribution to open-source projects while reducing identified intellectual-property (IP) risk to near 0.",
       "Internal open-source reviewer, removing external review gates, lowering contribution latencies by 5-10x.",
-      "Enabled key market requirements, specific to China, to the Android browser, resolving a feature gap required to launch Qualcomm’s Snapdragon devices in China. Resulting revenue upside was $50M+, near term. Alternate solutions, including outsourcing, all failed to meet the launch date (fiscal quarter) required.",
+      "Enabled key market requirements, specific to China, to the Android browser, resolving a feature gap required to launch Qualcomm's Snapdragon devices in China. Resulting revenue upside was $50M+, near term. Alternate solutions, including outsourcing, all failed to meet the launch date (fiscal quarter) required.",
       "Designed and implemented the Sentinel system to automate monitoring and trigger cherry-picking security patches and CVEs to active release branches. This decreased critical response times from weeks to <24 hours.",
       "Increased existing unit test coverage by more than 50%.",
       "Quantified the impact of HW design decisions affecting key web benchmarks and typical use cases. Proposed hardware changes in cache sizes and instruction pipelining. The next processor performed >35% for those benchmarks.",
@@ -64,6 +66,7 @@ const experiences = [
     icon: snapdragon,
     iconBg: "#112",
     date: "Feb 2008 - May 2011",
+    summary: "Technical lead for Display, Graphics, Image Decoders, and the test framework.",
     points: [
       "Technical lead for Display,",
       "... and Graphics,",
@@ -90,6 +93,7 @@ const experiences = [
     icon: snapdragon,
     iconBg: "#112",
     date: "Oct 2004 - Feb 2008",
+    summary: "Led the System Performance and Windows BSP teams",
     points: [
       "System performance lead for MSM6550",
       "Windows Mobile BSP lead",
@@ -116,6 +120,7 @@ const experiences = [
     icon: conexant,
     iconBg: "#112",   // "#383E56"
     date: "Dec 1996 - Oct 2004",
+    summary: "Led the Digital Infotainment software team, managing capture drivers and tooling for analog terrestrial, digital terrestrial, and digital satelite products.",
     points: [
       "Led team that developed and maintained drivers for broadcast TV capture cards including BT848 and BT878",
       "Analog terrestrial (NTSC, PAL, NTSC-J)",
@@ -146,6 +151,7 @@ const experiences = [
     icon: microsoft,
     iconBg: "#000",   // "#383E56"
     date: "Jun 1992 - Dec 1996",
+    summary: "Developed and maintained essential display drivers and contributed to the GDI (rendering) engine.",
     points: [
       "Developed and maintained essential display drivers",
       "Contributed to the GDI (rendering) engine",
