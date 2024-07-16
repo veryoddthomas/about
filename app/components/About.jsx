@@ -43,7 +43,7 @@ const About = () => {
         </p>
       </motion.div>
 
-      <h2 className='link mt-16'><a href='domains'>Domains</a></h2>
+      {/* <h2 className='link mt-16'><a href='domains'>Domains</a></h2>
 
       <div className='mt-10 flex flex-wrap gap-2 max-w-[800px]'>
         {domains.map((domain, index) => (
@@ -57,7 +57,7 @@ const About = () => {
         {languages.map((language, index) => (
           <IconCard key={language.title} index={index} url={'languages/#' + language.id} {...language} />
         ))}
-      </div>
+      </div> */}
     </>
   );
 };
