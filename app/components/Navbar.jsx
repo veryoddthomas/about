@@ -10,12 +10,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const navLinks = [
-  { page: "/", id: "", title: "Home", },
-  { page: "/", id: "work", title: "Experience", },
-  { page: "/", id: "about", title: "Overview", },
-  { page: "domains", id: "", title: "Domains", },
-  { page: "languages", id: "", title: "Languages", },
-  { page: "/", id: "contact", title: "Contact Me", },
+  { page: "/", fragment: "", id: "/#", title: "Home", },
+  { page: "/", fragment: "work", id: "/#work", title: "Experience", },
+  { page: "/", fragment: "about", id: "/#about", title: "Overview", },
+  { page: "/", fragment: "contact", id: "/#contact", title: "Contact Me", },
+  { page: "domains", fragment: "", id: "/domain#", title: "Domains", },
+  { page: "languages", fragment: "", id: "/languages#", title: "Languages", },
 ];
 
 
@@ -53,7 +53,7 @@ const FullMenu = ({ showSize }) => {
           key={nav.id}
           className={'text-primary-light hover:text-secondary-light text-[18px] font-medium cursor-pointer'}
         >
-          <a href={`${nav.page}#${nav.id}`}>{nav.title}</a>
+          <a href={`${nav.page}#${nav.fragment}`}>{nav.title}</a>
         </li>
       ))}
       {/* <li
@@ -91,12 +91,12 @@ const CompressedMenu = ({ hideSize }) => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`font-poppins font-medium cursor-pointer text-[24px]  text-primary-light hover:bg-primary-dark hover:text-secondary-light`}
+              className={`font-poppins font-medium cursor-pointer text-[24px] text-primary-light hover:bg-primary-dark hover:text-secondary-light`}
               onClick={() => {
                 setToggle(!toggle);
               }}
             >
-              <a href={`${nav.page}#${nav.id}`}>{nav.title}</a>
+              <a href={`${nav.page}#${nav.fragment}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
