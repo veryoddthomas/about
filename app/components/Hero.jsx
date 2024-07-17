@@ -8,14 +8,11 @@ const Hero = () => {
     <section className={`relative w-full h-screen mx-auto`}>
       <div className={'page-setup'}>
         <div>
-          <h1 className='lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2'>
-            Welcome!
-          </h1>
+          <h1 className='text-4xl mt-2'> Welcome! </h1>
           <br />
-          {/* <hr/>  */}
           <br />
-          <div className='font-medium text-primary lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-6'>
-            <div className="flex gap-6 mt-8 lg:mt-16">
+          <div className='font-medium text-primary text-lg mt-6'>
+            <div className="flex gap-6 mt-8 lg:mt-16 mt-">
 
               <span>My name is <span className='emphasized-2'>Tom Zakrajsek</span>.
                 {/* You can find me at */}
