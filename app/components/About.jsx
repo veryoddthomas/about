@@ -25,9 +25,9 @@ const About = () => {
           Throughout my career, I have worked on embedded systems, display drivers,
           streaming media drivers, DMA drivers, graphics software, multimedia
           codecs, parsers, communication protocols, test frameworks,
-          profilers, DRM software (CPRM), console applications on Windows and Linux,
-          web applications, the WebKit rendering engine, and Qualcomm's trusted execution
-          environment (QTEE).
+          profilers, DRM software (CPRM), native applications on Windows and Linux,
+          web services and applications, the WebKit rendering engine, and Qualcomm's
+          trusted execution environment (QTEE).
         </p>
 
         <p>
