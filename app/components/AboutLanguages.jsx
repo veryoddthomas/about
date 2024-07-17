@@ -1,11 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { fadeIn, textVariant } from "../utils/motion";
 import { AnimatedSection } from ".";
 import { IconCard } from ".";
-
-import { domains } from "../data/domains";
 import { languages } from "../data/languages";
 
 const AboutLanguages = () => {
@@ -35,4 +32,4 @@ const AboutLanguages = () => {
   );
 };
 
-export default AnimatedSection(AboutLanguages, "about-languages");
+export default AnimatedSection(AboutLanguages, "languages");

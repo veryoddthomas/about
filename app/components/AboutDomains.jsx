@@ -1,12 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { fadeIn, textVariant } from "../utils/motion";
 import { AnimatedSection } from ".";
 import { IconCard } from ".";
-
 import { domains } from "../data/domains";
-import { languages } from "../data/languages";
 
 const AboutDomains = () => {
   return (
@@ -36,4 +33,4 @@ const AboutDomains = () => {
   );
 };
 
-export default AnimatedSection(AboutDomains, "about-domains");
+export default AnimatedSection(AboutDomains, "domains");
