@@ -1,8 +1,8 @@
-import { Inter } from "next/font/google";
+import { inter } from '@/app/ui/fonts'
+
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Tom Z's Profile",
@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className} >
+      <body className={inter.className} antialiased >
         <Navbar />
         {children}
       </body>
