@@ -54,7 +54,7 @@ const LanguageTags = ({ experience }) => {
   return (
     <div>
       {experience.languages != null ?
-        <div className='mt-4 flex flex-wrap gap-2'>
+        <div className='mt-4 flex flex-wrap gap-x-2'>
           {experience.languages.map((language, index) => (
             <div
               key={`lang-${index}`}
