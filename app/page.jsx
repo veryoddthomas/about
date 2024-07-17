@@ -4,8 +4,8 @@
 import Hero from "./components/Hero";
 import Contact from "./components/Contact";
 import About from "./components/About";
-import AboutDomains from "./components/AboutDomains";
-import AboutLanguages from "./components/AboutLanguages";
+import DomainCards from "./components/DomainCards";
+import LanguageCards from "./components/LanguageCards";
 import Experience from "./components/Experience";
 
 
@@ -18,8 +18,8 @@ export default function Home() {
       </div>
       <Experience />
       <About />
-      <AboutDomains />
-      <AboutLanguages />
+      <DomainCards />
+      <LanguageCards />
       <Contact />
       {/* The following pads below the last entry so that following
             the link will place the anchor at the top of the screen */}
