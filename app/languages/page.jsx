@@ -4,7 +4,7 @@ import { languages, proficiency_ratings } from "../data/languages";
 const LanguageDescription = ({ title, id, desc, proficiency }) => (
   <div>
     <a id={id} />
-    <div className='mt-12 text-lg'>
+    <div className='py-4 text-lg'>
       <h2>{title}
         <span className='group relative'>
           <span className='text-lg text-tertiary-light'> &nbsp;({proficiency})</span>

@@ -4,7 +4,7 @@ import { domains } from "../data/domains";
 const DomainDescription = ({ title, id, desc }) => (
   <div>
     <a id={id} />
-    <div className='mt-12 text-lg'>
+    <div className='py-4 text-lg'>
       <h2>{title}</h2>
       <div className='space-y-4'>
         {desc.map((paragraph, paragraph_index) => (
