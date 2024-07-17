@@ -19,8 +19,11 @@ almost 5 years there.
             `, `
 Since then, I have also worked on Qualcomm's BREW
 operating system, Android, Windows Mobile, and Embedded Linux
-releases for Snapdragon.  One major focus of my work has been performance
-analysis and optimization.  Another has been security.
+releases for Snapdragon.
+            `, `
+Never having worked for Apple, my only impact on the shipping
+versions of iOS and OSX were via contributions to the WebKit
+open-source project which provides the rendering engine for Safari.
             `,
         ],
     },

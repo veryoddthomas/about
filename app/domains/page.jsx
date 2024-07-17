@@ -1,11 +1,20 @@
 import { domains } from "../data/domains";
+import Image from "next/image";
 
 
-const DomainDescription = ({ title, id, desc }) => (
+const DomainDescription = ({ title, id, desc, icon }) => (
   <div>
     <a id={id} />
     <div className='py-4 text-lg'>
-      <h2>{title}</h2>
+      <h2>
+        {/* <Image
+          src={icon}
+          alt={title}
+          // className='w-24 h-12 object-contain inline'
+          className='w-16 h-16 object-contain inline align-left object-left mr-4'
+        /> */}
+        {title}
+      </h2>
       <div className='space-y-4'>
         {desc.map((paragraph, paragraph_index) => (
           <p key={`${id}-${paragraph_index}`} className='text-primary'>{paragraph}</p>

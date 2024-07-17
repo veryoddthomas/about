@@ -1,14 +1,23 @@
 import { languages, proficiency_ratings } from "../data/languages";
+import Image from "next/image";
 
 
-const LanguageDescription = ({ title, id, desc, proficiency }) => (
+const LanguageDescription = ({ title, id, desc, proficiency, icon }) => (
   <div>
     <a id={id} />
     <div className='py-4 text-lg'>
-      <h2>{title}
+      <h2>
+        {/* <Image
+          src={icon}
+          alt={title}
+          // className='w-24 h-12 object-contain inline'
+          className='w-16 h-16 object-contain inline align-left object-left mr-4'
+        /> */}
+
+        {title}
         <span className='group relative'>
           <span className='text-lg text-tertiary-light'> &nbsp;({proficiency})</span>
-          <span className="absolute flex min-w-60 top-16  ml-8 scale-0 z-10 transition-all rounded bg-tertiary-dark p-4 text-xl font-normal text-white group-hover:scale-100">
+          <span className="absolute flex  min-w-40 -left-6 top-8  ml-8 scale-0 z-10 transition-all rounded bg-tertiary-dark p-4 text-xl font-normal text-white group-hover:scale-100">
             {proficiency_ratings[proficiency]}
           </span>
         </span>
