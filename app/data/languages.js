@@ -22,7 +22,6 @@ const languages = [
   {
     title: "C and C++",
     proficiency: "Expert",
-    stars: "★★★★★",
     icon: c_and_cpp,
     id: "c-and-cpp",
     desc: [
@@ -31,14 +30,15 @@ I have decades of experience with C and C++, developing
 on Windows, OS X, and Linux using GCC, clang, and Microsoft
 Visual C++, as well numerous cross-compilers for
 embedded devices.  Much of my experience is with
-system code, as opposed to GUI applications.
+system code, as opposed to GUI applications.  I also
+have experience with interop between C and
+other languages (Assembly, Lua, Rust, etc.)
       `,
     ],
   },
   {
     title: "Python",
     proficiency: "Advanced",
-    stars: "★★★★☆",
     icon: python,
     id: "python",
     desc: [
@@ -46,13 +46,13 @@ system code, as opposed to GUI applications.
 I have been programming in Python for more than 10 years.
 I use it for basic scripting, text manipulation and parsing,
 data analysis, modeling, and extensive on-device test automation.
+I've done a fair amount of python2 ➜ python3 migration.
       `,
     ]
   },
   {
     title: "Rust",
     proficiency: "Intermediate",
-    stars: "★★★☆☆",
     icon: rust,
     id: "rust",
     desc: [
@@ -67,14 +67,15 @@ standard library.  "System programmers can have nice things too."
   {
     title: "Lua",
     proficiency: "Functional",
-    stars: "★★★☆☆",
     icon: lua,
     id: "lua",
     desc: [
       `
-I have a lot less experience with Lua than I do with Python, but I
-still think it is a great language for certain problem domains.
-Lua is extremely intuitive, compact, and easy to comprehend.
+I have used Lua intermittently over several years. I think it's a great
+language for certain problem domains. Lua is extremely intuitive,
+compact, and easy to comprehend. It is powerful, but simple to learn.
+It is also embeddable, which makes it a great choice for enabling
+scripting inside another application (or game engine).
       `,
     ]
 
@@ -82,24 +83,20 @@ Lua is extremely intuitive, compact, and easy to comprehend.
   {
     title: "Mojo",
     proficiency: "Novice",
-    stars: "★☆☆☆☆",
     icon: mojo,
     id: "mojo",
     desc: [
       `
-  TBD:
-        `, `
-  I'm just starting to work with Mojo and it looks like it has
-  incredible potential.  Not only is it an extraordinary platform
-  for AI, but it will probably eventually replace Python and Lua
-  in my toolbag.
+  I'm just starting to work with Mojo, but it's exciting.
+  It is a revolutionary platform for AI and other parallelizable
+  problem domains, while also being very familiar to experienced
+  python developers.
         `,
     ]
   },
   {
     title: "Javascript",
     proficiency: "Intermediate",
-    stars: "★★☆☆☆",
     icon: javascript,
     id: "javascript",
     desc: [
@@ -115,7 +112,6 @@ on Javascript first.
   {
     title: "Assembly",
     proficiency: "Advanced",
-    stars: "★★★★★",
     icon: asm,
     id: "Assembly",
     desc: [
@@ -127,13 +123,12 @@ x86, 68k, ADSP2101, DSP56k, ARM, Snapdragon, PowerPC, MIPS, and Alpha.
   }, {
     title: "Other Languages",
     proficiency: "Functional",
-    stars: "★☆☆☆☆",
     icon: code,
     id: "other",
     desc: [
       `
-I've also used the following:
-C#, Ruby, Lisp, HTML, CSS, Bash, Pascal, Ada, Awk, Make, Sed, Perl, PHP, and Basic.  I'm sure
+I've also used C#, Ruby, Lisp, HTML, CSS, Bash, Pascal, Ada,
+Awk, Make, Sed, Perl, PHP, and Basic.  I'm sure
 there are others, but I don't really consider myself proficient
 in any of these.  Basically, I can make them do what I need.
       `,
