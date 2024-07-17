@@ -59,7 +59,7 @@ const LanguageTags = ({ experience }) => {
           {experience.languages.map((language, index) => (
             <div
               key={`lang-${index}`}
-              className={'`text-[14px] text-tertiary-light'}
+              className={'text-xl text-tertiary-light'}
             >
               {language}
             </div>
@@ -74,7 +74,7 @@ const LanguageTags = ({ experience }) => {
 const SummaryContents = ({ experience }) => {
   return (
     <div>
-      <div className='my-4 ml-4 text-primary-light text-base font-normal' > {[experience.summary]} </div>
+      <div className='my-4 ml-4 text-primary-light text-xl font-normal' > {[experience.summary]} </div>
     </div>
   )
 }
@@ -86,7 +86,7 @@ const SimpleContents = ({ experience }) => {
         {experience.points.map((point, index) => (
           <li
             key={`xp-${index}`}
-            className='text-primary-light text-[14px] pl-1 tracking-wider'
+            className='text-primary-light text-xl pl-1 tracking-wider'
           >
             {point}
           </li>
@@ -105,7 +105,7 @@ const DetailedContents = ({ experience }) => {
             {experience.points.map((point, index) => (
               <li
                 key={`xp-${index}`}
-                className='text-primary-light text-[14px] pl-1 tracking-wider'
+                className='text-primary-light text-xl pl-1 tracking-wider'
               >
                 {point}
               </li>
@@ -124,7 +124,7 @@ const DetailedContents = ({ experience }) => {
             {experience.detailed_points.map((point, index) => (
               <li
                 key={`dxp-${index}`}
-                className='text-primary-light text-[14px] pl-1 tracking-wider'
+                className='text-primary-light text-xl pl-1 tracking-wider'
               >
                 {point}
               </li>
@@ -146,8 +146,8 @@ const ExperienceCard = ({ experience }) => {
   return (
     <TimelineElementWrapper company_name={company_name} date={date} icon={icon} iconBg={iconBg}>
       <div>
-        <h3 className='text-primary-light text-[24px] font-bold'>{experience.company_name}</h3>
-        <h3 className='text-secondary-light text-lg font-bold mt-1' >
+        <h3 className='text-primary-light text-xl font-bold'>{experience.company_name}</h3>
+        <h3 className='text-secondary-light text-xl font-bold mt-1' >
           {experience.title}
         </h3>
       </div>
@@ -178,19 +178,19 @@ const CompanyCard = ({ experiencesAtCompany }) => {
   return (
     <TimelineElementWrapper company_name={company_name} date={date} icon={icon} iconBg={iconBg}>
       <div>
-        <h3 className='text-primary-light text-lg font-bold'>{experiencesAtCompany[0].company_name}</h3>
-        <h3 className='text-secondary-light text-base font-bold mt-1' >
+        <h3 className='text-primary-light text-xl font-bold'>{experiencesAtCompany[0].company_name}</h3>
+        <h3 className='text-secondary-light text-xl font-bold mt-1' >
           <div className='flex flex-col'>
             {/* list-disc */}
             {experiencesAtCompany.map((role, index) => (
               <>
-                <div className='text-secondary-light text-base font-bold' key={`role-${index}`} > {role.title} </div>
+                <div className='text-secondary-light text-xl font-bold' key={`role-${index}`} > {role.title} </div>
                 {/* {
                   role.points.map((point, pointIndex) => (
                     <div className='text-primary-light text-base font-normal' key={`point-${pointIndex}`} > {[point]} </div>
                   ))
                 } */}
-                <div className='my-4 ml-4 text-primary-light text-base font-normal' key={`role-${index}-summary`} > {[role.summary]} </div>
+                <div className='my-4 ml-4 text-primary-light text-xl font-normal' key={`role-${index}-summary`} > {[role.summary]} </div>
               </>))}
           </div>
         </h3>
