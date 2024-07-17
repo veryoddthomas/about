@@ -8,6 +8,23 @@ import {
 
 const domains = [
     {
+        title: "Operating Systems",
+        label: "OS",
+        id: "operating-systems",
+        icon: os,
+        desc: [
+            `
+I was a member of the original Windows NT team at Microsoft.  I spent
+almost 5 years there.
+            `, `
+Since then, I have also worked on Qualcomm's BREW
+operating system, Android, Windows Mobile, and Embedded Linux
+releases for Snapdragon.  One major focus of my work has been performance
+analysis and optimization.  Another has been security.
+            `,
+        ],
+    },
+    {
         title: "Embedded Systems",
         label: "Firmware",
         id: "embedded-systems",
@@ -15,24 +32,6 @@ const domains = [
         desc: [
             `
 TBD.
-            `,
-        ],
-    },
-    {
-        title: "Operating Systems",
-        label: "OS",
-        id: "operating-systems",
-        icon: os,
-        desc: [
-            `
-I was hired out of college by Microsoft to work on the initial release
-of Windows NT.  I spent almost 5 years
-on that team.
-            `, `
-Since then, I have also worked on Qualcomm's BREW
-operating system, Android, Windows Mobile, and Embedded Linux
-releases for Snapdragon.  One major focus of my work has been performance
-analysis and optimization.  Another has been security.
             `,
         ],
     },
@@ -65,7 +64,13 @@ TBD.
         icon: lock,  // shield
         desc: [
             `
-TBD.
+In the Secure Systems Group at Qualcomm, I worked on all aspects of delivering
+a secure platform for Snapdragon devices.  I dealt with the entire secure-software
+stack, including secure-boot, debug, hypervisor(s), the trusted
+execution environment and trusted applications that ran within it. I was also
+involved in managing supply-chain security, responsible open-source usage and
+licensing, static analysis of the codebase, fuzzing of the system components,
+code signing, continuous integration and delivery, and CVE/vulerability mitigation.
             `,
 
             //             `, `
