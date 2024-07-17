@@ -50,7 +50,6 @@ const TimelineElementWrapper = ({ children, company_name, date, icon, iconBg }) 
 }
 
 
-
 const LanguageTags = ({ experience }) => {
   return (
     <div>
@@ -59,7 +58,7 @@ const LanguageTags = ({ experience }) => {
           {experience.languages.map((language, index) => (
             <div
               key={`lang-${index}`}
-              className={'text-xl text-tertiary-light'}
+              className={'text-lg text-tertiary-light'}
             >
               {language}
             </div>
@@ -105,7 +104,7 @@ const DetailedContents = ({ experience }) => {
             {experience.points.map((point, index) => (
               <li
                 key={`xp-${index}`}
-                className='text-primary-light text-xl pl-1 tracking-wider'
+                className='text-primary-light text-lg pl-1 tracking-wider'
               >
                 {point}
               </li>
@@ -146,8 +145,8 @@ const ExperienceCard = ({ experience }) => {
   return (
     <TimelineElementWrapper company_name={company_name} date={date} icon={icon} iconBg={iconBg}>
       <div>
-        <h3 className='text-primary-light text-xl font-bold'>{experience.company_name}</h3>
-        <h3 className='text-secondary-light text-xl font-bold mt-1' >
+        <h3 className='text-primary-light text-2xl font-bold uppercase'>{experience.company_name}</h3>
+        <h3 className='text-secondary-light text-xl font mt-1' >
           {experience.title}
         </h3>
       </div>
@@ -169,7 +168,7 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const CompanyCard = ({ experiencesAtCompany }) => {
-  console.log(experiencesAtCompany);
+  // console.log(experiencesAtCompany);
   const company_name = experiencesAtCompany[0].company_name;
   const date = experiencesAtCompany[0].date;
   const icon = experiencesAtCompany[0].icon;
