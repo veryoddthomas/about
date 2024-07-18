@@ -1,8 +1,3 @@
-import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from 'next/link'
-import { github, linkedin } from "../assets";
-
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
@@ -13,17 +8,7 @@ const Hero = () => {
           <br />
           <div className='font-medium text-primary text-xl lg:text-3xl mt-6'>
             <div className="flex gap-6 mt-8 lg:mt-16 mt-">
-
-              <span>My name is <span className='emphasized-2'>Tom Zakrajsek</span>.
-                {/* You can find me at */}
-              </span>
-
-              {/* <Link rel="noopener noreferrer" target="_blank" href={'https://github.com/veryoddthomas/'}>
-                <Image className="" src={github} alt="My Github" width={40} height={40} />
-              </Link>
-              <Link rel="noopener noreferrer" target="_blank" href={'https://www.linkedin.com/in/tom-zakrajsek/'}>
-                <Image src={linkedin} alt="My LinkedIn" width={40} height={40} />
-              </Link> */}
+              <span>My name is <span className='emphasized-2'>Tom Zakrajsek</span>. </span>
             </div>
             <p className='mt-6'>
               I&apos;m a
