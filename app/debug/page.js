@@ -12,6 +12,7 @@ export default function Debug() {
                 </p>
 
                 <div className='text-tertiary-light font-black font-mono text-left my-6'>
+                    <div className='flex xs:hidden'>screen size is below xs</div>
                     <div className='hidden xs:max-sm:flex'>screen size is xs</div>
                     <div className='hidden sm:max-md:flex'>screen size is sm</div>
                     <div className='hidden md:max-lg:flex'>screen size is md</div>
