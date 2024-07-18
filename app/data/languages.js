@@ -113,7 +113,7 @@ on Javascript first.
     title: "Assembly",
     proficiency: "Advanced",
     icon: asm,
-    id: "Assembly",
+    id: "assembly",
     desc: [
       `
 I've programmed in Assembly language on the following RISC, CISC, and DSP processor families:
