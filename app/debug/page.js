@@ -1,13 +1,15 @@
-export default function Developer() {
+export default function Debug() {
     return (
         <main className="bg-primary-dark">
             <div className='page-setup'>
 
-                <h1 className='title-size'>Title</h1>
-                <br />
-                <h1>Heading 1 (h1)</h1>
+                <h1 className='title-size'>Debug Sandbox Page</h1>
 
-                <p> Regular paragraph text. </p>
+                <br />
+
+                <p> This is my page for checking styling and quick access to
+                    info. For example:
+                </p>
 
                 <div className='text-tertiary-light font-black font-mono text-left my-6'>
                     <div className='hidden xs:max-sm:flex'>screen size is xs</div>
@@ -17,6 +19,12 @@ export default function Developer() {
                     <div className='hidden xl:max-2xl:flex'>screen size is xl</div>
                     <div className='hidden 2xl:flex'>screen size is 2xl</div>
                 </div>
+
+                <br />
+                <h1 className="pre-h1">Small Heading (pre-h1)</h1>
+                <h1>Heading 1 (h1)</h1>
+
+                <p> Regular paragraph text. </p>
 
                 <h2>Heading 2 (h2)</h2>
                 <p> Regular paragraph text. </p>

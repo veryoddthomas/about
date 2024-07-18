@@ -25,7 +25,7 @@ const NameLogo = () => {
   return (
     <span className="flex flex-row items-center gap-5">
       < Link
-        href='/developer'
+        href='/debug'
         className='flex items-center gap-2'
         onClick={() => { window.scrollTo(0, 0); }}
       >
