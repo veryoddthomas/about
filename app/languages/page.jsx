@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import { languages, proficiency_ratings } from "../data/languages";
 // import Image from "next/image";
 
@@ -27,12 +26,10 @@ const LanguageDescription = ({ title, id, desc, proficiency, icon, index }) => (
 
       <div className='space-y-4'>
         {desc.map((paragraph, paragraph_index) => (
-          <Fragment key={`${id}-${index}-${paragraph_index}`}>
+          <div key={`${id}-${index}-${paragraph_index}`} className='text-primary my-6'>
             {/* {console.log(`${id}-${index}-${paragraph_index}`)} */}
-            <p className='text-primary'>
-              {paragraph}
-            </p>
-          </Fragment>
+            {paragraph}
+          </div>
         ))}
       </div>
     </div>
