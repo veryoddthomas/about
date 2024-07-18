@@ -113,18 +113,12 @@ const DetailedContents = ({ experience }) => {
         </div>
 
         <div className="relative group-not-hover my-rotate-y-180 backface-hidden overflow-hidden" >
-
           <div className="absolute inset-0 flex items-center justify-center">
             <p className="text-secondary-light font-bold opacity-50 z-0 -rotate-45 scale-[5] lg:scale-[8]">TL;DR</p>
           </div>
-          {/* <h3 className='text-primary-light text-md italic mt-1' >TL;DR</h3> */}
-
           <ul className='mt-5 list-disc ml-5 space-y-2'>
             {experience.detailed_points.map((point, index) => (
-              <li
-                key={`dxp-${index}`}
-                className='text-primary-light text-xl pl-1 tracking-wider'
-              >
+              <li key={`dxp-${index}`} className='text-primary-light text-xl pl-1' >
                 {point}
               </li>
             ))}
@@ -145,10 +139,8 @@ const ExperienceCard = ({ experience }) => {
   return (
     <TimelineElementWrapper company_name={company_name} date={date} icon={icon} iconBg={iconBg}>
       <div>
-        <h3 className='text-primary-light text-2xl font-bold uppercase'>{experience.company_name}</h3>
-        <h3 className='text-secondary-light text-xl font mt-1' >
-          {experience.title}
-        </h3>
+        <div className='text-primary-light h3-size font-black uppercase'>{experience.company_name}</div>
+        <div className='text-secondary' > {experience.title} </div>
       </div>
 
       {
