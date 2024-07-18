@@ -52,21 +52,18 @@
   }
 
   p {
-    @apply mt-6
-  }
-  h1 {
-    /* @apply text-secondary-light font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] */
-    @apply text-secondary-light font-black text-4xl lg:text-6xl
+    @apply my-6
   }
 
-  h2 {
-    /* @apply text-secondary-light font-black md:text-[40px] sm:text-[35px] xs:text-[30px] text-[20px] mt-8 */
-    @apply text-secondary-light font-black text-3xl mt-8
-  }
+  .title-size { @apply text-5xl lg:text-8xl }
+  .h1-size { @apply text-4xl lg:text-6xl }
+  .h2-size { @apply text-3xl }
+  .h3-size { @apply text-2xl }
 
-  h3 {
-    @apply text-secondary-light font-black text-2xl
-  }
+  h1 { @apply text-secondary-light font-black h1-size }
+  h2 { @apply text-secondary-light font-black h2-size }
+  h3 { @apply text-secondary-light font-black h3-size }
+  h4 { @apply text-primary-light font-black text-xl }
 }
 
 :root {
