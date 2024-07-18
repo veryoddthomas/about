@@ -6,7 +6,7 @@ import {
 
 const experiences = [
   {
-    title: "Technical Director, Secure Systems Group",
+    title: "Technical Director, Secure Systems",
     company_name: "Qualcomm",
     icon: snapdragon,
     iconBg: "#112",
@@ -61,7 +61,7 @@ const experiences = [
     ],
   },
   {
-    title: "Technical Lead, BREW",
+    title: "Technical Lead, BREW OS",
     company_name: "Qualcomm",
     icon: snapdragon,
     iconBg: "#112",
@@ -88,7 +88,7 @@ const experiences = [
     ],
   },
   {
-    title: "Technical Lead, ASIC SW",
+    title: "Technical Lead, ASIC System Software",
     company_name: "Qualcomm",
     icon: snapdragon,
     iconBg: "#112",
