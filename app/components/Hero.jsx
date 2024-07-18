@@ -8,7 +8,7 @@ const Hero = () => {
     <section className={`relative w-full h-screen mx-auto`}>
       <div className={'page-setup'}>
         <div>
-          <h1 className='text-5xl lg:text-8xl mt-2'> Welcome! </h1>
+          <h1 className='title-size'> Welcome! </h1>
           <br />
           <br />
           <div className='font-medium text-primary text-xl lg:text-3xl mt-6'>
