@@ -1,9 +1,9 @@
 import { domains } from "../data/domains";
-import Image from "next/image";
 
 
-const DomainDescription = ({ title, id, desc, icon }) => (
-  <div>
+const DomainDescription = ({ title, id, desc, icon, index }) => (
+  <div key={`${id}-${index}`}>
+    {/* {console.log(`${id}-${index}`)} */}
     <a id={id} />
     <div className='py-4 text-lg'>
       <h2>
@@ -17,7 +17,10 @@ const DomainDescription = ({ title, id, desc, icon }) => (
       </h2>
       <div className='space-y-4'>
         {desc.map((paragraph, paragraph_index) => (
-          <p key={`${id}-${paragraph_index}`} className='text-primary'>{paragraph}</p>
+          <p key={`${id}-${index}-${paragraph_index}`} className='text-primary'>
+            {/* {console.log(`${id}-${index}-${paragraph_index}`)} */}
+            {paragraph}
+          </p>
         ))}
       </div>
     </div>
@@ -41,6 +44,7 @@ export default function Domains() {
 
         {domains.map((domain, index) => (
           <DomainDescription
+            index={index}
             {...domain} />
         ))}
         {/* The following pads below the last entry so that following

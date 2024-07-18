@@ -2,8 +2,9 @@ import { languages, proficiency_ratings } from "../data/languages";
 import Image from "next/image";
 
 
-const LanguageDescription = ({ title, id, desc, proficiency, icon }) => (
-  <div>
+const LanguageDescription = ({ title, id, desc, proficiency, icon, index }) => (
+  <div key={`${id}-${index}`}>
+    {/* {console.log(`${id}-${index}`)} */}
     <a id={id} />
     <div className='py-4 text-lg'>
       <h2>
@@ -25,7 +26,10 @@ const LanguageDescription = ({ title, id, desc, proficiency, icon }) => (
 
       <div className='space-y-4'>
         {desc.map((paragraph, paragraph_index) => (
-          <p key={`${id}-${paragraph_index}`} className='text-primary'>{paragraph}</p>
+          <p key={`${id}-${index}-${paragraph_index}`} className='text-primary'>
+            {/* {console.log(`${id}-${index}-${paragraph_index}`)} */}
+            {paragraph}
+          </p>
         ))}
       </div>
     </div>
@@ -49,6 +53,7 @@ export default function Languages() {
 
         {languages.map((language, index) => (
           <LanguageDescription
+            index={index}
             {...language} />
         ))}
         {/* The following pads below the last entry so that following
