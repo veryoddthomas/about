@@ -25,7 +25,7 @@ const NameLogo = () => {
   return (
     <span className="flex flex-row items-center gap-5">
       < Link
-        href='/'
+        href='/developer'
         className='flex items-center gap-2'
         onClick={() => { window.scrollTo(0, 0); }}
       >
@@ -115,10 +115,8 @@ const CompressedMenu = ({ hideSize }) => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`font-poppins font-medium cursor-pointer text-[24px] text-primary-light hover:bg-primary-dark hover:text-secondary-light`}
-              onClick={() => {
-                setToggle(!toggle);
-              }}
+              className={`text-primary-light font-black hover:bg-primary-dark hover:text-secondary-light`}
+              onClick={() => { setToggle(!toggle); }}
             >
               <a href={`${nav.page}#${nav.fragment}`}>{nav.title}</a>
             </li>
