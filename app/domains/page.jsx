@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { domains } from "../data/domains";
 
 
@@ -17,10 +18,12 @@ const DomainDescription = ({ title, id, desc, icon, index }) => (
       </h2>
       <div className='space-y-4'>
         {desc.map((paragraph, paragraph_index) => (
-          <p key={`${id}-${index}-${paragraph_index}`} className='text-primary'>
+          <Fragment key={`${id}-${index}-${paragraph_index}`}>
             {/* {console.log(`${id}-${index}-${paragraph_index}`)} */}
-            {paragraph}
-          </p>
+            <p className='text-primary'>
+              {paragraph}
+            </p>
+          </Fragment>
         ))}
       </div>
     </div>
@@ -37,6 +40,7 @@ export default function Domains() {
         <div className='flex flex-wrap my-8 '>
           {domains.map((domain, index) => (
             <h2 key={domain.id} className='p-2 mx-2 my-1 text-tertiary-light text-base  border-primary border-2 rounded-2xl hover:bg-tertiary-dark'>
+              {/* {console.log(domain.id)} */}
               <a href={'#' + domain.id} className=""> {domain.title} </a>
             </h2>
           ))}

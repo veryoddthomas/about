@@ -1,5 +1,6 @@
+import { Fragment } from "react";
 import { languages, proficiency_ratings } from "../data/languages";
-import Image from "next/image";
+// import Image from "next/image";
 
 
 const LanguageDescription = ({ title, id, desc, proficiency, icon, index }) => (
@@ -26,10 +27,12 @@ const LanguageDescription = ({ title, id, desc, proficiency, icon, index }) => (
 
       <div className='space-y-4'>
         {desc.map((paragraph, paragraph_index) => (
-          <p key={`${id}-${index}-${paragraph_index}`} className='text-primary'>
+          <Fragment key={`${id}-${index}-${paragraph_index}`}>
             {/* {console.log(`${id}-${index}-${paragraph_index}`)} */}
-            {paragraph}
-          </p>
+            <p className='text-primary'>
+              {paragraph}
+            </p>
+          </Fragment>
         ))}
       </div>
     </div>
@@ -46,6 +49,7 @@ export default function Languages() {
         <div className='flex flex-wrap my-8   '>
           {languages.map((language, index) => (
             <h2 key={language.id} className='p-2 mx-2 my-1 text-tertiary-light text-base  border-primary border-2 rounded-2xl hover:bg-tertiary-dark'>
+              {/* {console.log(language.id)} */}
               <a href={'#' + language.id} className=""> {language.title} </a>
             </h2>
           ))}
