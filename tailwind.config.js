@@ -82,7 +82,7 @@ module.exports = {
         }
       },
       screens: {
-        xs: "450px",
+        xs: "300px",
       },
       backgroundImage: {
         "hero-pattern": "url('/images/herobg2b.png')",

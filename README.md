@@ -1,28 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-```stars: ★★★★☆```
+# My Professional Profile
+
+The goal here is to provide information about my professional skills, interests, and experience.
+I'm also using it for practicing full-stack web development.
+This site is hosted at [Vercel](https://veryoddthomas.vercel.app/)
+
+Feel free to fork it and use it as a template, or make suggestions.
+
 
 ## Getting Started
 
-First, run the development server:
+```bash
+git clone git@github.com:veryoddthomas/about.git
+```
+
+Run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+<!--
+## Technical Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -36,3 +40,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+ -->
+
+<!-- ```stars: ★★★☆☆``` -->

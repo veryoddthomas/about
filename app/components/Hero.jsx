@@ -8,10 +8,10 @@ const Hero = () => {
     <section className={`relative w-full h-screen mx-auto`}>
       <div className={'page-setup'}>
         <div>
-          <h1 className='text-4xl mt-2'> Welcome! </h1>
+          <h1 className='text-5xl lg:text-8xl mt-2'> Welcome! </h1>
           <br />
           <br />
-          <div className='font-medium text-primary text-lg mt-6'>
+          <div className='font-medium text-primary text-xl lg:text-3xl mt-6'>
             <div className="flex gap-6 mt-8 lg:mt-16 mt-">
 
               <span>My name is <span className='emphasized-2'>Tom Zakrajsek</span>.
@@ -42,7 +42,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* <div className='absolute xs:bottom-16 bottom-24 w-full flex justify-center items-center'>
+      {/* <div className='absolute bottom-24 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary-light flex justify-center items-start p-2'>
             <motion.div

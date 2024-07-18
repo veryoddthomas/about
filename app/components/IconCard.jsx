@@ -25,10 +25,9 @@ const IconCard = ({ index, title, icon, url }) => (
 
                 <br />
             </div>
-            <div>
-                <h3 className='text-primary-light text-[16px] text-center'>
-                    {title}
-                </h3>
+            {/* <div className='text-primary-light text-base text-center leading-tight'> */}
+            <div className='text-center leading-tight'>
+                {title}
             </div>
         </a>
     </motion.div>
