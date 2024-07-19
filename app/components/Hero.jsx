@@ -1,3 +1,5 @@
+import StringCycler from './StringCycler';
+
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
@@ -23,9 +25,32 @@ const Hero = () => {
               &nbsp;<span className='emphasized-1'>Qualcomm</span>&nbsp;
               as well as a few smaller companies.
             </p>
+
+            {/* <p className='mt-6'>
+              I place a lot of value on&nbsp;
+              <span className='emphasized-3'>
+                <StringCycler
+                  interval={1500}
+                  strings={([
+                    "clean code",
+                    "unit testing",  // "test-driven developement",
+                    "continuous improvement",
+                    "teamwork and peer-review",
+                    "professional integrity",
+                    "mentoring",
+                    "accountabilty",
+                  ])}
+                />
+              </span>
+
+            </p> */}
+
           </div>
         </div>
       </div>
+
+
+
 
       {/* <div className='absolute bottom-24 w-full flex justify-center items-center'>
         <a href='#about'>
