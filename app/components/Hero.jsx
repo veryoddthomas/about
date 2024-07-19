@@ -26,24 +26,27 @@ const Hero = () => {
               as well as a few smaller companies.
             </p>
 
-            {/* <p className='mt-6'>
-              I place a lot of value on&nbsp;
+            <p className='mt-6'>
+              At the moment, I'm probably thinking about&nbsp;
               <span className='emphasized-3'>
                 <StringCycler
                   interval={1500}
                   strings={([
                     "clean code",
                     "unit testing",  // "test-driven developement",
-                    "continuous improvement",
-                    "teamwork and peer-review",
-                    "professional integrity",
-                    "mentoring",
-                    "accountabilty",
+                    "rust",
+                    "model training",
+                    "supply chain security",
+                    "github actions",
+                    "cloud services and architecture",
+                    "mojo 🔥",
+                    "code optimization",
                   ])}
                 />
               </span>
+              .
+            </p>
 
-            </p> */}
 
           </div>
         </div>
