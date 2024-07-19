@@ -6,8 +6,6 @@ const Hero = () => {
       <div className={'page-setup'}>
         <div>
           <h1 className='title-size'> Welcome! </h1>
-          <br />
-          <br />
           <div className='font-medium text-primary text-xl lg:text-3xl mt-6'>
             <div className="flex gap-6 mt-8 lg:mt-16 mt-">
               <span>My name is <span className='emphasized-2'>Tom Zakrajsek</span>. </span>
