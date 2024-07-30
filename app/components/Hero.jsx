@@ -27,7 +27,7 @@ const Hero = () => {
             </p> */}
 
             <p className='mt-6'>
-              Stuff currently floating through my head includes:&nbsp;
+              At the moment, I'm probably thinking about:&nbsp;
               <span className='emphasized-3'>
                 <StringCycler
                   interval={2500}
