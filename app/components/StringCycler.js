@@ -7,6 +7,7 @@ const Marquee = (props) => {
 
     // const strings = ["Software Maintainer", "Full-Stack Software Creator", "System Software Architect", "Open Source Contributor"];
     const [index, setIndex] = useState(0);
+    const [stringsToCycleThrough, setStringsToCycleThrough] = useState(strings);
 
     useEffect(() => {
         // Set up an interval that runs every 1000 milliseconds (1 second)
@@ -19,7 +20,7 @@ const Marquee = (props) => {
     }, []);  // Empty dependency array means this effect runs only on mount and unmount
 
     return (
-        strings[index]
+        stringsToCycleThrough[index]
     );
 }
 

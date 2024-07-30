@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import StringCycler from './StringCycler';
 
 const Hero = () => {
@@ -10,6 +11,7 @@ const Hero = () => {
             <div className="flex gap-6 mt-8 lg:mt-16 mt-">
               <span>My name is <span className='emphasized-2'>Tom Zakrajsek</span>. </span>
             </div>
+
             <p className='mt-6'>
               I&apos;m a
               &nbsp;<span className='emphasized-1'>software engineer</span>&nbsp; and
@@ -17,27 +19,27 @@ const Hero = () => {
               with a passion for software craftsmanship and developing strong teams.
             </p>
 
-            <p className='mt-6'>
-              I have worked for both
+            {/* <p className='mt-6'>
+              I have worked for
               &nbsp;<span className='emphasized-1'>Microsoft</span>&nbsp; and
               &nbsp;<span className='emphasized-1'>Qualcomm</span>&nbsp;
-              as well as a few smaller companies.
-            </p>
+              as well as Conexant, Valhalla Scientific, and the DOD.
+            </p> */}
 
             <p className='mt-6'>
-              At the moment, I'm probably thinking about&nbsp;
+              Stuff currently floating through my head includes:&nbsp;
               <span className='emphasized-3'>
                 <StringCycler
-                  interval={1500}
+                  interval={2500}
                   strings={([
                     "clean code",
                     "unit testing",  // "test-driven developement",
-                    "rust",
+                    "rust (programming language)",
                     "model training",
                     "supply chain security",
                     "github actions",
                     "cloud services and architecture",
-                    "mojo 🔥",
+                    "mojo 🔥 (programming language)",
                     "code optimization",
                   ])}
                 />
@@ -45,6 +47,25 @@ const Hero = () => {
               .
             </p>
 
+            {/*
+            <p className='mt-6'>
+              If I'm thinking about non-technical stuff, I'm probably thinking about&nbsp;
+              <span className='emphasized-3'>
+                <StringCycler
+                  interval={2500}
+                  strings={([
+                    "disc golf",
+                    "beer",
+                    "the next vacation",
+                    "whiskey",
+                    "working out",
+                  ])}
+                />
+
+              </span>
+              .
+            </p>
+            */}
 
           </div>
         </div>
@@ -53,7 +74,7 @@ const Hero = () => {
 
 
 
-      {/* <div className='absolute bottom-24 w-full flex justify-center items-center'>
+      <div className='absolute bottom-24 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary-light flex justify-center items-start p-2'>
             <motion.div
@@ -70,7 +91,7 @@ const Hero = () => {
             />
           </div>
         </a>
-      </div> */}
+      </div>
 
     </section>
   );
