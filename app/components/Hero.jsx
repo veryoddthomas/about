@@ -30,16 +30,16 @@ const Hero = () => {
               At the moment, I'm probably thinking about:&nbsp;
               <span className='emphasized-3'>
                 <StringCycler
-                  interval={2500}
+                  interval={1500}
                   strings={([
                     "clean code",
-                    "unit testing",  // "test-driven developement",
-                    "rust (programming language)",
+                    "unit testing and code coverage",  // "test-driven developement",
+                    "Rust",
                     "model training",
                     "supply chain security",
-                    "github actions",
+                    "Github actions",
                     "cloud services and architecture",
-                    "mojo 🔥 (programming language)",
+                    "Mojo 🔥",
                     "code optimization",
                   ])}
                 />
