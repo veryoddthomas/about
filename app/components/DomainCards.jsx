@@ -10,7 +10,7 @@ const DomainCards = () => {
     <>
       <motion.div variants={textVariant()}>
         <h1 className='pre-h1'>Technology</h1>
-        <h1>Domains</h1>
+        <h1 className='link'><a href='domains'>Domains</a></h1>
       </motion.div>
 
       <motion.div
