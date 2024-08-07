@@ -13,7 +13,7 @@ const experiences = [
     date: "Oct 2017 - Dec 2023",
     summary: "Managed overall software delivery for Qualcomm's Trusted Execution Environment (QTEE).",
     points: [
-      "Managed overall software delivery for Qualcomm's Trusted Execution Environment (QTEE).",
+      "Managed software delivery for our secure systems, including Qualcomm's Trusted Execution Environment (QTEE).",
     ],
     detailed_points: [
       "Led a global team of 30+ engineers responsible for end-to-end delivery of Qualcomm's Trusted Execution Environment (QTEE). The team was highly execution focused, and process optimization and robustness were key to success through scalability.",
@@ -106,8 +106,8 @@ const experiences = [
       "Identified and characterized bug in the ARM L2 cache controller we were using, which led to ARM HW rev.",
       "Tuned clocks, caches, and bus controllers for performance/power tradeoffs.",
       "Managed builds and releases for the Qualcomm Windows Mobile platform.",
-      "Implmented on-chip CPRM support (DRM for SD cards).",
-      "Was the 4C entity adopter contact for the Qualcomm.",
+      "Implemented on-chip CPRM support (DRM for SD cards).",
+      "Was the 4C entity adopter contact for Qualcomm.",
     ],
     languages: [
       "c",

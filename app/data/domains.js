@@ -21,7 +21,7 @@ and Alpha architectures.  And yes, I had to test and debug them
 on all of those platforms.
             `, `
 Since then, I have also worked on Qualcomm's BREW
-operating system, Android, Windows Mobile, and Embedded Linux
+operating system, Android, Windows on Arm, and Embedded Linux
 releases for Snapdragon.
             `, `
 Never having worked for Apple, my only impact on the shipping
@@ -60,26 +60,26 @@ project was the epitome of being thrown into the deep end.
         icon: mobile,
         desc: [
             `
-TBD.
+Early on, I worked on what was basically a bare-metal internal operating system
+on a processor with an ARM core, combined with Qualcomm's Binary Runtime
+Environment for Wireless(BREW).  The highest priority, beyond basic functionality,
+was to minimize power consumption.
+            `, `
+Later, additional cores (including CPUs, DSPs, GPUs, and NPUs) were added to expand
+the capabilities of the platform.
+            `, `
+As the technology evolved, Android and Embedded Linux became the dominant
+platforms for newer, high-end phones that had more memory and faster processors.
+Then the lower-tier phones caught up with the resource requirements and the
+decision was made to move all new devices to Android(or Windows)
+for all phone tiers.
+            `, `
+As we leveraged more external code, a lot of the software burden shifted to
+large scale integration and verification, as well as dealing with
+requirements for open-source tracking and licensing.  We also had to build
+a secure-boot chain and secure execution environment that could co-exist with
+a host operating system, as well as an ecosystem to protect the integrity of both.
             `,
-
-            // Early on, I worked on what was basically a bare-metal internal operating system
-            // on a processor with an ARM core, combined with Qualcomm's Binary Runtime
-            // Environment for Wireless (BREW).  The highest priority, beyond basic functionality,
-            // was to minimize power consumption.  That was central to all software architecture
-            // considerations.
-            //             `, `
-            // As the industry progressed, Android and Embedded Linux became the dominant
-            // platforms for newer, high end phone that had more memory and faster processors.
-            // Then the lower-tier phones caught up with the resource requirements and the
-            // decision was made to stop maintaining the BREW OS and use Android (or Windows)
-            // for all phone tiers.
-            //             `, `
-            // As we leveraged more external code, a lot of the software burden shifted to
-            // large scale integration and verification, as well as introducing heavy duty
-            // requirements for open-source tracking and building a secure-boot and secure execution
-            // environment that could interoperate with Android.
-            //             `,
         ],
     },
     {
@@ -102,26 +102,12 @@ TBD.
             `
 In the Secure Systems Group at Qualcomm, I worked on all aspects of delivering
 a secure platform for Snapdragon devices.  I dealt with the entire secure-software
-stack, including secure-boot, debug, hypervisor(s), the trusted
-execution environment and trusted applications that ran within it. I was also
-involved in managing supply-chain security, responsible open-source usage and
+stack, including secure-boot, debug, hypervisor(s), the trusted execution
+environment and trusted applications that ran within it.  I was also
+involved in supply-chain security, ensuring responsible open-source usage and
 licensing, static analysis of the codebase, fuzzing of the system components,
 code signing, continuous integration and delivery, and CVE/vulnerability mitigation.
             `,
-
-            //             `, `
-            // Static Analysis and Fuzzing.  Trusted Execution Evironments (TEEs).  Secure Boot.  Secure Enclaves.
-            //             `, `
-            // Vulnerability tracking and mitigation leveraging the Common Vulnerabilities and Exposures (CVE) database.
-            //             `, `
-            // Incident response and forensics.
-            //             `, `
-            // Supply Chain Levels for Software Artifacts (SLSA)
-            //             `, `
-            // Software Bill of Materials (SBOM)
-            //             `, `
-            // Secure Software Development Framework (SSDF)
-
         ],
     },
 ];
