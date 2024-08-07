@@ -130,7 +130,7 @@ const DetailedContents = ({ experience }) => {
 }
 
 const ExperienceCard = ({ experience }) => {
-  const summary = true;
+  const summary = false;
   const company_name = experience.company_name;
   const date = experience.date;
   const icon = experience.icon;
