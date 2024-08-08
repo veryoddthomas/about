@@ -221,7 +221,7 @@ const experiences = [
     date: "Feb 1990 - Jun 1992",
     summary: "Developed and maintained control software for digital test equipment.",
     points: [
-      "Worked full time (flexibly) while attending UCSD",
+      "Worked 25-40 hours per week while attending UCSD",
       "Developed and maintained software for several electronic test systems",
       "Designed and developed software for a digital power spectrum analyzer.",
     ],
@@ -241,29 +241,34 @@ const experiences = [
       "68k-asm",
     ],
   },
-  {
-    title: "Engineering Assistant (Intern) - Code 54 (special projects)",
-    company_name: "NAVELEX/FLTCORGRU 1 (DOD)",
-    icon: dod,
-    iconBg: "#fff",   // "#383E56"
-    date: "Oct 1987 - Feb 1990",
-    summary: "Problem solving in a team of troubleshooters.",
-    points: [
-      "Held a U.S. secret clearance",
-      "███████████████",
-      "████████████████████████",
-      "█████ and then ███████",
-    ],
-    detailed_points: [
-      "Can you keep a secret?",
-      "Good, me too.",
-    ],
-    languages: [
-      "c",
-      "pascal",
-      "dbase",
-    ],
-  },
+  // {
+  //   title: "Engineering Assistant (Intern) - Code 54 (special projects)",
+  //   company_name: "NAVELEX (DOD)",
+  //   icon: dod,
+  //   iconBg: "#fff",   // "#383E56"
+  //   date: "Oct 1987 - Feb 1990",
+  //   summary: "Problem solving in a team of troubleshooters.",
+  //   points: [
+  //     "Held a U.S. secret clearance.",
+  //     "Solved whatever problems arose.",
+  //     "██████ █████ ████.",
+  //     "█████ and then ███████.",
+  //   ],
+  //   detailed_points: [
+  //     "Held a U.S. secret clearance.",
+  //     "Maintained document-control system for classified information.",
+  //     "Built tooling to manipulate AutoCAD plot files to support new paper sizes.",
+  //     "Implemented software to transfer encoded files from a DEC PDP-8 to PC and transcode to ASCII text.",
+  //     "Redesigned database used to track technical feedback reports to optimize it significantly.",
+  //     "The rest is classified..."
+  //   ],
+  //   languages: [
+  //     "c",
+  //     "pascal",
+  //     "basic",
+  //     "dbase",
+  //   ],
+  // },
 ];
 
 export { experiences };
