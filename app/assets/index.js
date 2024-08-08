@@ -43,6 +43,7 @@ import gears from "./tech/gears.png";
 import asm from "./tech/asm.png";
 import ucsd from "./ucsd.png";  // "./ucsd-seal.png"
 import valhalla from "./company/valhalla.png";
+import dod from "./dod.png";
 
 
 export {
@@ -86,5 +87,6 @@ export {
   gears,
   asm,
   ucsd,
-  valhalla
+  valhalla,
+  dod,
 };

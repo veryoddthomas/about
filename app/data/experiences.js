@@ -4,6 +4,7 @@ import {
   snapdragon,
   ucsd,
   valhalla,
+  dod,
 } from "../assets";
 
 const experiences = [
@@ -238,6 +239,29 @@ const experiences = [
     languages: [
       "c",
       "68k-asm",
+    ],
+  },
+  {
+    title: "Engineering Assistant (Intern) - Code 54 (special projects)",
+    company_name: "NAVELEX/FLTCORGRU 1 (DOD)",
+    icon: dod,
+    iconBg: "#fff",   // "#383E56"
+    date: "Oct 1987 - Feb 1990",
+    summary: "Problem solving in a team of troubleshooters.",
+    points: [
+      "Held a U.S. secret clearance",
+      "███████████████",
+      "████████████████████████",
+      "█████ and then ███████",
+    ],
+    detailed_points: [
+      "Can you keep a secret?",
+      "Good, me too.",
+    ],
+    languages: [
+      "c",
+      "pascal",
+      "dbase",
     ],
   },
 ];
