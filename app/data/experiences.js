@@ -2,6 +2,8 @@ import {
   conexant,
   microsoft,
   snapdragon,
+  ucsd,
+  valhalla,
 } from "../assets";
 
 const experiences = [
@@ -175,7 +177,68 @@ const experiences = [
       "alpha-asm",
       "powerpc-asm",
     ],
+  },
+  {
+    title: "Bachelor's Degree, Computer Science",
+    company_name: "UCSD",
+    icon: ucsd,
+    iconBg: "#fff",
+    date: "Sep 1989 - Jun 1992",
+    summary: "Additional Programs of Concentration (pseudo minors) in Psychology and Music",
+    points: [
+      "Computer Science",
+      "Software Construction",
+      "C++",
+    ],
+    detailed_points: [
+      "Computer Architecture",
+      "Data Structures and Algorithms",
+      "Digital Logic",
+      "Algorithm Analysis",
+      "Discrete Mathematics",
+      "Operating Systems",
+      "Object Oriented Design",
+      "Compiler Construction",
+      "Software Engineering",
 
+    ],
+    languages: [
+      "c++",
+      "c",
+      "asm",
+      "prolog",
+      "lisp",
+      "fortran",
+      "pascal",
+    ],
+  },
+  {
+    title: "Software Engineer, Firmware/BSP",
+    company_name: "Valhalla Scientific",
+    icon: valhalla,
+    iconBg: "#fff",   // "#383E56"
+    date: "Feb 1990 - Jun 1992",
+    summary: "Developed and maintained control software for digital test equipment.",
+    points: [
+      "Worked full time (flexibly) while attending UCSD",
+      "Developed and maintained software for several electronic test systems",
+      "Designed and developed software for a digital power spectrum analyzer.",
+    ],
+    detailed_points: [
+      "Co-developed software and firmware for a Motorola 68000 host, a Motorola DSP56001 coprocessor, and an Analog Devices ADSP2101 coprocessor for a digital power spectrum analyzer.",
+      "Developed a PC based simulator for our spectrum analyzer. We were able to test more than 75% of our code in the PC environment. This helped us deal with rapidly changing user interface requirements.",
+      "Completed Motorola certification program for the DSP56001 microprocessor.",
+      "Maintained firmware for several existing electronic test equipment systems.",
+      "Assisted in design and debug of power-analyzer programmable logic devices (Altera PLDs).",
+      "Designed and implemented control software for a digital high potential dielectric breakdown tester.",
+      "Designed and implemented high performance/high resolution adaptive DAC control software system to maintain 1V resolution at 7KV under varying load conditions.",
+      "Developed a graphic PC based simulator for the high voltage tester.",
+      "Implemented communications protocols for RS-232 and GPIB IEEE.488.2 general purpose parallel bi-directional bus.",
+    ],
+    languages: [
+      "c",
+      "68k-asm",
+    ],
   },
 ];
 
