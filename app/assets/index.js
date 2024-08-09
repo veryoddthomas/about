@@ -44,6 +44,7 @@ import asm from "./tech/asm.png";
 import ucsd from "./ucsd.png";  // "./ucsd-seal.png"
 import valhalla from "./company/valhalla.png";
 import dod from "./dod.png";
+import src from "./src.png";
 
 
 export {
@@ -89,4 +90,5 @@ export {
   ucsd,
   valhalla,
   dod,
+  src,
 };
