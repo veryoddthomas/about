@@ -49,7 +49,7 @@ const FullMenu = ({ showSize }) => {
       {navLinks.map((nav) => (
         <li
           key={nav.id}
-          className={'text-primary-light hover:text-secondary-light text-[18px] font-medium cursor-pointer'}
+          className={'text-primary-light hover:text-secondary-light text-xl font-medium cursor-pointer'}
         >
           <a href={`${nav.page}#${nav.fragment}`}>{nav.title}</a>
         </li>
@@ -83,10 +83,25 @@ const CompressedMenu = ({ hideSize }) => {
     }
   };
 
+  const handleEscape = (event) => {
+    if (event.key === 'Escape') {
+      if (menuRef.current) {
+        setToggle(false);
+      }
+    }
+  };
+
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleEscape);
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
     };
   }, []);
 
@@ -111,7 +126,7 @@ const CompressedMenu = ({ hideSize }) => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`text-primary-light font-black hover:bg-primary-dark hover:text-secondary-light`}
+              className={`text-primary-light text-xl font-bold hover:bg-primary-dark hover:text-secondary-light`}
               onClick={() => { setToggle(!toggle); }}
             >
               <a href={`${nav.page}#${nav.fragment}`}>{nav.title}</a>
@@ -165,7 +180,6 @@ const Navbar = () => {
         {/* <FullMenu showSize={'lg:flex'} />
         <CompressedMenu hideSize={'lg:hidden'} /> */}
         <CompressedMenu />
-
         <NameLogo />
       </div>
     </nav>
