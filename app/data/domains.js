@@ -25,7 +25,7 @@ operating system, Android, Windows on Arm, and Embedded Linux
 releases for Snapdragon.
             `, `
 Never having worked for Apple, my only impact on the shipping
-versions of iOS and OSX were via contributions to the WebKit
+versions of iOS and OSX was via contributions to the WebKit
 open-source project which provides the rendering engine for Safari.
             `,
         ],
