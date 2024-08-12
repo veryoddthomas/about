@@ -16,7 +16,6 @@ const DomainCards = () => {
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-primary lg:text-[20px] text-[18px] leading-[30px]'
-      // max-w-3xl
       >
 
         {/* <h2 className='link mt-16'><a href='domains'>Domains</a></h2> */}
