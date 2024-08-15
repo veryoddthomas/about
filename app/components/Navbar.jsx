@@ -12,7 +12,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 const navLinks = [
   { page: "/", fragment: "", id: "/#", title: "Welcome", },
   { page: "/", fragment: "experience", id: "/#experience", title: "Experience", },
-  { page: "/", fragment: "about", id: "/#about", title: "Overview", },
+  { page: "/", fragment: "overview", id: "/#overview", title: "Overview", },
   { page: "/", fragment: "domains", id: "/#domains", title: "Technology Domains", },
   { page: "/", fragment: "languages", id: "/#languages", title: "Programming Languages", },
   { page: "/", fragment: "contact", id: "/#contact", title: "Contact Me", },

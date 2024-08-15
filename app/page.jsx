@@ -1,9 +1,8 @@
 "use client";
 
-// import { About, Contact, Experience, Hero } from "./components";
 import Welcome from "./components/Welcome";
 import Contact from "./components/Contact";
-import About from "./components/About";
+import Overview from "./components/Overview";
 import DomainCards from "./components/DomainCards";
 import LanguageCards from "./components/LanguageCards";
 import Experience from "./components/Experience";
@@ -18,7 +17,7 @@ export default function Home() {
       </div>
       {/* <Mission /> */}
       <Experience />
-      <About />
+      <Overview />
       <DomainCards />
       <LanguageCards />
       <Contact />

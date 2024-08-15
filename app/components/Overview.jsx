@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { AnimatedSection } from ".";
 
-const About = () => {
+const Overview = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -40,4 +40,4 @@ const About = () => {
   );
 };
 
-export default AnimatedSection(About, "about");
+export default AnimatedSection(Overview, "overview");
