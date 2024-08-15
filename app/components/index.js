@@ -1,4 +1,4 @@
-import Hero from "./Hero";
+import Welcome from "./Welcome";
 import Navbar from "./Navbar";
 import About from "./About";
 import Contact from "./Contact";
@@ -8,7 +8,7 @@ import Experience from "./Experience";
 
 
 export {
-  Hero,
+  Welcome as Hero,
   Navbar,
   About,
   Contact,
