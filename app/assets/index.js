@@ -45,6 +45,7 @@ import ucsd from "./ucsd.png";  // "./ucsd-seal.png"
 import valhalla from "./company/valhalla.png";
 import dod from "./dod.png";
 import src from "./src.png";
+import qrcode from "./qrcode.png";
 
 
 export {
@@ -91,4 +92,5 @@ export {
   valhalla,
   dod,
   src,
+  qrcode,
 };

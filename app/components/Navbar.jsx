@@ -16,6 +16,7 @@ const navLinks = [
   { page: "/", fragment: "domains", id: "/#domains", title: "Technology Domains", },
   { page: "/", fragment: "languages", id: "/#languages", title: "Programming Languages", },
   { page: "/", fragment: "contact", id: "/#contact", title: "Contact Me", },
+  { page: "qrcode", fragment: "", id: "/qrcode#", title: "QR Code", },
   // { page: "domains", fragment: "", id: "/domain#", title: "Domains", },
   // { page: "languages", fragment: "", id: "/languages#", title: "Languages", },
 ];
