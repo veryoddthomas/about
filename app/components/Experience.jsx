@@ -13,9 +13,9 @@ import {
 import { complex, motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
-import { experiences } from "../data/experiences";
-import { AnimatedSection } from ".";
-import { textVariant } from "../utils/motion";
+import { experiences } from "../data/experiences.js";
+import { AnimatedSection } from "./index.js";
+import { textVariant } from "../utils/motion.js";
 import Image from "next/image";
 
 
@@ -207,8 +207,8 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h1 className={'pre-h1 text-center'}>Career</h1>
-        <h1 className={'text-center'}>Work Experience</h1>
+        <h1 className={'pre-h1 text-center'}>Career / Education</h1>
+        <h1 className={'text-center'}>Experience</h1>
       </motion.div>
 
       <div className='mt-8 lg:mt-16 flex flex-col'>
@@ -232,4 +232,4 @@ const Experience = () => {
   );
 };
 
-export default AnimatedSection(Experience, "work");
+export default AnimatedSection(Experience, "experience");
