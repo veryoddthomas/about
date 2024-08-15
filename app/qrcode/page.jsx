@@ -6,9 +6,8 @@ export default function QRCode() {
         <main className="bg-primary-dark">
             <div className='page-setup'>
                 <h1>QR Code</h1>
-                <h3 className='text-primary mt-12'>https://veryoddthomas.vercel.app/</h3>
 
-                <div className='flex flex-wrap my-8   '>
+                <div className='flex flex-wrap mt-8   '>
                     <Image
                         src={qrcode}
                         alt={'https://veryoddthomas.vercel.app/'}
@@ -17,6 +16,7 @@ export default function QRCode() {
                         className='object-contain inline align-left object-left mr-4'
                     />
                 </div>
+                <p className='text-primary-light mt-2'>veryoddthomas.vercel.app</p>
 
 
                 {/* The following pads below the last entry so that following
