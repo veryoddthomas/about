@@ -1,4 +1,4 @@
-import { domains } from "../data/domains";
+import { domains } from "../../data/domains";
 
 
 const DomainDescription = ({ title, id, desc, icon, index }) => (

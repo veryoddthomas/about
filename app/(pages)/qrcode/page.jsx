@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { qrcode } from "../assets";
+import { qrcode } from "../../assets";
 
 export default function QRCode() {
     return (
