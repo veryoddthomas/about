@@ -13,7 +13,7 @@ const Overview = () => {
 
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-primary text-xl leading-[30px]'
+        className='mt-4 text-primary text-2xl leading-[30px]'
       >
         <p>
           Throughout my career, I have worked on embedded systems, display drivers,
