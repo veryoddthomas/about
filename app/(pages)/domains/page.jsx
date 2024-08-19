@@ -1,4 +1,5 @@
 import { domains } from "../../data/domains";
+import PageEndDiv from "../../components/PageEndDiv";
 
 
 const DomainDescription = ({ title, id, desc, icon, index }) => (
@@ -47,11 +48,7 @@ export default function Domains() {
             index={index}
             {...domain} />
         ))}
-        {/* The following pads below the last entry so that following
-            the link will place the anchor at the top of the screen */}
-        <div className='min-h-screen min-w-full justify-center items-center flex flex-grow'>
-          The End 😀
-        </div>
+        <PageEndDiv />
       </div>
     </main >
   );

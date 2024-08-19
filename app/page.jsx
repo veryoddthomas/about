@@ -7,6 +7,9 @@ import DomainCards from "./components/DomainCards";
 import LanguageCards from "./components/LanguageCards";
 import Experience from "./components/Experience";
 import Mission from "./components/Mission";
+import Image from "next/image";
+import { tomz } from "./assets";
+import PageEndDiv from "./components/PageEndDiv";
 
 
 export default function Home() {
@@ -20,12 +23,9 @@ export default function Home() {
       <Overview />
       <DomainCards />
       <LanguageCards />
-      <Contact />
-      {/* The following pads below the last entry so that following
-            the link will place the anchor at the top of the screen */}
-      <div className='min-h-screen min-w-full justify-center items-center flex flex-grow'>
-        The End 😀
-      </div>
+      <PageEndDiv>
+        <Contact />
+      </PageEndDiv>
     </main>
   );
 }
