@@ -25,6 +25,7 @@
   .page-setup {
     /* @apply bg-primary-dark  */
     @apply absolute inset-0 top-[120px]  max-w-7xl mx-auto px-6
+           /* pb-[100vh] */
   }
 
   .page-title {
@@ -45,6 +46,9 @@
   p {
     @apply my-6
   }
+
+  /* .last-page-blank { @apply min-h-screen min-w-full flex flex-grow justify-center items-center }
+  .last-page-link { @apply min-h-screen min-w-full flex flex-grow } */
 
   .title-size { @apply text-5xl lg:text-8xl }
   .pre-h1-size { @apply text-sm lg:text-xl }

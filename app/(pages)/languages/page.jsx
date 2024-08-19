@@ -1,5 +1,6 @@
 import { languages, proficiency_ratings } from "../../data/languages";
-// import Image from "next/image";
+import Image from "next/image";
+import PageEndDiv from "../../components/PageEndDiv";
 
 
 const LanguageDescription = ({ title, id, desc, proficiency, icon, index }) => (
@@ -57,11 +58,7 @@ export default function Languages() {
             index={index}
             {...language} />
         ))}
-        {/* The following pads below the last entry so that following
-            the link will place the anchor at the top of the screen */}
-        <div className='min-h-screen min-w-full justify-center items-center flex flex-grow'>
-          The End 😀
-        </div>
+        <PageEndDiv center={false} />
       </div>
     </main>
   );

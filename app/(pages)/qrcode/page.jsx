@@ -17,14 +17,6 @@ export default function QRCode() {
                     />
                 </div>
                 <p className='text-primary-light mt-2'>veryoddthomas.vercel.app</p>
-
-
-                {/* The following pads below the last entry so that following
-                    the link will place the anchor at the top of the screen */}
-                {/* <div className='min-h-screen min-w-full justify-center items-center flex flex-grow'>
-                    The End 😀
-                </div> */}
-
             </div>
         </main>
     );
