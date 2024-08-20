@@ -19,13 +19,6 @@ const Welcome = () => {
               with a passion for software craftsmanship and developing strong teams.
             </p>
 
-            {/* <p className='mt-6'>
-              I have worked for
-              &nbsp;<span className='emphasized-1'>Microsoft</span>&nbsp; and
-              &nbsp;<span className='emphasized-1'>Qualcomm</span>&nbsp;
-              as well as Conexant, Valhalla Scientific, and the DOD.
-            </p> */}
-
             <p className='mt-6'>
               At the moment, I'm probably thinking about:&nbsp;
               <span className='emphasized-1'>
@@ -46,33 +39,9 @@ const Welcome = () => {
               </span>
               .
             </p>
-
-            {/*
-            <p className='mt-6'>
-              If I'm thinking about non-technical stuff, I'm probably thinking about&nbsp;
-              <span className='emphasized-3'>
-                <StringCycler
-                  interval={2500}
-                  strings={([
-                    "disc golf",
-                    "beer",
-                    "the next vacation",
-                    "whiskey",
-                    "working out",
-                  ])}
-                />
-
-              </span>
-              .
-            </p>
-            */}
-
           </div>
         </div>
       </div>
-
-
-
 
       <div className='absolute bottom-24 w-full flex justify-center items-center'>
         <a href='#about'>
