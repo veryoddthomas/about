@@ -27,12 +27,17 @@ const Welcome = () => {
                   strings={([
                     "clean code",
                     "unit testing and code coverage",  // "test-driven developement",
+                    "code reviews",
                     "Rust",
                     "model training",
-                    "supply chain security",
+                    "hardware abstraction layers",
+                    "embeded device architecture",
+                    "supply-chain security",
+                    "supply-chain reliability",
                     "Github actions",
                     "cloud services and architecture",
                     "Mojo 🔥",
+                    "superconducting quantum interference devices (SQUIDs)",
                     "code optimization",
                   ])}
                 />
