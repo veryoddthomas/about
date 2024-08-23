@@ -95,7 +95,7 @@ const Contact = () => {
           </Link>
           &nbsp;
           &nbsp;
-          <span>or just drop me a line below.</span>
+          <span>or just drop me a line below.</span>&nbsp;&nbsp;<span className='text-tertiary'>Feedback about the site is welcome.</span>
           {/* </div> */}
         </div>
 

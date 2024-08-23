@@ -114,7 +114,7 @@ const DetailedContents = ({ experience }) => {
 
         <div className="relative group-not-hover my-rotate-y-180 backface-hidden overflow-hidden" >
           <div className="absolute inset-0 flex items-center justify-center">
-            <p className="text-secondary-light font-bold opacity-50 z-0 -rotate-45 scale-[5] lg:scale-[8]">TL;DR</p>
+            <p className="text-secondary-light font-bold opacity-30 z-0 -rotate-45 scale-[5] lg:scale-[8]">TL;DR</p>
           </div>
           <ul className='mt-5 list-disc ml-5 space-y-2'>
             {experience.detailed_points.map((point, index) => (
@@ -169,7 +169,7 @@ const CompanyCard = ({ experiencesAtCompany }) => {
   return (
     <TimelineElementWrapper company_name={company_name} date={date} icon={icon} iconBg={iconBg}>
       <div>
-        <h3 className='text-primary-light text-xl font-bold'>{experiencesAtCompany[0].company_name}</h3>
+        <h3 className='text-primary-light h3-size font-black uppercase'>{experiencesAtCompany[0].company_name}</h3>
         <h3 className='text-secondary-light text-xl font-bold mt-1' >
           <div className='flex flex-col'>
             {/* list-disc */}
@@ -195,6 +195,7 @@ const Experience = () => {
   const experiencesGroupedByCompany = experiences.reduce((acc, curr) => {
     if (!acc[curr.company_name]) {
       acc[curr.company_name] = [];
+
     }
     acc[curr.company_name].push(curr);
     return acc;

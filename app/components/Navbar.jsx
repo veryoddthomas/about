@@ -4,7 +4,7 @@ import { React, useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
-import { logo, menu, close } from "../assets";
+import { logo, menu, close, src } from "../assets";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -16,6 +16,7 @@ const navLinks = [
   { page: "/", fragment: "domains", id: "/#domains", title: "Technology Domains", },
   { page: "/", fragment: "languages", id: "/#languages", title: "Programming Languages", },
   { page: "/", fragment: "contact", id: "/#contact", title: "Contact Me", },
+  { page: "qrcode", fragment: "", id: "/qrcode#", title: "QR Code", },
   // { page: "domains", fragment: "", id: "/domain#", title: "Domains", },
   // { page: "languages", fragment: "", id: "/languages#", title: "Languages", },
 ];
@@ -24,25 +25,21 @@ const navLinks = [
 const NameLogo = () => {
   return (
     <span className="flex flex-row items-center gap-5">
-      < Link
-        href='/debug'
-        className='flex items-center gap-2'
-        onClick={() => { window.scrollTo(0, 0); }}
-      >
+      {/* < Link href='/debug' className='flex items-center gap-2' onClick={() => { window.scrollTo(0, 0); }} >
         <Image src={logo} alt='logo' className='w-9 h-9 object-contain' />
-
-        {/* <div className='text-primary-light hover:text-secondary-light text-[18px] font-bold cursor-pointer flex '>
-          <span className='lg:block hidden'>Tom Zakrajsek&nbsp;
-            &mdash; Software Engineer</span>
-        </div> */}
-      </Link >
+      </Link > */}
 
       <Link rel="noopener noreferrer" href={'https://github.com/veryoddthomas/'}>
         <FontAwesomeIcon icon={faGithub} size="2x" inverse />
       </Link>
+
       <Link rel="noopener noreferrer" href={'https://www.linkedin.com/in/tom-zakrajsek/'}>
         <FontAwesomeIcon icon={faLinkedin} size="2x" inverse />
       </Link>
+
+      < Link href={'https://github.com/veryoddthomas/about'} className='flex items-center gap-2'  >
+        <Image src={src} alt='source' className='w-9 h-9 object-contain' />
+      </Link >
     </span>
   );
 }
@@ -53,7 +50,7 @@ const FullMenu = ({ showSize }) => {
       {navLinks.map((nav) => (
         <li
           key={nav.id}
-          className={'text-primary-light hover:text-secondary-light text-[18px] font-medium cursor-pointer'}
+          className={'text-primary-light hover:text-secondary-light text-xl font-medium cursor-pointer'}
         >
           <a href={`${nav.page}#${nav.fragment}`}>{nav.title}</a>
         </li>
@@ -87,10 +84,25 @@ const CompressedMenu = ({ hideSize }) => {
     }
   };
 
+  const handleEscape = (event) => {
+    if (event.key === 'Escape') {
+      if (menuRef.current) {
+        setToggle(false);
+      }
+    }
+  };
+
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleEscape);
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
     };
   }, []);
 
@@ -115,7 +127,7 @@ const CompressedMenu = ({ hideSize }) => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`text-primary-light font-black hover:bg-primary-dark hover:text-secondary-light`}
+              className={`text-primary-light text-xl font-bold hover:bg-primary-dark hover:text-secondary-light`}
               onClick={() => { setToggle(!toggle); }}
             >
               <a href={`${nav.page}#${nav.fragment}`}>{nav.title}</a>
@@ -169,7 +181,6 @@ const Navbar = () => {
         {/* <FullMenu showSize={'lg:flex'} />
         <CompressedMenu hideSize={'lg:hidden'} /> */}
         <CompressedMenu />
-
         <NameLogo />
       </div>
     </nav>

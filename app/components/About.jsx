@@ -1,12 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { fadeIn, textVariant } from "../utils/motion";
 import { AnimatedSection } from ".";
-import { IconCard } from ".";
-
-import { domains } from "../data/domains";
-import { languages } from "../data/languages";
 
 const About = () => {
   return (
@@ -19,7 +14,6 @@ const About = () => {
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-primary text-xl leading-[30px]'
-      // max-w-3xl
       >
         <p>
           Throughout my career, I have worked on embedded systems, display drivers,

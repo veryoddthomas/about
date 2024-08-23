@@ -2,6 +2,9 @@ import {
   conexant,
   microsoft,
   snapdragon,
+  ucsd,
+  valhalla,
+  dod,
 } from "../assets";
 
 const experiences = [
@@ -13,7 +16,7 @@ const experiences = [
     date: "Oct 2017 - Dec 2023",
     summary: "Managed overall software delivery for Qualcomm's Trusted Execution Environment (QTEE).",
     points: [
-      "Managed overall software delivery for Qualcomm's Trusted Execution Environment (QTEE).",
+      "Managed software delivery for our secure systems, including Qualcomm's Trusted Execution Environment (QTEE).",
     ],
     detailed_points: [
       "Led a global team of 30+ engineers responsible for end-to-end delivery of Qualcomm's Trusted Execution Environment (QTEE). The team was highly execution focused, and process optimization and robustness were key to success through scalability.",
@@ -106,8 +109,8 @@ const experiences = [
       "Identified and characterized bug in the ARM L2 cache controller we were using, which led to ARM HW rev.",
       "Tuned clocks, caches, and bus controllers for performance/power tradeoffs.",
       "Managed builds and releases for the Qualcomm Windows Mobile platform.",
-      "Implmented on-chip CPRM support (DRM for SD cards).",
-      "Was the 4C entity adopter contact for the Qualcomm.",
+      "Implemented on-chip CPRM support (DRM for SD cards).",
+      "Was the 4C entity adopter contact for Qualcomm.",
     ],
     languages: [
       "c",
@@ -175,8 +178,96 @@ const experiences = [
       "alpha-asm",
       "powerpc-asm",
     ],
-
   },
+  {
+    title: "Bachelor's Degree, Computer Science",
+    company_name: "University of California, San Diego (UCSD)",
+    icon: ucsd,
+    iconBg: "#fff",
+    date: "Sep 1989 - Jun 1992",
+    summary: "Additional Programs of Concentration (pseudo minors) in Psychology and Music",
+    points: [
+      // "Computer Science",
+      // "Software Construction",
+      // "C++",
+    ],
+    detailed_points: [
+      // "Computer Architecture",
+      // "Data Structures and Algorithms",
+      // "Digital Logic",
+      // "Algorithm Analysis",
+      // "Discrete Mathematics",
+      // "Operating Systems",
+      // "Object Oriented Design",
+      // "Compiler Construction",
+      // "Software Engineering",
+    ],
+    languages: [
+      // "c++",
+      // "c",
+      // "asm",
+      // "prolog",
+      // "lisp",
+      // "fortran",
+      // "pascal",
+    ],
+  },
+  {
+    title: "Software Engineer, Firmware/BSP",
+    company_name: "Valhalla Scientific",
+    icon: valhalla,
+    iconBg: "#fff",   // "#383E56"
+    date: "Feb 1990 - Jun 1992",
+    summary: "Developed and maintained control software for digital test equipment.",
+    points: [
+      "Worked 25-40 hours per week while attending UCSD",
+      "Developed and maintained software for several electronic test systems",
+      "Designed and developed software for a digital power spectrum analyzer.",
+    ],
+    detailed_points: [
+      "Co-developed software and firmware for a Motorola 68000 host, a Motorola DSP56001 coprocessor, and an Analog Devices ADSP2101 coprocessor for a digital power spectrum analyzer.",
+      "Developed a PC based simulator for our spectrum analyzer. We were able to test more than 75% of our code in the PC environment. This helped us deal with rapidly changing user interface requirements.",
+      "Completed Motorola certification program for the DSP56001 microprocessor.",
+      "Maintained firmware for several existing electronic test equipment systems.",
+      "Assisted in design and debug of power-analyzer programmable logic devices (Altera PLDs).",
+      "Designed and implemented control software for a digital high potential dielectric breakdown tester.",
+      "Designed and implemented high performance/high resolution adaptive DAC control software system to maintain 1V resolution at 7KV under varying load conditions.",
+      "Developed a graphic PC based simulator for the high voltage tester.",
+      "Implemented communications protocols for RS-232 and GPIB IEEE.488.2 general purpose parallel bi-directional bus.",
+    ],
+    languages: [
+      "c",
+      "68k-asm",
+    ],
+  },
+  // {
+  //   title: "Engineering Assistant (Intern) - Code 54 (special projects)",
+  //   company_name: "NAVELEX (DOD)",
+  //   icon: dod,
+  //   iconBg: "#fff",   // "#383E56"
+  //   date: "Oct 1987 - Feb 1990",
+  //   summary: "Problem solving in a team of troubleshooters.",
+  //   points: [
+  //     "Held a U.S. secret clearance.",
+  //     "Solved whatever problems arose.",
+  //     "██████ █████ ████.",
+  //     "█████ and then ███████.",
+  //   ],
+  //   detailed_points: [
+  //     "Held a U.S. secret clearance.",
+  //     "Maintained document-control system for classified information.",
+  //     "Built tooling to manipulate AutoCAD plot files to support new paper sizes.",
+  //     "Implemented software to transfer encoded files from a DEC PDP-8 to PC and transcode to ASCII text.",
+  //     "Redesigned database used to track technical feedback reports to optimize it significantly.",
+  //     "The rest is classified..."
+  //   ],
+  //   languages: [
+  //     "c",
+  //     "pascal",
+  //     "basic",
+  //     "dbase",
+  //   ],
+  // },
 ];
 
 export { experiences };

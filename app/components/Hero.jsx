@@ -28,7 +28,7 @@ const Hero = () => {
 
             <p className='mt-6'>
               At the moment, I'm probably thinking about:&nbsp;
-              <span className='emphasized-3'>
+              <span className='emphasized-1'>
                 <StringCycler
                   interval={1500}
                   strings={([

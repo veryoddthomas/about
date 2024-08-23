@@ -7,6 +7,7 @@ import About from "./components/About";
 import DomainCards from "./components/DomainCards";
 import LanguageCards from "./components/LanguageCards";
 import Experience from "./components/Experience";
+import Mission from "./components/Mission";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         {/* <Navbar /> */}
         <Hero />
       </div>
+      {/* <Mission /> */}
       <Experience />
       <About />
       <DomainCards />
