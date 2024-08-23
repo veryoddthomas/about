@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import StringCycler from './StringCycler';
 
-const Hero = () => {
+const Welcome = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div className={'page-setup'}>
@@ -97,4 +97,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Welcome;

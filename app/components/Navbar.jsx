@@ -10,13 +10,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const navLinks = [
-  { page: "/", fragment: "", id: "/#", title: "Home", },
-  { page: "/", fragment: "work", id: "/#work", title: "Experience", },
-  { page: "/", fragment: "about", id: "/#about", title: "Overview", },
+  { page: "/", fragment: "", id: "/#", title: "Welcome", },
+  { page: "/", fragment: "experience", id: "/#experience", title: "Experience", },
+  { page: "/", fragment: "overview", id: "/#overview", title: "Overview", },
   { page: "/", fragment: "domains", id: "/#domains", title: "Technology Domains", },
   { page: "/", fragment: "languages", id: "/#languages", title: "Programming Languages", },
   { page: "/", fragment: "contact", id: "/#contact", title: "Contact Me", },
-  { page: "qrcode", fragment: "", id: "/qrcode#", title: "QR Code", },
+  { page: "about", fragment: "", id: "/about#", title: "About", },
+  // { page: "qrcode", fragment: "", id: "/qrcode#", title: "QR Code", },
   // { page: "domains", fragment: "", id: "/domain#", title: "Domains", },
   // { page: "languages", fragment: "", id: "/languages#", title: "Languages", },
 ];
@@ -37,9 +38,9 @@ const NameLogo = () => {
         <FontAwesomeIcon icon={faLinkedin} size="2x" inverse />
       </Link>
 
-      < Link href={'https://github.com/veryoddthomas/about'} className='flex items-center gap-2'  >
+      {/* < Link href={'https://github.com/veryoddthomas/about'} className='flex items-center gap-2'  >
         <Image src={src} alt='source' className='w-9 h-9 object-contain' />
-      </Link >
+      </Link > */}
     </span>
   );
 }

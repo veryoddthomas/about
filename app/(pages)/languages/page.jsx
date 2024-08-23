@@ -1,4 +1,4 @@
-import { languages, proficiency_ratings } from "../data/languages";
+import { languages, proficiency_ratings } from "../../data/languages";
 // import Image from "next/image";
 
 

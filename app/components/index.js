@@ -1,6 +1,6 @@
-import Hero from "./Hero";
+import Welcome from "./Welcome";
 import Navbar from "./Navbar";
-import About from "./About";
+import Overview from "./Overview";
 import Contact from "./Contact";
 import AnimatedSection from "./AnimatedSection";
 import IconCard from "./IconCard";
@@ -8,9 +8,9 @@ import Experience from "./Experience";
 
 
 export {
-  Hero,
+  Welcome,
   Navbar,
-  About,
+  Overview,
   Contact,
   AnimatedSection,
   IconCard,

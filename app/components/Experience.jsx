@@ -13,9 +13,9 @@ import {
 import { complex, motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
-import { experiences } from "../data/experiences";
-import { AnimatedSection } from ".";
-import { textVariant } from "../utils/motion";
+import { experiences } from "../data/experiences.js";
+import { AnimatedSection } from "./index.js";
+import { textVariant } from "../utils/motion.js";
 import Image from "next/image";
 
 
@@ -26,7 +26,7 @@ const TimelineElementWrapper = ({ children, company_name, date, icon, iconBg }) 
       // https://github.com/stephane-monnot/react-vertical-timeline/issues/166
       visible={true}
       contentStyle={{
-        background: colors.primary['900'],  // ref: https://tailwindcss.com/docs/customizing-colors
+        background: company_name.includes('UCSD') ? colors.tertiary['950'] : colors.primary['900'],  // ref: https://tailwindcss.com/docs/customizing-colors
         color: "#fff",
         border: "1px solid #fff",
         borderRadius: "12px",
@@ -207,8 +207,8 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h1 className={'pre-h1 text-center'}>Career</h1>
-        <h1 className={'text-center'}>Work Experience</h1>
+        <h1 className={'pre-h1 text-center'}>Career / Education</h1>
+        <h1 className={'text-center'}>Experience</h1>
       </motion.div>
 
       <div className='mt-8 lg:mt-16 flex flex-col'>
@@ -232,4 +232,4 @@ const Experience = () => {
   );
 };
 
-export default AnimatedSection(Experience, "work");
+export default AnimatedSection(Experience, "experience");
