@@ -37,7 +37,6 @@ export default function Domains() {
         <div className='flex flex-wrap my-8 '>
           {domains.map((domain, index) => (
             <h2 key={domain.id} className='p-2 mx-2 my-1 text-tertiary-light text-base  border-primary border-2 rounded-2xl hover:bg-tertiary-dark'>
-              {/* {console.log(domain.id)} */}
               <a href={'#' + domain.id} className=""> {domain.title} </a>
             </h2>
           ))}
@@ -50,7 +49,9 @@ export default function Domains() {
         ))}
         {/* The following pads below the last entry so that following
             the link will place the anchor at the top of the screen */}
-        <div className='min-h-screen flex flex-grow' />
+        <div className='min-h-screen min-w-full justify-center items-center flex flex-grow'>
+          The End 😀
+        </div>
       </div>
     </main >
   );

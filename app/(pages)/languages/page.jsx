@@ -59,7 +59,9 @@ export default function Languages() {
         ))}
         {/* The following pads below the last entry so that following
             the link will place the anchor at the top of the screen */}
-        <div className='min-h-screen flex flex-grow' />
+        <div className='min-h-screen min-w-full justify-center items-center flex flex-grow'>
+          The End 😀
+        </div>
       </div>
     </main>
   );
