@@ -210,7 +210,7 @@ const Experience = () => {
     <>
       <motion.div variants={textVariant()}>
         <h1 className={'pre-h1 text-center'}>Career / Education</h1>
-        <h1 className='text-center link'><a href='experience'>Experience</a></h1>
+        <h1 className='text-center'><a href='experience'>Experience</a></h1>
 
       </motion.div>
 
