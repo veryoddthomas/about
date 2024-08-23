@@ -46,6 +46,7 @@ import valhalla from "./company/valhalla.png";
 import dod from "./dod.png";
 import src from "./src.png";
 import qrcode from "./qrcode.png";
+import tomz from "./tom-z-mercury-dark.png";
 
 
 export {
@@ -93,4 +94,5 @@ export {
   dod,
   src,
   qrcode,
+  tomz,
 };

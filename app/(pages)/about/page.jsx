@@ -43,13 +43,6 @@ export default function About() {
             className='w-64 h-64 object-contain inline align-left object-left mr-4'
           />
         </div>
-
-        {/* The following pads below the last entry so that following
-                    the link will place the anchor at the top of the screen */}
-
-        {/* <div className='min-h-screen min-w-full justify-center items-center flex flex-grow'>
-          The End 😀
-        </div> */}
       </div>
     </main >
   );
