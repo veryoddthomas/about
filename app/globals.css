@@ -46,11 +46,11 @@
     @apply my-6
   }
 
-  .title-size { @apply text-5xl lg:text-8xl }
   .pre-h1-size { @apply text-sm lg:text-xl }
   .h1-size { @apply text-4xl lg:text-6xl }
   .h2-size { @apply text-3xl }
   .h3-size { @apply text-2xl }
+  .title-size { @apply h1-size }
 
   .pre-h1 { @apply pre-h1-size text-primary-light uppercase tracking-wider my-4 }
   h1 { @apply text-secondary-light font-black h1-size }
