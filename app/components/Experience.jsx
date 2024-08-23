@@ -1,4 +1,3 @@
-// console.log(experiencesAtCompany.experiencesAtCompany[0]);
 import React from "react";
 
 import resolveConfig from 'tailwindcss/resolveConfig'
@@ -208,23 +207,24 @@ const Experience = () => {
     <>
       <motion.div variants={textVariant()}>
         <h1 className={'pre-h1 text-center'}>Career / Education</h1>
-        <h1 className={'text-center'}>Experience</h1>
+        <h1 className='text-center link'><a href='experience'>Experience</a></h1>
+
       </motion.div>
 
       <div className='mt-8 lg:mt-16 flex flex-col'>
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
+          {/* {experiences.map((experience, index) => (
             <ExperienceCard
               key={`experience-${index}`}
               experience={experience}
             />
-          ))}
+          ))} */}
 
-          {/* {Object.keys(experiencesGroupedByCompany).map((company, index) => (
+          {Object.keys(experiencesGroupedByCompany).map((company, index) => (
             // console.log(company),
             // console.log(JSON.stringify(experiencesGroupedByCompany[company])),
             <CompanyCard experiencesAtCompany={experiencesGroupedByCompany[company]} />
-          ))} */}
+          ))}
 
         </VerticalTimeline>
       </div>
