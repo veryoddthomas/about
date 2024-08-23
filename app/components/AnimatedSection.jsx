@@ -11,13 +11,11 @@ const AnimatedSection = (Component, idName) =>
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.1 }}
-        className={'sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0'}
+        className={'sm:px-16 px-6 sm:py-12 py-6 max-w-7xl mx-auto relative z-0'}
       >
-        <span className='hash-span' id={idName}>
-          &nbsp;
+        <span className='' id={idName}>
+          <Component />
         </span>
-
-        <Component />
       </motion.section>
     );
   };
