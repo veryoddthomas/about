@@ -23,9 +23,8 @@ export default function Home() {
       <Overview />
       <DomainCards />
       <LanguageCards />
-      <PageEndDiv>
-        <Contact />
-      </PageEndDiv>
-    </main>
+      <Contact />
+      <PageEndDiv />
+    </main >
   );
 }
