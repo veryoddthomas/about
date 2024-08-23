@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { fadeIn } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion";
 
 const IconCard = ({ index, title, icon, url }) => (
     <motion.div
@@ -25,6 +25,7 @@ const IconCard = ({ index, title, icon, url }) => (
 
                 <br />
             </div>
+            {/* <div className='text-primary-light text-base text-center leading-tight'> */}
             <div className='text-center leading-tight'>
                 {title}
             </div>

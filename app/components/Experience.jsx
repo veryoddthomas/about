@@ -13,9 +13,9 @@ import {
 import { complex, motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
-import { experiences } from "../data/experiences.js";
-import { AnimatedSection } from "./index.js";
-import { textVariant } from "../utils/motion.js";
+import { experiences } from "../data/experiences";
+import { AnimatedSection } from ".";
+import { textVariant } from "../utils/motion";
 import Image from "next/image";
 
 
@@ -26,7 +26,7 @@ const TimelineElementWrapper = ({ children, company_name, date, icon, iconBg }) 
       // https://github.com/stephane-monnot/react-vertical-timeline/issues/166
       visible={true}
       contentStyle={{
-        background: company_name.includes('UCSD') ? colors.rose['950'] : colors.primary['900'],  // ref: https://tailwindcss.com/docs/customizing-colors
+        background: colors.primary['900'],  // ref: https://tailwindcss.com/docs/customizing-colors
         color: "#fff",
         border: "1px solid #fff",
         borderRadius: "12px",
@@ -114,7 +114,7 @@ const DetailedContents = ({ experience }) => {
 
         <div className="relative group-not-hover my-rotate-y-180 backface-hidden overflow-hidden" >
           <div className="absolute inset-0 flex items-center justify-center">
-            <p className="text-secondary-light font-bold opacity-30 z-0 -rotate-45 scale-[5] lg:scale-[8]">TL;DR</p>
+            <p className="text-secondary-light font-bold opacity-50 z-0 -rotate-45 scale-[5] lg:scale-[8]">TL;DR</p>
           </div>
           <ul className='mt-5 list-disc ml-5 space-y-2'>
             {experience.detailed_points.map((point, index) => (
@@ -169,7 +169,7 @@ const CompanyCard = ({ experiencesAtCompany }) => {
   return (
     <TimelineElementWrapper company_name={company_name} date={date} icon={icon} iconBg={iconBg}>
       <div>
-        <h3 className='text-primary-light h3-size font-black uppercase'>{experiencesAtCompany[0].company_name}</h3>
+        <h3 className='text-primary-light text-xl font-bold'>{experiencesAtCompany[0].company_name}</h3>
         <h3 className='text-secondary-light text-xl font-bold mt-1' >
           <div className='flex flex-col'>
             {/* list-disc */}
@@ -195,7 +195,6 @@ const Experience = () => {
   const experiencesGroupedByCompany = experiences.reduce((acc, curr) => {
     if (!acc[curr.company_name]) {
       acc[curr.company_name] = [];
-
     }
     acc[curr.company_name].push(curr);
     return acc;
@@ -207,8 +206,8 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h1 className={'pre-h1 text-center'}>Career / Education</h1>
-        <h1 className={'text-center'}>Experience</h1>
+        <h1 className={'pre-h1 text-center'}>Career</h1>
+        <h1 className={'text-center'}>Work Experience</h1>
       </motion.div>
 
       <div className='mt-8 lg:mt-16 flex flex-col'>
@@ -232,4 +231,4 @@ const Experience = () => {
   );
 };
 
-export default AnimatedSection(Experience, "experience");
+export default AnimatedSection(Experience, "work");

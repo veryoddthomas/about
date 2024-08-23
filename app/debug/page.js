@@ -1,5 +1,3 @@
-import PageEndDiv from "../../components/PageEndDiv";
-
 export default function Debug() {
     return (
         <main className="bg-primary-dark">
@@ -44,7 +42,9 @@ export default function Debug() {
                     amet commodo nulla facilisi nullam. Faucibus pulvinar.
                 </p>
 
-                <PageEndDiv />
+                {/* The following pads below the last entry so that following
+                    the link will place the anchor at the top of the screen */}
+                <div className='min-h-screen flex flex-grow' />
             </div>
         </main >
     );

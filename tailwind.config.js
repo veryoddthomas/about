@@ -5,8 +5,6 @@ const colors = require('tailwindcss/colors')
 const MONOCHROME_MODE = false;
 
 const palette = [colors.slate, colors.sky, colors.teal];  // default
-// const palette = [colors.slate, colors.violet, colors.slate];  // default
-
 // const palette = [colors.neutral, colors.sky, colors.teal];  // a little warmer
 // const palette = [colors.slate, colors.orange, colors.yellow];  // halloween
 // const palette = [colors.slate, colors.emerald, colors.rose];  // christmas

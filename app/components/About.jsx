@@ -1,9 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { fadeIn, textVariant } from "../utils/motion";
 import { AnimatedSection } from ".";
+import { IconCard } from ".";
 
-const Overview = () => {
+import { domains } from "../data/domains";
+import { languages } from "../data/languages";
+
+const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -13,7 +18,8 @@ const Overview = () => {
 
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-primary text-2xl leading-[30px]'
+        className='mt-4 text-primary text-xl leading-[30px]'
+      // max-w-3xl
       >
         <p>
           Throughout my career, I have worked on embedded systems, display drivers,
@@ -40,4 +46,4 @@ const Overview = () => {
   );
 };
 
-export default AnimatedSection(Overview, "overview");
+export default AnimatedSection(About, "about");

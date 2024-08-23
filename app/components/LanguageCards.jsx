@@ -10,7 +10,7 @@ const LanguageCards = () => {
     <>
       <motion.div variants={textVariant()}>
         <h1 className='pre-h1'>Proficiencies</h1>
-        <h1 className='link'><a href='languages'>Programming Languages</a></h1>
+        <h1>Programming Languages</h1>
       </motion.div>
 
       <motion.div

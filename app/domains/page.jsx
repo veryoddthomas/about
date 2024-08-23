@@ -1,5 +1,4 @@
-import { domains } from "../../data/domains";
-import PageEndDiv from "../../components/PageEndDiv";
+import { domains } from "../data/domains";
 
 
 const DomainDescription = ({ title, id, desc, icon, index }) => (
@@ -38,6 +37,7 @@ export default function Domains() {
         <div className='flex flex-wrap my-8 '>
           {domains.map((domain, index) => (
             <h2 key={domain.id} className='p-2 mx-2 my-1 text-tertiary-light text-base  border-primary border-2 rounded-2xl hover:bg-tertiary-dark'>
+              {/* {console.log(domain.id)} */}
               <a href={'#' + domain.id} className=""> {domain.title} </a>
             </h2>
           ))}
@@ -48,7 +48,9 @@ export default function Domains() {
             index={index}
             {...domain} />
         ))}
-        <PageEndDiv />
+        {/* The following pads below the last entry so that following
+            the link will place the anchor at the top of the screen */}
+        <div className='min-h-screen flex flex-grow' />
       </div>
     </main >
   );
