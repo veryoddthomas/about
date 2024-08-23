@@ -159,11 +159,14 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const CompanyCard = ({ experiencesAtCompany }) => {
-  // console.log(experiencesAtCompany);
   const company_name = experiencesAtCompany[0].company_name;
-  const date = experiencesAtCompany[0].date;
   const icon = experiencesAtCompany[0].icon;
   const iconBg = experiencesAtCompany[0].iconBg;
+  const startDateRange = experiencesAtCompany[experiencesAtCompany.length - 1].date;
+  const endDateRange = experiencesAtCompany[0].date;
+  const startDate = startDateRange.split('-')[0].trim();
+  const endDate = endDateRange.split('-')[1].trim();
+  const date = `${startDate} - ${endDate}`;
 
   return (
     <TimelineElementWrapper company_name={company_name} date={date} icon={icon} iconBg={iconBg}>
