@@ -1,3 +1,4 @@
+// console.log(experiencesAtCompany.experiencesAtCompany[0]);
 import React from "react";
 
 import resolveConfig from 'tailwindcss/resolveConfig'
@@ -129,7 +130,7 @@ const DetailedContents = ({ experience }) => {
 }
 
 const ExperienceCard = ({ experience }) => {
-  const summary = true;
+  const summary = false;
   const company_name = experience.company_name;
   const date = experience.date;
   const icon = experience.icon;
@@ -159,14 +160,11 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const CompanyCard = ({ experiencesAtCompany }) => {
+  // console.log(experiencesAtCompany);
   const company_name = experiencesAtCompany[0].company_name;
+  const date = experiencesAtCompany[0].date;
   const icon = experiencesAtCompany[0].icon;
   const iconBg = experiencesAtCompany[0].iconBg;
-  const startDateRange = experiencesAtCompany[experiencesAtCompany.length - 1].date;
-  const endDateRange = experiencesAtCompany[0].date;
-  const startDate = startDateRange.split('-')[0].trim();
-  const endDate = endDateRange.split('-')[1].trim();
-  const date = `${startDate} - ${endDate}`;
 
   return (
     <TimelineElementWrapper company_name={company_name} date={date} icon={icon} iconBg={iconBg}>
@@ -210,24 +208,23 @@ const Experience = () => {
     <>
       <motion.div variants={textVariant()}>
         <h1 className={'pre-h1 text-center'}>Career / Education</h1>
-        <h1 className='text-center'><a href='experience'>Experience</a></h1>
-
+        <h1 className={'text-center'}>Experience</h1>
       </motion.div>
 
       <div className='mt-8 lg:mt-16 flex flex-col'>
         <VerticalTimeline>
-          {/* {experiences.map((experience, index) => (
+          {experiences.map((experience, index) => (
             <ExperienceCard
               key={`experience-${index}`}
               experience={experience}
             />
-          ))} */}
+          ))}
 
-          {Object.keys(experiencesGroupedByCompany).map((company, index) => (
+          {/* {Object.keys(experiencesGroupedByCompany).map((company, index) => (
             // console.log(company),
             // console.log(JSON.stringify(experiencesGroupedByCompany[company])),
             <CompanyCard experiencesAtCompany={experiencesGroupedByCompany[company]} />
-          ))}
+          ))} */}
 
         </VerticalTimeline>
       </div>
