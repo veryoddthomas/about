@@ -176,7 +176,7 @@ const CompanyCard = ({ experiencesAtCompany }) => {
           <div className='flex flex-col'>
             {/* list-disc */}
             {experiencesAtCompany.map((role, index) => (
-              <>
+              <div key={`"${role}-${index}"`}>
                 <div className='text-secondary-light text-xl font-bold' key={`role-${index}`} > {role.title} </div>
                 {/* {
                   role.points.map((point, pointIndex) => (
@@ -184,7 +184,7 @@ const CompanyCard = ({ experiencesAtCompany }) => {
                   ))
                 } */}
                 <div className='my-4 ml-4 text-primary-light text-xl font-normal' key={`role-${index}-summary`} > {[role.summary]} </div>
-              </>))}
+              </div>))}
           </div>
         </h3>
       </div>
@@ -226,7 +226,7 @@ const Experience = () => {
           {Object.keys(experiencesGroupedByCompany).map((company, index) => (
             // console.log(company),
             // console.log(JSON.stringify(experiencesGroupedByCompany[company])),
-            <CompanyCard experiencesAtCompany={experiencesGroupedByCompany[company]} />
+            <CompanyCard experiencesAtCompany={experiencesGroupedByCompany[company]} key={`"${company}-${index}"`}/>
           ))}
 
         </VerticalTimeline>
